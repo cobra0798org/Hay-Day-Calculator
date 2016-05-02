@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import hayDay.xmlObjects.HayDayType;
-import hayDay.xmlObjects.RareItem;
+import hayDay.xmlObjects.Item;
 
 public class RareItems
 {
     private HayDayType hayDay;
-    private ArrayList<RareItem> rareItems;
+    private ArrayList<Item> rareItems;
     
     public RareItems()
     {
@@ -23,10 +23,10 @@ public class RareItems
         rareItems = hayDay.getRareItems();
     }
     
-    public LinkedHashMap<String, RareItem> getRareItems()
+    public LinkedHashMap<String, Item> getRareItems()
     {
-        LinkedHashMap<String, RareItem> items = new LinkedHashMap<String, RareItem>();
-        for (RareItem item : rareItems)
+        LinkedHashMap<String, Item> items = new LinkedHashMap<String, Item>();
+        for (Item item : rareItems)
         {
             items.put(item.getName(), item);
         }
@@ -37,7 +37,7 @@ public class RareItems
     public LinkedHashMap<String, Double> getCostsForOne()
     {
         LinkedHashMap<String, Double> prices = new LinkedHashMap<String, Double>();
-        for (RareItem item : rareItems)
+        for (Item item : rareItems)
         {
             prices.put(item.getName(), item.getCostForOne());
         }
@@ -48,7 +48,7 @@ public class RareItems
     public LinkedHashMap<String, Double> getCostsForTen()
     {
         LinkedHashMap<String, Double> costsForTen = new LinkedHashMap<String, Double>();
-        for (RareItem item : rareItems)
+        for (Item item : rareItems)
         {
             costsForTen.put(item.getName(), item.getCostForTen());
         }
@@ -59,7 +59,7 @@ public class RareItems
     public LinkedHashMap<String, Integer> getLevels()
     {
         LinkedHashMap<String, Integer> levels = new LinkedHashMap<String, Integer>();
-        for (RareItem item : rareItems)
+        for (Item item : rareItems)
         {
             levels.put(item.getName(), item.getLevel());
         }

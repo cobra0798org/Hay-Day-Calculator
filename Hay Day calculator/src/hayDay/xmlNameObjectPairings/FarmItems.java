@@ -5,12 +5,13 @@ import java.util.LinkedHashMap;
 
 import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HayDayType;
+import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Requirement;
 
 public class FarmItems
 {
     private HayDayType hayDay;
-    private ArrayList<FarmItem> farmItems;
+    private ArrayList<Item> farmItems;
     
     public FarmItems()
     {
@@ -27,9 +28,9 @@ public class FarmItems
     public LinkedHashMap<String, FarmItem> getFarmItems()
     {
         LinkedHashMap<String, FarmItem> items = new LinkedHashMap<String, FarmItem>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
-            items.put(item.getName(), item);
+            items.put(item.getName(), (FarmItem)item);
         }
         
         return items;
@@ -38,7 +39,7 @@ public class FarmItems
     public LinkedHashMap<String, Double> getCostsForOne()
     {
         LinkedHashMap<String, Double> prices = new LinkedHashMap<String, Double>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
             prices.put(item.getName(), item.getCostForOne());
         }
@@ -49,7 +50,7 @@ public class FarmItems
     public LinkedHashMap<String, Double> getCostsForTen()
     {
         LinkedHashMap<String, Double> costsForTen = new LinkedHashMap<String, Double>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
             costsForTen.put(item.getName(), item.getCostForTen());
         }
@@ -60,9 +61,9 @@ public class FarmItems
     public LinkedHashMap<String, Integer> getExps()
     {
         LinkedHashMap<String, Integer> exps = new LinkedHashMap<String, Integer>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
-            exps.put(item.getName(), item.getExp());
+            exps.put(item.getName(), ((FarmItem)item).getExp());
         }
         
         return exps;
@@ -71,7 +72,7 @@ public class FarmItems
     public LinkedHashMap<String, Integer> getLevels()
     {
         LinkedHashMap<String, Integer> levels = new LinkedHashMap<String, Integer>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
             levels.put(item.getName(), item.getLevel());
         }
@@ -82,7 +83,7 @@ public class FarmItems
     public LinkedHashMap<String, Integer> getTimes()
     {
         LinkedHashMap<String, Integer> times = new LinkedHashMap<String, Integer>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
             times.put(item.getName(), item.getTime());
         }
@@ -94,9 +95,9 @@ public class FarmItems
     {
         LinkedHashMap<String, ArrayList<Requirement>> requirements 
                 = new LinkedHashMap<String, ArrayList<Requirement>>();
-        for (FarmItem item : farmItems)
+        for (Item item : farmItems)
         {
-            requirements.put(item.getName(), item.getRequirements());
+            requirements.put(item.getName(), ((FarmItem)item).getRequirements());
         }
         
         return requirements;

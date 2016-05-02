@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import hayDay.xmlObjects.HayDayType;
+import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.MineItem;
 
 public class MineItems
 {
     private HayDayType hayDay;
-    private ArrayList<MineItem> mineItems;
+    private ArrayList<Item> mineItems;
     
     public MineItems()
     {
@@ -26,9 +27,9 @@ public class MineItems
     public LinkedHashMap<String, MineItem> getMineItems()
     {
         LinkedHashMap<String, MineItem> items = new LinkedHashMap<String, MineItem>();
-        for (MineItem item : mineItems)
+        for (Item item : mineItems)
         {
-            items.put(item.getName(), item);
+            items.put(item.getName(), (MineItem)item);
         }
         
         return items;
@@ -37,7 +38,7 @@ public class MineItems
     public LinkedHashMap<String, Double> getCostsForOne()
     {
         LinkedHashMap<String, Double> prices = new LinkedHashMap<String, Double>();
-        for (MineItem item : mineItems)
+        for (Item item : mineItems)
         {
             prices.put(item.getName(), item.getCostForOne());
         }
@@ -48,7 +49,7 @@ public class MineItems
     public LinkedHashMap<String, Double> getCostsForTen()
     {
         LinkedHashMap<String, Double> costsForTen = new LinkedHashMap<String, Double>();
-        for (MineItem item : mineItems)
+        for (Item item : mineItems)
         {
             costsForTen.put(item.getName(), item.getCostForTen());
         }
@@ -59,9 +60,9 @@ public class MineItems
     public LinkedHashMap<String, Integer> getExps()
     {
         LinkedHashMap<String, Integer> exps = new LinkedHashMap<String, Integer>();
-        for (MineItem item : mineItems)
+        for (Item item : mineItems)
         {
-            exps.put(item.getName(), item.getExp());
+            exps.put(item.getName(), ((MineItem)item).getExp());
         }
         
         return exps;
@@ -70,7 +71,7 @@ public class MineItems
     public LinkedHashMap<String, Integer> getLevels()
     {
         LinkedHashMap<String, Integer> levels = new LinkedHashMap<String, Integer>();
-        for (MineItem item : mineItems)
+        for (Item item : mineItems)
         {
             levels.put(item.getName(), item.getLevel());
         }
