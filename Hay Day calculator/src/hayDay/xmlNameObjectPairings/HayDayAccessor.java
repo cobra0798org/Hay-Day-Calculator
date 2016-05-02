@@ -4,12 +4,15 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
+import hayDay.xmlObjects.FarmItem;
+import hayDay.xmlObjects.HarvestItem;
 import hayDay.xmlObjects.HayDayType;
-import hayDay.xmlObjects.ObjectFactory;
+import hayDay.xmlObjects.MineItem;
+import hayDay.xmlObjects.ProductItem;
+import hayDay.xmlObjects.RareItem;
 
 public class HayDayAccessor
 {
@@ -42,13 +45,15 @@ public class HayDayAccessor
         e.printStackTrace();
     }
     
-    @SuppressWarnings({ "rawtypes", "resource" })
+    @SuppressWarnings({"resource" })
     private static HayDayType xmlAccess() throws JAXBException, FileNotFoundException
     {
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.class);
+        JAXBContext jc = JAXBContext.newInstance(HayDayType.class, 
+                FarmItem.class, ProductItem.class,
+                HarvestItem.class, RareItem.class, MineItem.class);
         Unmarshaller u = jc.createUnmarshaller();
         FileInputStream poFIO = new FileInputStream("Data/data.xml");
-        JAXBElement poe = (JAXBElement)u.unmarshal(poFIO);
-        return (HayDayType)poe.getValue();
+        HayDayType poe = (HayDayType)u.unmarshal(poFIO);
+        return poe;
     }
 }
