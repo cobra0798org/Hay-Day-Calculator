@@ -1,0 +1,5039 @@
+<?xml version="1.0"?>
+<hayDay>
+    <product_item name="bread">
+      <cost_for_one>21</cost_for_one>
+      <cost_for_ten>216</cost_for_ten>
+      <exp>3</exp>
+      <time>5</time>
+      <mastered_time>4</mastered_time>
+      <level>2</level>
+
+        <requirement> 
+          <item>wheat</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->    
+    <product_item name="chicken_feed">
+      <cost_for_one>7</cost_for_one>
+      <cost_for_ten>70</cost_for_ten>
+      <exp>1</exp>
+      <time>5</time>
+      <mastered_time>4</mastered_time>
+      <level>3</level>
+
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>corn</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">feed_mill</source>
+    </product_item>
+    
+    <product_item name="cow_feed">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <exp>2</exp>
+      <time>10</time>
+      <mastered_time>8</mastered_time>
+      <level>6</level>
+
+        <requirement> 
+          <item>soybean</item>
+          <count>2</count>
+        </requirement> 
+        <requirement> 
+          <item>corn</item>
+          <count>1</count>
+        </requirement> 
+
+      <source type="machine">feed_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="cream">
+      <cost_for_one>50</cost_for_one>
+      <cost_for_ten>500</cost_for_ten>
+      <exp>6</exp>
+      <time>20</time>
+      <mastered_time>17</mastered_time>
+      <level>6</level>
+
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">dairy</source>
+    </product_item>
+    
+    <product_item name="corn_bread">
+      <cost_for_one>72</cost_for_one>
+      <cost_for_ten>720</cost_for_ten>
+      <exp>8</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>7</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="brown_sugar">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>324</cost_for_ten>
+      <exp>4</exp>
+      <time>20</time>
+      <mastered_time>17</mastered_time>
+      <level>7</level>
+
+        <requirement> 
+          <item>sugarcane</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sugar_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="popcorn">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>320</cost_for_ten>
+      <exp>4</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>8</level>
+
+        <requirement> 
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">popcorn_pot</source>
+    </product_item>
+    
+    <product_item name="butter">
+      <cost_for_one>82</cost_for_one>
+      <cost_for_ten>828</cost_for_ten>
+      <exp>10</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>9</level>
+
+        <requirement> 
+          <item>milk</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">dairy</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="pancake">
+      <cost_for_one>108</cost_for_one>
+      <cost_for_ten>1080</cost_for_ten>
+      <exp>13</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>9</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>egg</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <product_item name="pig_feed">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <exp>2</exp>
+      <time>20</time>
+      <mastered_time>17</mastered_time>
+      <level>10</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>soybean</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">feed_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="cookie">
+      <cost_for_one>104</cost_for_one>
+      <cost_for_ten>1040</cost_for_ten>
+      <exp>13</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>10</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <product_item name="bacon_and_eggs">
+      <cost_for_one>201</cost_for_one>
+      <cost_for_ten>2016</cost_for_ten>
+      <exp>24</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>11</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>4</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <product_item name="cheese">
+      <cost_for_one>122</cost_for_one>
+      <cost_for_ten>1224</cost_for_ten>
+      <exp>15</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>12</level>
+
+        <requirement> 
+          <item>milk</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">dairy</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="white_sugar">
+      <cost_for_one>50</cost_for_one>
+      <cost_for_ten>504</cost_for_ten>
+      <exp>6</exp>
+      <time>40</time>
+      <mastered_time>34</mastered_time>
+      <level>13</level>
+
+        <requirement> 
+          <item>sugarcane</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sugar_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="carrot_pie">
+      <cost_for_one>82</cost_for_one>
+      <cost_for_ten>828</cost_for_ten>
+      <exp>10</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>14</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="pumpkin_pie">
+      <cost_for_one>158</cost_for_one>
+      <cost_for_ten>1580</cost_for_ten>
+      <exp>19</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>15</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>pumpkin</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <product_item name="sheep_feed">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <exp>3</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>16</level>
+
+        <requirement> 
+          <item>soybean</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">feed_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="buttered_popcorn">
+      <cost_for_one>126</cost_for_one>
+      <cost_for_ten>1260</cost_for_ten>
+      <exp>15</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>16</level>
+
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">popcorn_pot</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="sweater">
+      <cost_for_one>151</cost_for_one>
+      <cost_for_ten>1510</cost_for_ten>
+      <exp>18</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>17</level>
+
+        <requirement> 
+          <item>wool</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">loom</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="bacon_pie">
+      <cost_for_one>219</cost_for_one>
+      <cost_for_ten>2190</cost_for_ten>
+      <exp>26</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>18</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="syrup">
+      <cost_for_one>90</cost_for_one>
+      <cost_for_ten>900</cost_for_ten>
+      <exp>11</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>18</level>
+
+        <requirement> 
+          <item>sugarcane</item>
+          <count>4</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sugar_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="cotton_fabric">
+      <cost_for_one>108</cost_for_one>
+      <cost_for_ten>1080</cost_for_ten>
+      <exp>13</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>18</level>
+
+        <requirement> 
+          <item>cotton</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">loom</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->
+    <product_item name="hamburger">
+      <cost_for_one>180</cost_for_one>
+      <cost_for_ten>1800</cost_for_ten>
+      <exp>22</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>18</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>bread</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="raspberry_muffin">
+      <cost_for_one>140</cost_for_one>
+      <cost_for_ten>1400</cost_for_ten>
+      <exp>17</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>19</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blue_woolly_hat">
+      <cost_for_one>111</cost_for_one>
+      <cost_for_ten>1110</cost_for_ten>
+      <exp>13</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>19</level>
+
+        <requirement> 
+          <item>wool</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>indigo</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">loom</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cotton_shirt">
+      <cost_for_one>241</cost_for_one>
+      <cost_for_ten>2410</cost_for_ten>
+      <exp>29</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>19</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">sewing_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blue_sweater">
+      <cost_for_one>208</cost_for_one>
+      <cost_for_ten>2080</cost_for_ten>
+      <exp>22</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>20</level>
+
+        <requirement> 
+          <item>wool</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>indigo</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">loom</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="carrot_cake">
+      <cost_for_one>165</cost_for_one>
+      <cost_for_ten>1650</cost_for_ten>
+      <exp>20</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>21</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>carrot</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="woolly_chaps">
+      <cost_for_one>309</cost_for_one>
+      <cost_for_ten>3090</cost_for_ten>
+      <exp>37</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>21</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>wool</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement>         
+
+      <source type="machine">sewing_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cream_cake">
+      <cost_for_one>219</cost_for_one>
+      <cost_for_ten>2190</cost_for_ten>
+      <exp>26</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>23</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>5</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <product_item name="red_berry_cake">
+      <cost_for_one>255</cost_for_one>
+      <cost_for_ten>2556</cost_for_ten>
+      <exp>31</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>23</level>
+
+        <requirement> 
+          <item>cherry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cheesecake">
+      <cost_for_one>284</cost_for_one>
+      <cost_for_ten>2840</cost_for_ten>
+      <exp>34</exp>
+      <time>240</time>
+      <mastered_time>204</mastered_time>
+      <level>24</level>
+
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>cookie</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>         
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="silver_bar">
+      <cost_for_one>147</cost_for_one>
+      <cost_for_ten>1470</cost_for_ten>
+      <exp>14</exp>
+      <time>480</time>
+      <mastered_time>408</mastered_time>
+      <level>24</level>
+
+        <requirement> 
+          <item>silver_ore</item>
+          <count>3</count>
+          <type>mine_item</type>
+        </requirement> 
+
+      <source type="machine">smelter</source>
+    </product_item>
+    
+    <product_item name="chili_popcorn">
+      <cost_for_one>122</cost_for_one>
+      <cost_for_ten>1226</cost_for_ten>
+      <exp>15</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>25</level>
+
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement>
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>       
+
+      <source type="machine">popcorn_pot</source>
+    </product_item>
+    
+    <product_item name="gold_bar">
+      <cost_for_one>180</cost_for_one>
+      <cost_for_ten>1800</cost_for_ten>
+      <exp>18</exp>
+      <time>720</time>
+      <mastered_time>612</mastered_time>
+      <level>25</level>
+
+        <requirement> 
+          <item>gold_ore</item>
+          <count>3</count>
+          <type>mine_item</type>
+        </requirement> 
+
+      <source type="machine">smelter</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="platinum_bar">
+      <cost_for_one>205</cost_for_one>
+      <cost_for_ten>2050</cost_for_ten>
+      <exp>21</exp>
+      <time>960</time>
+      <mastered_time>816</mastered_time>
+      <level>25</level>
+
+        <requirement> 
+          <item>platinum_ore</item>
+          <count>3</count>
+          <type>mine_item</type>
+        </requirement> 
+
+      <source type="machine">smelter</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="violet_dress">
+      <cost_for_one>327</cost_for_one>
+      <cost_for_ten>3270</cost_for_ten>
+      <exp>39</exp>
+      <time>135</time>
+      <mastered_time>114</mastered_time>
+      <level>25</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>indigo</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">sewing_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blackberry_muffin">
+      <cost_for_one>226</cost_for_one>
+      <cost_for_ten>2260</cost_for_ten>
+      <exp>27</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>26</level>
+
+        <requirement> 
+          <item>blackberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="carrot_juice">
+      <cost_for_one>46</cost_for_one>
+      <cost_for_ten>460</cost_for_ten>
+      <exp>6</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>26</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">juice_press</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="fish_burger">
+      <cost_for_one>226</cost_for_one>
+      <cost_for_ten>2260</cost_for_ten>
+      <exp>27</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>bread</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <product_item name="red_lure">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>1</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>none</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">lure_workbench</source>
+    </product_item>
+    
+    <product_item name="green_lure">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>2</exp>
+      <time>75</time>
+      <mastered_time>63</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>green_voucher</item>
+          <count>1</count>
+          <type>voucher</type>
+        </requirement> 
+
+      <source type="machine">lure_workbench</source>
+    </product_item>
+    
+    <product_item name="blue_lure">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>3</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>blue_voucher</item>
+          <count>1</count>
+          <type>voucher</type>
+        </requirement> 
+
+      <source type="machine">lure_workbench</source>
+    </product_item>
+    
+    <product_item name="purple_lure">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>4</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>purple_voucher</item>
+          <count>1</count>
+          <type>voucher</type>
+        </requirement> 
+
+      <source type="machine">lure_workbench</source>
+    </product_item>
+    
+    <product_item name="gold_lure">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>5</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>27</level>
+
+        <requirement> 
+          <item>golden_voucher</item>
+          <count>1</count>
+          <type>voucher</type>
+        </requirement> 
+
+      <source type="machine">lure_workbench</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="apple_pie">
+      <cost_for_one>270</cost_for_one>
+      <cost_for_ten>2700</cost_for_ten>
+      <exp>32</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>28</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>syrup</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="fish_pie">
+      <cost_for_one>226</cost_for_one>
+      <cost_for_ten>2260</cost_for_ten>
+      <exp>27</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>28</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="apple_juice">
+      <cost_for_one>129</cost_for_one>
+      <cost_for_ten>1290</cost_for_ten>
+      <exp>15</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>28</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">juice_press</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="vanilla_ice_cream">
+      <cost_for_one>172</cost_for_one>
+      <cost_for_ten>1720</cost_for_ten>
+      <exp>20</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>29</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>         
+
+      <source type="machine">ice_cream_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="roasted_tomatoes">
+      <cost_for_one>118</cost_for_one>
+      <cost_for_ten>1180</cost_for_ten>
+      <exp>14</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>30</level>
+
+        <requirement> 
+          <item>tomato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cherry_juice">
+      <cost_for_one>216</cost_for_one>
+      <cost_for_ten>2160</cost_for_ten>
+      <exp>26</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>30</level>
+
+        <requirement> 
+          <item>cherry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">juice_press</source>
+    </product_item>
+    
+    <product_item name="fishing_net">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>7</exp>
+      <time>240</time>
+      <mastered_time>204</mastered_time>
+      <level>30</level>
+
+        <requirement> 
+          <item>none</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">net_maker</source>
+    </product_item>
+    
+    <product_item name="mystery_net">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>7</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>30</level>
+
+        <requirement> 
+          <item>diamond</item>
+          <count>5</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">net_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="tomato_juice">
+      <cost_for_one>162</cost_for_one>
+      <cost_for_ten>1620</cost_for_ten>
+      <exp>19</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>31</level>
+
+        <requirement> 
+          <item>tomato</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">juice_press</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="berry_juice">
+      <cost_for_one>205</cost_for_one>
+      <cost_for_ten>2050</cost_for_ten>
+      <exp>24</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>31</level>
+
+        <requirement> 
+          <item>blackberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">juice_press</source>
+    </product_item>
+    
+    <product_item name="goat_feed">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <exp>3</exp>
+      <time>40</time>
+      <mastered_time>34</mastered_time>
+      <level>32</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>corn</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">feed_mill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="goat_cheese">
+      <cost_for_one>162</cost_for_one>
+      <cost_for_ten>1620</cost_for_ten>
+      <exp>33</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>33</level>
+
+        <requirement> 
+          <item>goat_milk</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">dairy</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="pizza">
+      <cost_for_one>190</cost_for_one>
+      <cost_for_ten>1900</cost_for_ten>
+      <exp>23</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>33</level>
+
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>tomato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="refined_coal">
+      <cost_for_one>108</cost_for_one>
+      <cost_for_ten>1080</cost_for_ten>
+      <exp>13</exp>
+      <time>360</time>
+      <mastered_time>306</mastered_time>
+      <level>33</level>
+
+        <requirement> 
+          <item>coal</item>
+          <count>3</count>
+          <type>mine_item</type>
+        </requirement> 
+
+      <source type="machine">smelter</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cherry_popsicle">
+      <cost_for_one>352</cost_for_one>
+      <cost_for_ten>3520</cost_for_ten>
+      <exp>42</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>33</level>
+
+        <requirement> 
+          <item>cherry_juice</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>syrup</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">ice_cream_maker</source>
+    </product_item>
+    
+    <product_item name="feta_pie">
+      <cost_for_one>223</cost_for_one>
+      <cost_for_ten>2232</cost_for_ten>
+      <exp>26</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>34</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>goat_cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="iron_bar">
+      <cost_for_one>129</cost_for_one>
+      <cost_for_ten>1290</cost_for_ten>
+      <exp>15</exp>
+      <time>420</time>
+      <mastered_time>357</mastered_time>
+      <level>34</level>
+
+        <requirement> 
+          <item>iron_ore</item>
+          <count>3</count>
+          <type>mine_item</type>
+        </requirement> 
+
+      <source type="machine">smelter</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="strawberry_ice_cream">
+      <cost_for_one>331</cost_for_one>
+      <cost_for_ten>3310</cost_for_ten>
+      <exp>40</exp>
+      <time>240</time>
+      <mastered_time>204</mastered_time>
+      <level>34</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>strawberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">ice_cream_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="strawberry_cake">
+      <cost_for_one>316</cost_for_one>
+      <cost_for_ten>3160</cost_for_ten>
+      <exp>35</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>35</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>strawberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="baked_potato">
+      <cost_for_one>298</cost_for_one>
+      <cost_for_ten>2980</cost_for_ten>
+      <exp>36</exp>
+      <time>35</time>
+      <mastered_time>29</mastered_time>
+      <level>35</level>
+
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="apple_jam">
+      <cost_for_one>198</cost_for_one>
+      <cost_for_ten>1980</cost_for_ten>
+      <exp>26</exp>
+      <time>360</time>
+      <mastered_time>306</mastered_time>
+      <level>35</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">jam_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="chocolate_cake">
+      <cost_for_one>320</cost_for_one>
+      <cost_for_ten>3200</cost_for_ten>
+      <exp>38</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>36</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>cocao</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="casserole">
+      <cost_for_one>367</cost_for_one>
+      <cost_for_ten>3670</cost_for_ten>
+      <exp>44</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>36</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="raspberry_jam">
+      <cost_for_one>230</cost_for_one>
+      <cost_for_ten>2300</cost_for_ten>
+      <exp>29</exp>
+      <time>420</time>
+      <mastered_time>357</mastered_time>
+      <level>36</level>
+
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">jam_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="spicy_pizza">
+      <cost_for_one>226</cost_for_one>
+      <cost_for_ten>2260</cost_for_ten>
+      <exp>27</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>37</level>
+
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>tomato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blackberry_jam">
+      <cost_for_one>388</cost_for_one>
+      <cost_for_ten>3880</cost_for_ten>
+      <exp>46</exp>
+      <time>480</time>
+      <mastered_time>408</mastered_time>
+      <level>37</level>
+
+        <requirement> 
+          <item>blackberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">jam_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="potato_feta_cake">
+      <cost_for_one>309</cost_for_one>
+      <cost_for_ten>3090</cost_for_ten>
+      <exp>32</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>38</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>4</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>goat_cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cherry_jam">
+      <cost_for_one>327</cost_for_one>
+      <cost_for_ten>3270</cost_for_ten>
+      <exp>39</exp>
+      <time>420</time>
+      <mastered_time>357</mastered_time>
+      <level>38</level>
+
+        <requirement> 
+          <item>cherry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">jam_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="bracelet">
+      <cost_for_one>514</cost_for_one>
+      <cost_for_ten>5140</cost_for_ten>
+      <exp>50</exp>
+      <time>120</time>
+      <mastered_time>104</mastered_time>
+      <level>38</level>
+
+        <requirement> 
+          <item>gold_bar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>silver_bar</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">jeweler</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="potato_bread">
+      <cost_for_one>284</cost_for_one>
+      <cost_for_ten>2840</cost_for_ten>
+      <exp>34</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>39</level>
+
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="sheperds_pie">
+      <cost_for_one>280</cost_for_one>
+      <cost_for_ten>2800</cost_for_ten>
+      <exp>34</exp>
+      <time>100</time>
+      <mastered_time>85</mastered_time>
+      <level>39</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>carrot</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>pumpkin</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine"></source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="chocolate_ice_cream">
+      <cost_for_one>342</cost_for_one>
+      <cost_for_ten>3420</cost_for_ten>
+      <exp>41</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>39</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>cacao</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">ice_cream_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="necklace">
+      <cost_for_one>727</cost_for_one>
+      <cost_for_ten>7270</cost_for_ten>
+      <exp>72</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>39</level>
+
+        <requirement> 
+          <item>gold_bar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>platinum_bar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>silver_bar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">jeweler</source>
+    </product_item>
+    
+    <product_item name="honey">
+      <cost_for_one>154</cost_for_one>
+      <cost_for_ten>1548</cost_for_ten>
+      <exp>19</exp>
+      <time>20</time>
+      <mastered_time>17</mastered_time>
+      <level>39</level>
+
+        <requirement> 
+          <item>honeycomb</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">honey_extractor</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="honey_popcorn">
+      <cost_for_one>360</cost_for_one>
+      <cost_for_ten>3600</cost_for_ten>
+      <exp>43</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>40</level>
+
+        <requirement> 
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>honey</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">popcorn_pot</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="diamond_ring">
+      <cost_for_one>824</cost_for_one>
+      <cost_for_ten>8240</cost_for_ten>
+      <exp>84</exp>
+      <time>240</time>
+      <mastered_time>204</mastered_time>
+      <level>40</level>
+
+        <requirement> 
+          <item>diamond</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>gold_bar</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>platinum_bar</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">jeweler</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="fish_and_chips">
+      <cost_for_one>244</cost_for_one>
+      <cost_for_ten>2440</cost_for_ten>
+      <exp>29</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>41</level>
+
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>potato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="iron_bracelet">
+      <cost_for_one>658</cost_for_one>
+      <cost_for_ten>6580</cost_for_ten>
+      <exp>79</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>41</level>
+
+        <requirement> 
+          <item>iron_bar</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>refined_coal</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>silver_bar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">jeweler</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="espresso">
+      <cost_for_one>248</cost_for_one>
+      <cost_for_ten>2480</cost_for_ten>
+      <exp>29</exp>
+      <time>5</time>
+      <mastered_time>4</mastered_time>
+      <level>42</level>
+
+        <requirement> 
+          <item>coffee_bean</item>
+          <count>3</count>
+          <type>1</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">coffee_kiosk</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="honey_apple_cake">
+      <cost_for_one>482</cost_for_one>
+      <cost_for_ten>4820</cost_for_ten>
+      <exp>57</exp>
+      <time>200</time>
+      <mastered_time>170</mastered_time>
+      <level>42</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>honey</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="caffè_latte">
+      <cost_for_one>219</cost_for_one>
+      <cost_for_ten>2190</cost_for_ten>
+      <exp>26</exp>
+      <time>10</time>
+      <mastered_time>8</mastered_time>
+      <level>43</level>
+
+        <requirement> 
+          <item>coffee_bean</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">coffee_kiosk</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="chocolate_popcorn">
+      <cost_for_one>248</cost_for_one>
+      <cost_for_ten>2480</cost_for_ten>
+      <exp>29</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>44</level>
+
+        <requirement> 
+          <item>cacao</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>corn</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">popcorn_pot</source>
+    </product_item>
+    
+    <product_item name="lobster_trap">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>5</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>44</level>
+
+        <requirement> 
+          <item>none</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">net_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="frutti_di_mare_pizza">
+      <cost_for_one>403</cost_for_one>
+      <cost_for_ten>4030</cost_for_ten>
+      <exp>32</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>45</level>
+
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">bakery</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="caffè_mocha">
+      <cost_for_one>291</cost_for_one>
+      <cost_for_ten>2910</cost_for_ten>
+      <exp>35</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>45</level>
+
+        <requirement> 
+          <item>coffee_bean</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>cacao</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">coffee_kiosk</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="raspberry_mocha">
+      <cost_for_one>259</cost_for_one>
+      <cost_for_ten>2590</cost_for_ten>
+      <exp>16</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>46</level>
+
+        <requirement> 
+          <item>cacao</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>coffee_bean</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">coffee_kiosk</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lobster_soup">
+      <cost_for_one>612</cost_for_one>
+      <cost_for_ten>6120</cost_for_ten>
+      <exp>73</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>46</level>
+
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">soup_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="hot_chocolate">
+      <cost_for_one>270</cost_for_one>
+      <cost_for_ten>2700</cost_for_ten>
+      <exp>32</exp>
+      <time>25</time>
+      <mastered_time>21</mastered_time>
+      <level>47</level>
+
+        <requirement> 
+          <item>cacao</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">coffee_kiosk</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="tomato_soup">
+      <cost_for_one>478</cost_for_one>
+      <cost_for_ten>4780</cost_for_ten>
+      <exp>57</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>47</level>
+
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>goat_cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>tomato_juice</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>tomato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">soup_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="red_scarf">
+      <cost_for_one>288</cost_for_one>
+      <cost_for_ten>2880</cost_for_ten>
+      <exp>34</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>48</level>
+
+        <requirement> 
+          <item>strawberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wool</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">loom</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lobster_skewer">
+      <cost_for_one>417</cost_for_one>
+      <cost_for_ten>4170</cost_for_ten>
+      <exp>50</exp>
+      <time>40</time>
+      <mastered_time>34</mastered_time>
+      <level>48</level>
+
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>honey</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">bbq_grill</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="beeswax">
+      <cost_for_one>234</cost_for_one>
+      <cost_for_ten>2340</cost_for_ten>
+      <exp>28</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>48</level>
+
+        <requirement> 
+          <item>honeycomb</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">honey_extractor</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="strawberry_candle">
+      <cost_for_one>370</cost_for_one>
+      <cost_for_ten>3700</cost_for_ten>
+      <exp>44</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>48</level>
+
+        <requirement> 
+          <item>beeswax</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>strawberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">candle_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="pumpkin_soup">
+      <cost_for_one>392</cost_for_one>
+      <cost_for_ten>3920</cost_for_ten>
+      <exp>47</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>49</level>
+
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>carrot</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>honey</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>pumpkin</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">soup_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="strawberry_jam">
+      <cost_for_one>270</cost_for_one>
+      <cost_for_ten>2700</cost_for_ten>
+      <exp>47</exp>
+      <time>450</time>
+      <mastered_time>382</mastered_time>
+      <level>50</level>
+
+        <requirement> 
+          <item>strawberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">jam_maker</source>
+    </product_item>
+    
+    <product_item name="duck_trap">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>3</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>50</level>
+
+        <requirement> 
+          <item>none</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">net_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="caramel_apple">
+      <cost_for_one>255</cost_for_one>
+      <cost_for_ten>2550</cost_for_ten>
+      <exp>31</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>51</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>syrup</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">candy_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="pillow">
+      <cost_for_one>676</cost_for_one>
+      <cost_for_ten>6760</cost_for_ten>
+      <exp>81</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>51</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>duck_feather</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">sewing_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="toffee">
+      <cost_for_one>176</cost_for_one>
+      <cost_for_ten>1760</cost_for_ten>
+      <exp>21</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>52</level>
+
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">candy_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="raspberry_candle">
+      <cost_for_one>360</cost_for_one>
+      <cost_for_ten>3600</cost_for_ten>
+      <exp>52</exp>
+      <time>105</time>
+      <mastered_time>89</mastered_time>
+      <level>52</level>
+
+        <requirement> 
+          <item>beeswax</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">candle_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="fish_soup">
+      <cost_for_one>298</cost_for_one>
+      <cost_for_ten>2980</cost_for_ten>
+      <exp>35</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>53</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>potato</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">soup_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="soy_sauce">
+      <cost_for_one>180</cost_for_one>
+      <cost_for_ten>153</cost_for_ten>
+      <exp>19</exp>
+      <time>180</time>
+      <mastered_time>153</mastered_time>
+      <level>54</level>
+
+        <requirement> 
+          <item>soybeans</item>
+          <count>9</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sauce_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="chocolate">
+      <cost_for_one>460</cost_for_one>
+      <cost_for_ten>4600</cost_for_ten>
+      <exp>55</exp>
+      <time>1200</time>
+      <mastered_time>1020</mastered_time>
+      <level>54</level>
+
+        <requirement> 
+          <item>cacao</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">candy_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="sushi_roll">
+      <cost_for_one>489</cost_for_one>
+      <cost_for_ten>4890</cost_for_ten>
+      <exp>58</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>56</level>
+
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>rice</item>
+          <count>15</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>soy_sauce</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">sushi_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lollipop">
+      <cost_for_one>342</cost_for_one>
+      <cost_for_ten>3420</cost_for_ten>
+      <exp>41</exp>
+      <time>720</time>
+      <mastered_time>612</mastered_time>
+      <level>57</level>
+
+        <requirement> 
+          <item>cherry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>strawberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>syrup</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+
+      <source type="machine">candy_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="feta_salad">
+      <cost_for_one>745</cost_for_one>
+      <cost_for_ten>7450</cost_for_ten>
+      <exp>89</exp>
+      <time>90</time>
+      <mastered_time>76</mastered_time>
+      <level>58</level>
+
+        <requirement> 
+          <item>goat_cheese</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>olive</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>roasted_tomatoes</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">salad_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lobster_sushi">
+      <cost_for_one>637</cost_for_one>
+      <cost_for_ten>6370</cost_for_ten>
+      <exp>76</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>59</level>
+
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>rice</item>
+          <count>15</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>soy_sauce</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">sushi_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blanket">
+      <cost_for_one>1098</cost_for_one>
+      <cost_for_ten>10980</cost_for_ten>
+      <exp>131</exp>
+      <time>210</time>
+      <mastered_time>178</mastered_time>
+      <level>59</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>3</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>duck_feather</item>
+          <count>5</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>pumpkin</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sewing_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="jelly_beans">
+      <cost_for_one>684</cost_for_one>
+      <cost_for_ten>6840</cost_for_ten>
+      <exp>81</exp>
+      <time>1440</time>
+      <mastered_time>1224</mastered_time>
+      <level>60</level>
+
+        <requirement> 
+          <item>blackberry_jam</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry_jam</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">candy_machine</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="olive_oil">
+      <cost_for_one>277</cost_for_one>
+      <cost_for_ten>2770</cost_for_ten>
+      <exp>60</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>60</level>
+
+        <requirement> 
+          <item>olive</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sauce_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="veggie_bagel">
+      <cost_for_one>532</cost_for_one>
+      <cost_for_ten>5320</cost_for_ten>
+      <exp>63</exp>
+      <time>40</time>
+      <mastered_time>34</mastered_time>
+      <level>61</level>
+
+        <requirement> 
+          <item>bread</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>olive_oil</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sandwich_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="blt_salad">
+      <cost_for_one>723</cost_for_one>
+      <cost_for_ten>7230</cost_for_ten>
+      <exp>86</exp>
+      <time>105</time>
+      <mastered_time>89</mastered_time>
+      <level>62</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>mayonnaise</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>roasted_tomatoes</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">salad_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="mayonnaise">
+      <cost_for_one>378</cost_for_one>
+      <cost_for_ten>3780</cost_for_ten>
+      <exp>86</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>62</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>4</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>olive_oil</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+
+      <source type="machine">sauce_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="egg_sushi">
+      <cost_for_one>550</cost_for_one>
+      <cost_for_ten>5500</cost_for_ten>
+      <exp>66</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>63</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>4</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>rice</item>
+          <count>15</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>soy_sauce</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+
+      <source type="machine">sushi_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="seafood_salad">
+      <cost_for_one>763</cost_for_one>
+      <cost_for_ten>7630</cost_for_ten>
+      <exp>91</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>64</level>
+
+        <requirement> 
+          <item>fish_fillet</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>mayonnaise</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+
+      <source type="machine">salad_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="berry_smoothie">
+      <cost_for_one>547</cost_for_one>
+      <cost_for_ten>5470</cost_for_ten>
+      <exp>65</exp>
+      <time>75</time>
+      <mastered_time>63</mastered_time>
+      <level>64</level>
+
+        <requirement> 
+          <item>blackberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>strawberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>raspberry</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+
+      <source type="machine">smoothie_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="bacon_toast">
+      <cost_for_one>648</cost_for_one>
+      <cost_for_ten>6480</cost_for_ten>
+      <exp>77</exp>
+      <time>100</time>
+      <mastered_time>85</mastered_time>
+      <level>65</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>bread</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>mayonnaise</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+
+      <source type="machine">sandwich_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lemon_curd">
+      <cost_for_one>367</cost_for_one>
+      <cost_for_ten>3670</cost_for_ten>
+      <exp>45</exp>
+      <time>25</time>
+      <mastered_time>21</mastered_time>
+      <level>66</level>
+
+        <requirement> 
+          <item>butter</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lemon</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>white_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">sauce_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="egg_sandwich">
+      <cost_for_one>583</cost_for_one>
+      <cost_for_ten>5830</cost_for_ten>
+      <exp>69</exp>
+      <time>80</time>
+      <mastered_time>68</mastered_time>
+      <level>66</level>
+
+        <requirement> 
+          <item>bread</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>mayonnaise</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">sandwich_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="green_smoothie">
+      <cost_for_one>320</cost_for_one>
+      <cost_for_ten>3200</cost_for_ten>
+      <exp>38</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>66</level>
+
+        <requirement> 
+          <item>apple</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>lemon</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lettuce</item>
+          <count>5</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">smoothie_mixer</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="fresh_pasta">
+      <cost_for_one>43</cost_for_one>
+      <cost_for_ten>430</cost_for_ten>
+      <exp>5</exp>
+      <time>15</time>
+      <mastered_time>12</mastered_time>
+      <level>67</level>
+
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pasta_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="pasta_salad">
+      <cost_for_one>759</cost_for_one>
+      <cost_for_ten>7590</cost_for_ten>
+      <exp>90</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>67</level>
+
+        <requirement> 
+          <item>fresh_pasta</item>
+          <count>4</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lemon</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>olive_oil</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">salad_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lemon_pie">
+      <cost_for_one>446</cost_for_one>
+      <cost_for_ten>4460</cost_for_ten>
+      <exp>53</exp>
+      <time>135</time>
+      <mastered_time>114</mastered_time>
+      <level>67</level>
+
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lemon_curd</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">pie_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lemon_cake">
+      <cost_for_one>896</cost_for_one>
+      <cost_for_ten>8960</cost_for_ten>
+      <exp>107</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>68</level>
+
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>lemon_curd</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">cake_oven</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="tomato_sauce">
+      <cost_for_one>230</cost_for_one>
+      <cost_for_ten>2300</cost_for_ten>
+      <exp>27</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>69</level>
+
+        <requirement> 
+          <item>brown_sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lemon</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">sauce_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="honey_toast">
+      <cost_for_one>255</cost_for_one>
+      <cost_for_ten>2550</cost_for_ten>
+      <exp>31</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>69</level>
+
+        <requirement> 
+          <item>bread</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>egg</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>honey</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>milk</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">sandwich_bar</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="yogurt_smoothie">
+      <cost_for_one>349</cost_for_one>
+      <cost_for_ten>3490</cost_for_ten>
+      <exp>42</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>70</level>
+
+        <requirement> 
+          <item>cherry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>raspberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>white sugar</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">smothie_mixer</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="cloche_hat">
+      <cost_for_one>468</cost_for_one>
+      <cost_for_ten>4680</cost_for_ten>
+      <exp>56</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>70</level>
+
+        <requirement> 
+          <item>strawberry</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>wool</item>
+          <count>6</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">hat_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lemon_candle">
+      <cost_for_one>457</cost_for_one>
+      <cost_for_ten>4570</cost_for_ten>
+      <exp>55</exp>
+      <time>135</time>
+      <mastered_time>114</mastered_time>
+      <level>72</level>
+
+        <requirement> 
+          <item>beeswax</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>lemon</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>         
+
+      <source type="machine">candle_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="top_hat">
+      <cost_for_one>619</cost_for_one>
+      <cost_for_ten>6190</cost_for_ten>
+      <exp>74</exp>
+      <time>210</time>
+      <mastered_time>178</mastered_time>
+      <level>72</level>
+
+        <requirement> 
+          <item>cotton_fabric</item>
+          <count>3</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>duck_feather</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>refined_coal</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">hat_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="gnocchi">
+      <cost_for_one>475</cost_for_one>
+      <cost_for_ten>4750</cost_for_ten>
+      <exp>57</exp>
+      <time>80</time>
+      <mastered_time>68</mastered_time>
+      <level>72</level>
+
+        <requirement> 
+          <item>potato</item>
+          <count>4</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>tomato</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wheat</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>butter</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">pasta_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="noodle_soup">
+      <cost_for_one>432</cost_for_one>
+      <cost_for_ten>4320</cost_for_ten>
+      <exp>52</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>73</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>2</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>egg</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement> 
+        <requirement> 
+          <item>rice_noodles</item>
+          <count>3</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">soup_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="rice_noodles">
+      <cost_for_one>100</cost_for_one>
+      <cost_for_ten>1000</cost_for_ten>
+      <exp>12</exp>
+      <time>20</time>
+      <mastered_time>17</mastered_time>
+      <level>73</level>
+
+        <requirement> 
+          <item>rice</item>
+          <count>5</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pasta_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="sun_hat">
+      <cost_for_one>468</cost_for_one>
+      <cost_for_ten>4680</cost_for_ten>
+      <exp>66</exp>
+      <time>150</time>
+      <mastered_time>127</mastered_time>
+      <level>74</level>
+
+        <requirement> 
+          <item>duck_feather</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>indigo</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>raspberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>wool</item>
+          <count>3</count>
+          <type>harvest_item</type>
+        </requirement> 
+
+      <source type="machine">hat_maker</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="veggie_lasagna">
+      <cost_for_one>532</cost_for_one>
+      <cost_for_ten>5320</cost_for_ten>
+      <exp>63</exp>
+      <time>100</time>
+      <mastered_time>85</mastered_time>
+      <level>74</level>
+
+        <requirement> 
+          <item>tomato_sauce</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement> 
+          <item>fresh_pasta</item>
+          <count>3</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>carrot</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>cheese</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">pasta_kitchen</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="hot_dog">
+      <cost_for_one>370</cost_for_one>
+      <cost_for_ten>3700</cost_for_ten>
+      <exp>44</exp>
+      <time>30</time>
+      <mastered_time>25</mastered_time>
+      <level>75</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>2</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>bread</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato_sauce</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">hot_dog_stand</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="tofu_dog">
+      <cost_for_one>367</cost_for_one>
+      <cost_for_ten>3670</cost_for_ten>
+      <exp>44</exp>
+      <time>45</time>
+      <mastered_time>38</mastered_time>
+      <level>76</level>
+
+        <requirement> 
+          <item>lettuce</item>
+          <count>3</count>
+          <type>farm_item</type>
+        </requirement>
+        <requirement> 
+          <item>soybean</item>
+          <count>6</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>4</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">hot_dog_stand</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="corn_dog">
+      <cost_for_one>529</cost_for_one>
+      <cost_for_ten>5290</cost_for_ten>
+      <exp>63</exp>
+      <time>60</time>
+      <mastered_time>51</mastered_time>
+      <level>78</level>
+
+        <requirement> 
+          <item>bacon</item>
+          <count>4</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>corn</item>
+          <count>4</count>
+          <type>farm_item</type>
+        </requirement> 
+        <requirement> 
+          <item>olive_oil</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">hot_dog_stand</source>
+    </product_item>
+    
+    <!-- missing cost_for_ten -->  
+    <product_item name="lobster_pasta">
+      <cost_for_one>637</cost_for_one>
+      <cost_for_ten>6370</cost_for_ten>
+      <exp>76</exp>
+      <time>120</time>
+      <mastered_time>102</mastered_time>
+      <level>79</level>
+
+        <requirement> 
+          <item>lobster_tail</item>
+          <count>1</count>
+          <type>harvest_item</type>
+        </requirement>
+        <requirement> 
+          <item>cream</item>
+          <count>2</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>fresh_pasta</item>
+          <count>3</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement> 
+          <item>tomato</item>
+          <count>4</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">pasta_kitchen</source>
+    </product_item>
+  
+    <farm_item name="none">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>0</exp>
+      <time>0</time>
+      <mastered_time>0</mastered_time>
+      <level>1</level>
+
+        <requirement> 
+          <item>none</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="diamond">
+      <cost_for_one>54</cost_for_one>
+      <cost_for_ten>540</cost_for_ten>
+      <exp>0</exp>
+      <time>0</time>
+      <mastered_time>0</mastered_time>
+      <level>1</level>
+
+        <requirement> 
+          <item>diamond</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="wheat">
+      <cost_for_one>3</cost_for_one>
+      <cost_for_ten>36</cost_for_ten>
+      <exp>1</exp>
+      <time>2</time>
+      <level>1</level>
+
+        <requirement> 
+          <item>wheat</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+	
+	  <farm_item name="corn">
+      <cost_for_one>7</cost_for_one>
+      <cost_for_ten>72</cost_for_ten>
+      <exp>1</exp>
+      <time>5</time>
+      <level>2</level>
+
+        <requirement> 
+          <item>corn</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="soybean">
+      <cost_for_one>10</cost_for_one>
+      <cost_for_ten>108</cost_for_ten>
+      <exp>2</exp>
+      <time>20</time>
+      <level>5</level>
+
+        <requirement> 
+          <item>soybean</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="sugarcane">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <exp>3</exp>
+      <time>30</time>
+      <level>7</level>
+
+        <requirement> 
+          <item>sugarcane</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="carrot">
+      <cost_for_one>7</cost_for_one>
+      <cost_for_ten>72</cost_for_ten>
+      <exp>2</exp>
+      <time>10</time>
+      <level>9</level>
+
+        <requirement> 
+          <item>carrot</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="indigo">
+      <cost_for_one>25</cost_for_one>
+      <cost_for_ten>252</cost_for_ten>
+      <exp>5</exp>
+      <time>120</time>
+      <level>13</level>
+
+        <requirement> 
+          <item>indigo</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="pumpkin">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>324</cost_for_ten>
+      <exp>6</exp>
+      <time>180</time>
+      <level>15</level>
+
+        <requirement> 
+          <item>pumpkin</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="apple">
+      <cost_for_one>39</cost_for_one>
+      <cost_for_ten>396</cost_for_ten>
+      <exp>7</exp>
+      <time>960</time>
+      <level>15</level>
+
+        <requirement> 
+          <item>apple_tree</item>
+          <count>1</count>
+          <type>tree</type>
+        </requirement> 
+
+      <source type="tree">apple_tree</source>
+    </farm_item>
+    
+    <farm_item name="cotton">
+      <cost_for_one>28</cost_for_one>
+      <cost_for_ten>280</cost_for_ten>
+      <exp>6</exp>
+      <time>150</time>
+      <level>18</level>
+
+        <requirement> 
+          <item>cotton</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="raspberry">
+      <cost_for_one>46</cost_for_one>
+      <cost_for_ten>468</cost_for_ten>
+      <exp>9</exp>
+      <time>1080</time>
+      <level>19</level>
+
+        <requirement> 
+          <item>raspberry_bush</item>
+          <count>1</count>
+          <type>bush</type>
+        </requirement> 
+
+      <source type="bush">raspberry_bush</source>
+    </farm_item>
+    
+    <farm_item name="cherry">
+      <cost_for_one>68</cost_for_one>
+      <cost_for_ten>684</cost_for_ten>
+      <exp>13</exp>
+      <time>1620</time>
+      <level>22</level>
+
+        <requirement> 
+          <item>cherry_tree</item>
+          <count>1</count>
+          <type>tree</type>
+        </requirement> 
+
+      <source type="tree">cherry_tree</source>
+    </farm_item>
+    
+    <farm_item name="chili_pepper">
+      <cost_for_one>36</cost_for_one>
+      <cost_for_ten>360</cost_for_ten>
+      <exp>4</exp>
+      <time>240</time>
+      <level>25</level>
+
+        <requirement> 
+          <item>chili_pepper</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="blackberry">
+      <cost_for_one>82</cost_for_one>
+      <cost_for_ten>828</cost_for_ten>
+      <exp>16</exp>
+      <time>1920</time>
+      <level>26</level>
+
+        <requirement> 
+          <item>blackberry_bush</item>
+          <count>1</count>
+          <type>bush</type>
+        </requirement> 
+
+      <source type="bush">blackberry_bush</source>
+    </farm_item>
+    
+    <farm_item name="tomato">
+      <cost_for_one>43</cost_for_one>
+      <cost_for_ten>432</cost_for_ten>
+      <exp>8</exp>
+      <time>360</time>
+      <level>30</level>
+
+        <requirement> 
+          <item>tomato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="strawberry">
+      <cost_for_one>50</cost_for_one>
+      <cost_for_ten>504</cost_for_ten>
+      <exp>10</exp>
+      <time>480</time>
+      <level>34</level>
+
+        <requirement> 
+          <item>strawberry</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="potato">
+      <cost_for_one>36</cost_for_one>
+      <cost_for_ten>360</cost_for_ten>
+      <exp>7</exp>
+      <time>220</time>
+      <level>35</level>
+
+        <requirement> 
+          <item>potato</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="cocao">
+      <cost_for_one>86</cost_for_one>
+      <cost_for_ten>864</cost_for_ten>
+      <exp>16</exp>
+      <time>2040</time>
+      <level>36</level>
+
+        <requirement> 
+          <item>cacao_tree</item>
+          <count>1</count>
+          <type>tree</type>
+        </requirement> 
+
+      <source type="tree">cacao_tree</source>
+    </farm_item>
+    
+    <!-- missing cost_for_ten -->
+    <farm_item name="coffee_bean">
+      <cost_for_one>64</cost_for_one>
+      <cost_for_ten>640</cost_for_ten>
+      <exp>12</exp>
+      <time>1500</time>
+      <level>42</level>
+
+        <requirement> 
+          <item>coffee_bush</item>
+          <count>1</count>
+          <type>bush</type>
+        </requirement> 
+
+      <source type="machine">coffee_bush</source>
+    </farm_item>
+    
+    <!-- missing cost_for_ten -->
+    <farm_item name="rice">
+      <cost_for_one>18</cost_for_one>
+      <cost_for_ten>180</cost_for_ten>
+      <exp>3</exp>
+      <time>45</time>
+      <level>56</level>
+
+        <requirement> 
+          <item>rice</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <farm_item name="olive">
+      <cost_for_one>82</cost_for_one>
+      <cost_for_ten>828</cost_for_ten>
+      <exp>17</exp>
+      <time>600</time>
+      <level>57</level>
+
+        <requirement> 
+          <item>olive_tree</item>
+          <count>1</count>
+          <type>tree</type>
+        </requirement> 
+
+      <source type="tree">olive_tree</source>
+    </farm_item>
+    
+    <!-- missing cost_for_ten -->
+    <farm_item name="lettuce">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>320</cost_for_ten>
+      <exp>7</exp>
+      <time>210</time>
+      <level>58</level>
+
+        <requirement> 
+          <item>lettuce</item>
+          <count>1</count>
+          <type>farm_item</type>
+        </requirement> 
+
+      <source type="machine">field</source>
+    </farm_item>
+    
+    <!-- missing cost_for_ten -->
+    <farm_item name="lemon">
+      <cost_for_one>93</cost_for_one>
+      <cost_for_ten>930</cost_for_ten>
+      <exp>18</exp>
+      <time>1740</time>
+      <level>66</level>
+
+        <requirement> 
+          <item>lemon_tree</item>
+          <count>1</count>
+          <type>tree</type>
+        </requirement> 
+
+      <source type="tree">lemon_tree</source>
+    </farm_item>
+
+    <harvest_item name="egg">
+      <cost_for_one>18</cost_for_one>
+      <cost_for_ten>180</cost_for_ten>
+      <exp>2</exp>
+      <time>20</time>
+      <level>1</level>
+
+        <requirement>
+          <item>chicken_feed</item>
+          <count>1</count>
+          <type>cost_for_one</type>
+        </requirement> 
+
+      <source type="animal">chicken</source>
+    </harvest_item>
+    
+    <harvest_item name="milk">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>324</cost_for_ten>
+      <exp>3</exp>
+      <time>60</time>
+      <level>6</level>
+
+        <requirement>
+          <item>cow_feed</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="animal">cow</source>
+    </harvest_item>
+    
+    <harvest_item name="bacon">
+      <cost_for_one>50</cost_for_one>
+      <cost_for_ten>504</cost_for_ten>
+      <exp>5</exp>
+      <time>240</time>
+      <level>10</level>
+
+        <requirement>
+          <item>pig_feed</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="animal">pig</source>
+    </harvest_item>
+    
+    <harvest_item name="wool">
+      <cost_for_one>54</cost_for_one>
+      <cost_for_ten>540</cost_for_ten>
+      <exp>5</exp>
+      <time>360</time>
+      <level>16</level>
+
+        <requirement>
+          <item>sheep_feed</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="animal">sheep</source>
+    </harvest_item>
+    
+    <harvest_item name="fish_fillet">
+      <cost_for_one>54</cost_for_one>
+      <cost_for_ten>540</cost_for_ten>
+      <exp>8</exp>
+      <time>0</time>
+      <level>27</level>
+
+        <requirement>
+          <item>red_lure</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement>
+          <item>green_lure</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement>
+          <item>blue_lure</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement>
+          <item>purple_lure</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement>
+          <item>yellow_lure</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement>
+        <requirement>
+          <item>fishing_net</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+        <requirement>
+          <item>mystery_net</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="animal">fish</source>
+    </harvest_item>
+    
+    <harvest_item name="goat_milk">
+      <cost_for_one>64</cost_for_one>
+      <cost_for_ten>640</cost_for_ten>
+      <exp>6</exp>
+      <time>480</time>
+      <level>32</level>
+
+        <requirement>
+          <item>goat_feed</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="animal">goat</source>
+    </harvest_item>
+    
+    <!-- missing cost_for_ten -->
+    <harvest_item name="honeycomb">
+      <cost_for_one>68</cost_for_one>
+      <cost_for_ten>680</cost_for_ten>
+      <exp>8</exp>
+      <time>30</time>
+      <level>39</level>
+
+        <requirement>
+          <item>bee</item>
+          <count>3</count>
+          <type>animal</type>
+        </requirement> 
+
+      <source type="tree">beehive_tree</source>
+    </harvest_item>
+    
+    <!-- missing cost_for_ten -->
+    <harvest_item name="lobster_tail">
+      <cost_for_one>201</cost_for_one>
+      <cost_for_ten>2010</cost_for_ten>
+      <exp>24</exp>
+      <time>360</time>
+      <level>44</level>
+
+        <requirement>
+          <item>lobster_trap</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">lobster_pool</source>
+    </harvest_item>
+    
+    <!-- missing cost_for_ten -->
+    <harvest_item name="duck_feather">
+      <cost_for_one>140</cost_for_one>
+      <cost_for_ten>1400</cost_for_ten>
+      <exp>17</exp>
+      <time>180</time>
+      <level>50</level>
+
+        <requirement>
+          <item>duck_trap</item>
+          <count>1</count>
+          <type>product_item</type>
+        </requirement> 
+
+      <source type="machine">duck_salon</source>
+    </harvest_item>
+
+    <machine name="field">
+      <level>1</level>
+      <cost>1</cost>
+      <construction_time>0</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>0</level_one_mastery_time>
+      <level_two_mastery_time>0</level_two_mastery_time>
+      <level_three_mastery_time>0</level_three_mastery_time>
+        <farm_item>none</farm_item>
+        <farm_item>diamond</farm_item>
+        <farm_item>wheat</farm_item>
+        <farm_item>corn</farm_item>
+        <farm_item>sozbean</farm_item>
+        <farm_item>sugarcane</farm_item>
+        <farm_item>carrot</farm_item>
+        <farm_item>indigo</farm_item>
+        <farm_item>pumpkin</farm_item>
+        <farm_item>cotton</farm_item>
+        <farm_item>chili_pepper</farm_item>
+        <farm_item>tomato</farm_item>
+        <farm_item>strawberrz</farm_item>
+        <farm_item>potato</farm_item>
+        <farm_item>rice</farm_item>
+        <farm_item>lettuce</farm_item>
+    </machine>
+  
+    <machine name="bakery">
+      <level>2</level>
+      <cost>20</cost>
+      <construction_time>0.1666666667</construction_time>
+      <exp>3</exp>
+      <level_one_mastery_time>35</level_one_mastery_time>
+      <level_two_mastery_time>140</level_two_mastery_time>
+      <level_three_mastery_time>560</level_three_mastery_time>
+        <product_item>bread</product_item>
+        <product_item>corn_bread</product_item>
+        <product_item>cookie</product_item>
+        <product_item>raspberry_muffin</product_item>
+        <product_item>blackberry_muffin</product_item>
+        <product_item>pizza</product_item>
+        <product_item>spicy_pizza</product_item>
+        <product_item>potato_bread</product_item>
+        <product_item>frutti_di_mare_pizza</product_item>
+    </machine>
+    
+    <machine name="feed_mill">
+      <level>3</level>
+      <first_level>12</first_level>
+      <cost>5</cost>
+      <first_cost>3200</first_cost>
+      <construction_time>0.666666667</construction_time>
+      <exp>4</exp>
+      <level_one_mastery_time>120</level_one_mastery_time>
+      <level_two_mastery_time>840</level_two_mastery_time>
+      <level_three_mastery_time>5880</level_three_mastery_time>
+        <product_item>chicken_feed</product_item>
+        <product_item>cow_feed</product_item>
+        <product_item>pig_feed</product_item>
+        <product_item>sheep_feed</product_item>
+        <product_item>goat_feed</product_item>
+    </machine>
+    
+    <machine name="dairy">
+      <level>6</level>
+      <cost>50</cost>
+      <construction_time>2</construction_time>
+      <exp>8</exp>
+      <level_one_mastery_time>40</level_one_mastery_time>
+      <level_two_mastery_time>120</level_two_mastery_time>
+      <level_three_mastery_time>360</level_three_mastery_time>
+        <product_item>cream</product_item>
+        <product_item>butter</product_item>
+        <product_item>cheese</product_item>
+        <product_item>goat_cheese</product_item>
+    </machine>
+    
+    <machine name="sugar_mill">
+      <level>7</level>
+      <cost>350</cost>
+      <construction_time>6</construction_time>
+      <exp>13</exp>
+      <level_one_mastery_time>25</level_one_mastery_time>
+      <level_two_mastery_time>100</level_two_mastery_time>
+      <level_three_mastery_time>400</level_three_mastery_time>
+        <product_item>brown_sugar</product_item>
+        <product_item>white_sugar</product_item>
+        <product_item>syrup</product_item>
+    </machine>
+    
+    <machine name="popcorn_pot">
+      <level>8</level>
+      <cost>650</cost>
+      <construction_time>8</construction_time>
+      <exp>14</exp>
+      <level_one_mastery_time>50</level_one_mastery_time>
+      <level_two_mastery_time>150</level_two_mastery_time>
+      <level_three_mastery_time>450</level_three_mastery_time>
+        <product_item>popcorn</product_item>
+        <product_item>butttered_popcorn</product_item>
+        <product_item>chili_popcorn</product_item>
+        <product_item>honey_popcorn</product_item>
+        <product_item>chocolate_popcorn</product_item>
+    </machine>
+    
+    <machine name="bbq_grill">
+      <level>9</level>
+      <cost>730</cost>
+      <construction_time>8</construction_time>
+      <exp>14</exp>
+      <level_one_mastery_time>30</level_one_mastery_time>
+      <level_two_mastery_time>120</level_two_mastery_time>
+      <level_three_mastery_time>480</level_three_mastery_time>
+        <product_item>pancake</product_item>
+        <product_item>bacon_and_egg</product_item>
+        <product_item>hamburger</product_item>
+        <product_item>fish_burger</product_item>
+        <product_item>roasted_tomatoes</product_item>
+        <product_item>baked_potato</product_item>
+        <product_item>fish_and_chips</product_item>
+        <product_item>lobster_skewer</product_item>
+    </machine>
+    
+    <machine name="pie_oven">
+      <level>14</level>
+      <cost>2200</cost>
+      <construction_time>12</construction_time>
+      <exp>17</exp>
+      <level_one_mastery_time>40</level_one_mastery_time>
+      <level_two_mastery_time>160</level_two_mastery_time>
+      <level_three_mastery_time>640</level_three_mastery_time>
+        <product_item>carrot_pie</product_item>
+        <product_item>pumpkin_pie</product_item>
+        <product_item>bacon_pie</product_item>
+        <product_item>apple_pie</product_item>
+        <product_item>fish_pie</product_item>
+        <product_item>feta_pie</product_item>
+        <product_item>casserole</product_item>
+        <product_item>sheperds_pie</product_item>
+        <product_item>lemon_pie</product_item>
+    </machine>
+    
+    <machine name="loom">
+      <level>17</level>
+      <cost>3200</cost>
+      <construction_time>24</construction_time>
+      <exp>24</exp>
+      <level_one_mastery_time>36</level_one_mastery_time>
+      <level_two_mastery_time>180</level_two_mastery_time>
+      <level_three_mastery_time>900</level_three_mastery_time>
+        <product_item>sweater</product_item>
+        <product_item>cotton_fabric</product_item>
+        <product_item>blue_woolly_hat</product_item>
+        <product_item>blue_sweater</product_item>
+        <product_item>red_scarf</product_item>
+    </machine>
+    
+    <machine name="sewing_machine">
+      <level>19</level>
+      <cost>4500</cost>
+      <construction_time>20</construction_time>
+      <exp>24</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>cotton_shirt</product_item>
+        <product_item>woolly_chaps</product_item>
+        <product_item>violet_dress</product_item>
+        <product_item>pillow</product_item>
+        <product_item>blanket</product_item>
+    </machine>
+    
+    <machine name="acke_oven">
+      <level>21</level>
+      <cost>12100</cost>
+      <construction_time>24</construction_time>
+      <exp>24</exp>
+      <level_one_mastery_time>65</level_one_mastery_time>
+      <level_two_mastery_time>260</level_two_mastery_time>
+      <level_three_mastery_time>1040</level_three_mastery_time>
+        <product_item>carrot_cake</product_item>
+        <product_item>cream_cake</product_item>
+        <product_item>red_berry_cake</product_item>
+        <product_item>cheesecake</product_item>
+        <product_item>strawberry_cake</product_item>
+        <product_item>chocolate_cake</product_item>
+        <product_item>potato_feta_cake</product_item>
+        <product_item>honey_apple_cake</product_item>
+        <product_item>lemon_cake</product_item>
+    </machine>
+    
+    <machine name="smelter">
+      <number>1</number>
+      <level>24</level>
+      <cost>12500</cost>
+      <first_cost>22000</first_cost>
+      <second_cost>31500</second_cost>
+      <third_cost>41000</third_cost>
+      <fourth_cost>50500</fourth_cost>
+      <construction_time>18</construction_time>
+      <exp>21</exp>
+      <level_one_mastery_time>390</level_one_mastery_time>
+      <level_two_mastery_time>1540</level_two_mastery_time>
+      <level_three_mastery_time>6180</level_three_mastery_time>
+        <product_item>silver_bar</product_item>
+        <product_item>gold_bar</product_item>
+        <product_item>platinum_bar</product_item>
+        <product_item>iron_bar</product_item>
+        <product_item>refined_coal</product_item>
+    </machine>
+        
+    <machine name="juice_press">
+      <level>26</level>
+      <cost>31000</cost>
+      <construction_time>31</construction_time>
+      <exp>27</exp>
+      <level_one_mastery_time>50</level_one_mastery_time>
+      <level_two_mastery_time>250</level_two_mastery_time>
+      <level_three_mastery_time>1250</level_three_mastery_time>
+        <product_item>carrot_juice</product_item>
+        <product_item>apple_juice</product_item>
+        <product_item>cherry_juice</product_item>
+        <product_item>tomato_juice</product_item>
+        <product_item>berry_juice</product_item>
+    </machine>
+    
+    <machine name="lure_workbench">
+      <level>27</level>
+      <cost>35000</cost>
+      <construction_time>71</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time></level_one_mastery_time>
+      <level_two_mastery_time></level_two_mastery_time>
+      <level_three_mastery_time></level_three_mastery_time>
+        <product_item>red_lure</product_item>
+        <product_item>green_lure</product_item>
+        <product_item>blue_lure</product_item>
+        <product_item>purple_lure</product_item>
+        <product_item>golden_lure</product_item>
+    </machine>
+    
+    <machine name="ice_cream_maker">
+      <level>29</level>
+      <cost>38000</cost>
+      <construction_time>21</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>60</level_one_mastery_time>
+      <level_two_mastery_time>240</level_two_mastery_time>
+      <level_three_mastery_time>360</level_three_mastery_time>
+        <product_item>vanilla_ice_cream</product_item>
+        <product_item>cherry_popsicle</product_item>
+        <product_item>strawberry_ice_cream</product_item>
+        <product_item>chocolate_ice_cream</product_item>
+    </machine>
+    
+    <machine name="net_maker">
+      <level>30</level>
+      <cost>28000</cost>
+      <construction_time>48</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>120</level_one_mastery_time>
+      <level_two_mastery_time>840</level_two_mastery_time>
+      <level_three_mastery_time>5880</level_three_mastery_time>
+        <product_item>fishing_net</product_item>
+        <product_item>mystery_net</product_item>
+        <product_item>lobster_trap</product_item>
+        <product_item>duck_trap</product_item>
+    </machine>
+    
+    <machine name="jam_maker">
+      <level>35</level>
+      <cost>59000</cost>
+      <construction_time>36</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>90</level_one_mastery_time>
+      <level_two_mastery_time>360</level_two_mastery_time>
+      <level_three_mastery_time>1440</level_three_mastery_time>
+        <product_item>apple_jam</product_item>
+        <product_item>raspberry_jam</product_item>
+        <product_item>blackberry_jam</product_item>
+        <product_item>cherry_jam</product_item>
+        <product_item>strawberry_jam</product_item>
+    </machine>
+    
+    <machine name="jeweler">
+      <level>38</level>
+      <cost>68000</cost>
+      <construction_time>36</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>70</level_one_mastery_time>
+      <level_two_mastery_time>280</level_two_mastery_time>
+      <level_three_mastery_time>1120</level_three_mastery_time>
+        <product_item>bracelet</product_item>
+        <product_item>necklace</product_item>
+        <product_item>diamond_ring</product_item>
+        <product_item>rion_bracelet</product_item>
+    </machine>
+    
+    <machine name="honey_extractor">
+      <level>39</level>
+      <cost>35000</cost>
+      <construction_time>24</construction_time>
+      <exp>24</exp>
+      <level_one_mastery_time>50</level_one_mastery_time>
+      <level_two_mastery_time>150</level_two_mastery_time>
+      <level_three_mastery_time>450</level_three_mastery_time>
+        <product_item>honey</product_item>
+        <product_item>beeswax</product_item>
+    </machine>
+    
+    <machine name="coffee_kiosk">
+      <level>42</level>
+      <cost>75000</cost>
+      <construction_time>35</construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>70</level_one_mastery_time>
+      <level_two_mastery_time>240</level_two_mastery_time>
+      <level_three_mastery_time>960</level_three_mastery_time>
+        <product_item>espresso</product_item>
+        <product_item>caffé_latte</product_item>
+        <product_item>caffé_mocha</product_item>
+        <product_item>raspberry_mocha</product_item>
+        <product_item>hot_chocolate</product_item>
+    </machine>
+    
+    <machine name="lobster_pool">
+      <level>44</level>
+      <cost>80000</cost>
+      <first_cost>45000</first_cost>
+      <second_cost>52500</second_cost>
+      <third_cost>63800</third_cost>
+      <fourth_cost>79800</fourth_cost>
+      <fifth_cost>102000</fifth_cost>
+      <construction_time>48</construction_time>
+      <first_construction_time>12</first_construction_time>
+      <second_construction_time>14</second_construction_time>
+      <third_construction_time>16</third_construction_time>
+      <fourth_construction_time>18</fourth_construction_time>
+      <fifth_construction_time>20</fifth_construction_time>
+      <exp>0</exp>
+      <level_one_mastery_time>0</level_one_mastery_time>
+      <level_two_mastery_time>0</level_two_mastery_time>
+      <level_three_mastery_time>0</level_three_mastery_time>
+        <product_item>lobster_tail</product_item>
+    </machine>
+    
+    <machine name="soup_kitchen">
+      <level>46</level>
+      <cost>115000</cost>
+      <construction_time>36</construction_time>
+      <exp>28</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>lobster_soup</product_item>
+        <product_item>tomato_soup</product_item>
+        <product_item>pumpkin_soup</product_item>
+        <product_item>fish_soup</product_item>
+        <product_item>noodle_soup</product_item>
+    </machine>
+    
+    <machine name="candle_maker">
+      <level>48</level>
+      <cost>118000</cost>
+      <construction_time>38</construction_time>
+      <exp>24</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>strawberry_candle</product_item>
+        <product_item>raspberry_candle</product_item>
+        <product_item>lemon_candle</product_item>
+    </machine>
+    
+    <machine name="duck_salon">
+      <level>50</level>
+      <cost>90000</cost>
+      <first_cost>51000</first_cost>
+      <second_cost>59000</second_cost>
+      <third_cost>72000</third_cost>
+      <fourth_cost>90000</fourth_cost>
+      <fifth_cost>115000</fifth_cost>
+      <construction_time>57</construction_time>
+      <first_construction_time>13.5</first_construction_time>
+      <second_construction_time>16</second_construction_time>
+      <third_construction_time>18</third_construction_time>
+      <fourth_construction_time>20.5</fourth_construction_time>
+      <fifth_construction_time>22.5</fifth_construction_time>
+      <exp>34</exp>
+      <first_exp>19</first_exp>
+      <second_exp>20</second_exp>
+      <third_exp>21</third_exp>
+      <fourth_exp>22</fourth_exp>
+      <fifth_exp>23</fifth_exp>
+      <level_one_mastery_time>0</level_one_mastery_time>
+      <level_two_mastery_time>0</level_two_mastery_time>
+      <level_three_mastery_time>0</level_three_mastery_time>
+        <product_item>duck_feather</product_item>
+    </machine>
+    
+    <machine name="candy_machine">
+      <level>51</level>
+      <cost>120000</cost>
+      <construction_time>24</construction_time>
+      <exp>27</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>caramel_apple</product_item>
+        <product_item>toffee</product_item>
+        <product_item>chocolate</product_item>
+        <product_item>lollipop</product_item>
+        <product_item>jelly_beans</product_item>
+    </machine>
+    
+    <machine name="sauce_maker">
+      <level>54</level>
+      <cost>135000</cost>
+      <construction_time>40</construction_time>
+      <exp>30</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>soy_sauce</product_item>
+        <product_item>olive_oil</product_item>
+        <product_item>mayonnaise</product_item>
+        <product_item>lemon_curd</product_item>
+        <product_item>tomato_sauce</product_item>
+    </machine>
+    
+    <machine name="sushi_bar">
+      <level>56</level>
+      <cost>150000</cost>
+      <construction_time>43</construction_time>
+      <exp>38</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>sushi_roll</product_item>
+        <product_item>lobster_sushi</product_item>
+        <product_item>egg_sushi</product_item>
+    </machine>
+    
+    <machine name="salad_bar">
+      <level>58</level>
+      <cost>165000</cost>
+      <construction_time>47</construction_time>
+      <exp>32</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>feta_salad</product_item>
+        <product_item>blt_salad</product_item>
+        <product_item>seafood_salad</product_item>
+        <product_item>pasta_salad</product_item>
+    </machine>
+    
+    <machine name="sandwich_bar">
+      <level>61</level>
+      <cost>180000</cost>
+      <construction_time>52</construction_time>
+      <exp>34</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>veggie_bagel</product_item>
+        <product_item>bacon_toast</product_item>
+        <product_item>egg_sandwich</product_item>
+        <product_item>honey_toast</product_item>
+    </machine>
+    
+    <machine name="smoothie_mixer">
+      <level>64</level>
+      <cost>220000</cost>
+      <construction_time>72</construction_time>
+      <exp>39</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>berry_smoothie</product_item>
+        <product_item>green_smoothie</product_item>
+        <product_item>yogurt_smoothie</product_item>
+    </machine>
+    
+    <machine name="pasta_maker">
+      <level>67</level>
+      <cost>400000</cost>
+      <construction_time>80</construction_time>
+      <exp>43</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>fresh_pasta</product_item>
+        <product_item>rice_noodles</product_item>
+    </machine>
+    
+    <machine name="hat_maker">
+      <level>70</level>
+      <cost>260000</cost>
+      <construction_time>75</construction_time>
+      <exp>40</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>cloche_hat</product_item>
+        <product_item>top_hat</product_item>
+        <product_item>sun_hat</product_item>
+    </machine>
+    
+    <machine name="pasta_kitchen">
+      <level>72</level>
+      <cost>550000</cost>
+      <construction_time>84</construction_time>
+      <exp>42</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>gnocchi</product_item>
+        <product_item>veggie_lasagna</product_item>
+        <product_item>lobster_pasta</product_item>
+    </machine>
+    
+    <machine name="hot_dog_stand">
+      <level>75</level>
+      <cost>650000</cost>
+      <construction_time>88</construction_time>
+      <exp>41</exp>
+      <level_one_mastery_time>72</level_one_mastery_time>
+      <level_two_mastery_time>288</level_two_mastery_time>
+      <level_three_mastery_time>1152</level_three_mastery_time>
+        <product_item>hot_dog</product_item>
+        <product_item>tofu_dog</product_item>
+        <product_item>corn_dog</product_item>
+    </machine>
+
+    <tree name="aaple_tree">
+      <total_lifespan>64</total_lifespan>
+      <cost>160</cost>
+      <total_exp>91</total_exp>
+      <gross_profit>514</gross_profit>
+      <net_profit>339</net_profit>
+      <level>15</level>
+    </tree>
+    
+    <tree name="cherry_tree">
+      <total_lifespan>108</total_lifespan>
+      <cost>410</cost>
+      <total_exp>174</total_exp>
+      <gross_profit>889</gross_profit>
+      <net_profit>464</net_profit>
+      <level>22</level>
+    </tree>
+    
+    <tree name="cacao_tree">
+      <total_lifespan>140</total_lifespan>
+      <cost>550</cost>
+      <total_exp>213</total_exp>
+      <gross_profit>1123</gross_profit>
+      <net_profit>558</net_profit>
+      <level>36</level>
+    </tree>
+    
+    <tree name="olive_tree">
+      <total_lifespan>96</total_lifespan>
+      <cost>620</cost>
+      <total_exp>226</total_exp>
+      <gross_profit>1076</gross_profit>
+      <net_profit>441</net_profit>
+      <level>57</level>
+    </tree>
+    
+    <tree name="lemon_tree">
+      <total_lifespan>116</total_lifespan>
+      <cost>670</cost>
+      <total_exp>239</total_exp>
+      <gross_profit>1209</gross_profit>
+      <net_profit>539</net_profit>
+      <level>66</level>
+    </tree>
+
+    <bush name="raspberry_bush">
+      <total_lifespan>72</total_lifespan>
+      <cost>225</cost>
+      <total_exp></total_exp>
+      <gross_profit>604</gross_profit>
+      <net_profit>448</net_profit>
+      <level>19</level>
+    </bush>
+    
+    <bush name="blackberry_bush">
+      <total_lifespan>124</total_lifespan>
+      <cost>530</cost>
+      <total_exp>213</total_exp>
+      <gross_profit>1076</gross_profit>
+      <net_profit>510</net_profit>
+      <level></level>
+    </bush>
+    
+    <bush name="nectar_bush">
+      <total_lifespan>8.333333333</total_lifespan>
+      <cost>120</cost>
+      <total_exp>5</total_exp>
+      <gross_profit>0</gross_profit>
+      <net_profit>0</net_profit>
+      <level>39</level>
+    </bush>
+    
+    <bush name="coffee_bush">
+      <total_lifespan>100</total_lifespan>
+      <cost>375</cost>
+      <total_exp>213</total_exp>
+      <gross_profit>796</gross_profit>
+      <net_profit>421</net_profit>
+      <level>42</level>
+    </bush>
+  
+    <mine_item name="silver_ore">
+      <cost_for_one>18</cost_for_one>
+      <cost_for_ten>180</cost_for_ten>
+      <level>24</level>
+      <exp>5</exp>
+    </mine_item>
+    
+    <mine_item name="gold_ore">
+      <cost_for_one>21</cost_for_one>
+      <cost_for_ten>216</cost_for_ten>
+      <level>24</level>
+      <exp>6</exp>
+    </mine_item>
+    
+    <mine_item name="platinum_ore">
+      <cost_for_one>32</cost_for_one>
+      <cost_for_ten>320</cost_for_ten>
+      <level>24</level>
+      <exp>7</exp>
+    </mine_item>
+    
+    <mine_item name="coal">
+      <cost_for_one>10</cost_for_one>
+      <cost_for_ten>108</cost_for_ten>
+      <level>33</level>
+      <exp>3</exp>
+    </mine_item>
+    
+    <mine_item name="iron_ore">
+      <cost_for_one>14</cost_for_one>
+      <cost_for_ten>144</cost_for_ten>
+      <level>34</level>
+      <exp>4</exp>
+    </mine_item>
+    
+    <voucher>green_voucher</voucher>
+    <voucher>blue_voucher</voucher>
+    <voucher>purple_voucher</voucher>
+    <voucher>golden_voucher</voucher>
+  
+    <animal name="chicken">
+        <level number="1">1</level>
+        <level number="2">12</level>
+        <level number="3">23</level>
+        <cost number="1">10</cost>
+        <cost number="2">40</cost>
+        <cost number="3">270</cost>
+      <product>egg</product>
+    </animal>
+    
+    <animal name="cow">
+        <level number="1">6</level>
+        <level number="2">15</level>
+        <level number="3">27</level>
+        <cost number="1">50</cost>
+        <cost number="2">600</cost>
+        <cost number="3">1150</cost>
+      <product>milk</product>
+    </animal>
+    
+    <animal name="pig">
+        <level number="1">10</level>
+        <level number="2">18</level>
+        <level number="3">32</level>
+        <cost number="1">500</cost>
+        <cost number="2">1400</cost>
+        <cost number="3">2300</cost>
+      <product>bacon</product>
+    </animal>
+    
+    <animal name="sheep">
+        <level number="1">16</level>
+        <level number="2">26</level>
+        <level number="3">42</level>
+        <cost number="1">800</cost>
+        <cost number="2">2300</cost>
+        <cost number="3">3800</cost>
+      <product>wool</product>
+    </animal>
+    
+    <animal name="fish">
+        <level number="1">27</level>
+        <cost number="1">0</cost>
+      <product>fish_fillet</product>
+    </animal>
+    
+    <animal name="goat">
+        <level number="1">32</level>
+        <level number="2">37</level>
+        <level number="3">50</level>
+        <cost number="1">2150</cost>
+        <cost number="2">5400</cost>
+        <cost number="3">8650</cost>
+      <product>goat_milk</product>
+    </animal>
+    
+    <animal name="bee">
+        <level number="1">39</level>
+        <cost number="1">1500</cost>
+        <cost number="2">2000</cost>
+        <cost number="3">2500</cost>
+        <cost number="4">3000</cost>
+      <product>honeycomb</product>
+    </animal>
+    
+    <animal name="lobster">
+        <level number="1">44</level>
+        <cost number="1">0</cost>
+      <product>lobster_tail</product>
+    </animal>
+    
+    <animal name="duck">
+        <level number="1">50</level>
+        <cost number="1">0</cost>
+      <product>duck_feather</product>
+    </animal>
+    
+    <rare_item name="duct_tape">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="plank">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="bolt">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="nail">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="wood_panel">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="screw">
+        <cost_for_one>270</cost_for_one>
+        <cost_for_ten>2700</cost_for_ten>
+        <level>1</level>
+    </rare_item>
+        <rare_item name="saw">
+        <cost_for_one>54</cost_for_one>
+        <cost_for_ten>540</cost_for_ten>
+        <level>5</level>
+    </rare_item>
+        <rare_item name="axe">
+        <cost_for_one>36</cost_for_one>
+        <cost_for_ten>360</cost_for_ten>
+        <level>5</level>
+    </rare_item>
+        <rare_item name="shovel">
+        <cost_for_one>108</cost_for_one>
+        <cost_for_ten>1080</cost_for_ten>
+        <level>5</level>
+    </rare_item>
+        <rare_item name="dynamite">
+        <cost_for_one>25</cost_for_one>
+        <cost_for_ten>250</cost_for_ten>
+        <level>5</level>
+    </rare_item>
+        <rare_item name="tnt_bucket">
+        <cost_for_one>72</cost_for_one>
+        <cost_for_ten>720</cost_for_ten>
+        <level>5</level>
+    </rare_item>
+        <rare_item name="marker_stake">
+        <cost_for_one>403</cost_for_one>
+        <cost_for_ten>4032</cost_for_ten>
+        <level>22</level>
+    </rare_item>
+        <rare_item name="mallet">
+        <cost_for_one>403</cost_for_one>
+        <cost_for_ten>4032</cost_for_ten>
+        <level>22</level>
+    </rare_item>
+        <rare_item name="land_deed">
+        <cost_for_one>403</cost_for_one>
+        <cost_for_ten>4032</cost_for_ten>
+        <level>22</level>
+    </rare_item>
+        <rare_item name="tar_bucket">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="brick">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="paint_bucket">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="stone_brick">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="hand_drill">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="hammer">
+        <cost_for_one>342</cost_for_one>
+        <cost_for_ten>3420</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="map_piece">
+        <cost_for_one>450</cost_for_one>
+        <cost_for_ten>4500</cost_for_ten>
+        <level>34</level>
+    </rare_item>
+        <rare_item name="pickaxe">
+        <cost_for_one>126</cost_for_one>
+        <cost_for_ten>1260</cost_for_ten>
+        <level>33</level>
+    </rare_item>
+</hayDay>

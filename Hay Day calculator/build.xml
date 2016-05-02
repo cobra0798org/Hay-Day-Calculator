@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<project basedir="." default="run">
+	<property name="lib_dir" value="lib"/>
+	<path id="xjc.path">
+		<fileset dir="lib" includes="${lib_dir}/*.jar"/>
+	</path>
+	<path id="classpath">
+    	<pathelement path="src" />
+    	<pathelement path="classes" />
+    	<fileset dir="${lib_dir}" includes="**/*.jar" />
+	</path>
+	<taskdef name="xjc" classpathref="xjc.path" classname="com.sun.tools.xjc.XJCTask">
+		<classpath refid="classpath"/>
+	</taskdef>
+
+	<target name="compile">
+    	<echo message="Compiling the schema..." />
+    	<mkdir dir="gen-src" />
+    	<xjc schema="files/XML-to-Java-Schema.xsd" package="jaxb.xmlObjects" destdir="gen-src">
+    		<produces dir="gen-src/jaxb.xmlObjects" includes="**/*.java" />
+    	</xjc>
+    	<echo message="Compiling the java source files..." />
+    	<mkdir dir="classes" />
+    	<javac destdir="classes">
+    		<src path="src" />
+    		<src path="gen-src" />
+    		<classpath refid="classpath" />
+    	</javac>
+	</target>
+
+	<target name="run" depends="compile">
+    	<echo message="Running the application..." />
+    	<java classname="HayDayCalculator" fork="true">
+    		<classpath refid="classpath" />
+    	</java>
+	</target>
+
+	<target name="clean" description="Deletes all the generated artifacts.">
+    	<delete dir="gen-src" />
+    	<delete dir="classes" />
+  	</target>
+</project>
+
