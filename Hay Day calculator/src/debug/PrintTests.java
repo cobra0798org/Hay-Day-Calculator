@@ -7,33 +7,36 @@ import hayDay.xmlObjects.Bush;
 import hayDay.xmlObjects.Cost;
 import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HarvestItem;
+import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Level;
 import hayDay.xmlObjects.Machine;
 import hayDay.xmlObjects.MineItem;
 import hayDay.xmlObjects.Product;
 import hayDay.xmlObjects.ProductItem;
+import hayDay.xmlObjects.RareItem;
 import hayDay.xmlObjects.Requirement;
 import hayDay.xmlObjects.Source;
 import hayDay.xmlObjects.Tree;
 
 public class PrintTests
 {
-    public static void printProductItemTests(ArrayList<ProductItem> list)
+    public static void printProductItemTests(ArrayList<Item> list)
     {
         System.out.println("***PRODUCT ITEMS***");
-        for(ProductItem item : list)
+        for(Item item : list)
         {
-            System.out.println("NAME: " + item.getName());
-            System.out.println("COST FOR ONE: " + item.getCostForOne());
-            System.out.println("COST FOR TEN: " + item.getCostForTen());
-            System.out.println("EXP: " + item.getExp());
-            System.out.println("TIME: " + item.getTime());
-            System.out.println("MASTERED TIME: " + item.getMasteredTime());
-            System.out.println("LEVEL: " + item.getLevel());
+            ProductItem productItem = (ProductItem)item;
+            System.out.println("NAME: " + productItem.getName());
+            System.out.println("COST FOR ONE: " + productItem.getCostForOne());
+            System.out.println("COST FOR TEN: " + productItem.getCostForTen());
+            System.out.println("EXP: " + productItem.getExp());
+            System.out.println("TIME: " + productItem.getTime());
+            System.out.println("MASTERED TIME: " + productItem.getMasteredTime());
+            System.out.println("LEVEL: " + productItem.getLevel());
             
-            printRequirementTests(item.getRequirements());
+            printRequirementTests(productItem.getRequirements());
             
-            printSourceTests(item.getSource());
+            printSourceTests(productItem.getSource());
             
             System.out.println();
             System.out.println("********************");
@@ -86,42 +89,44 @@ public class PrintTests
         }
     }
     
-    public static void printFarmItemTests(ArrayList<FarmItem> farmItems)
+    public static void printFarmItemTests(ArrayList<Item> farmItems)
     {
         System.out.println("***PRODUCT ITEMS***");
-        for(FarmItem item : farmItems)
+        for(Item item : farmItems)
         {
-            System.out.println("NAME: " + item.getName());
-            System.out.println("COST FOR ONE: " + item.getCostForOne());
-            System.out.println("COST FOR TEN: " + item.getCostForTen());
-            System.out.println("EXP: " + item.getExp());
-            System.out.println("TIME: " + item.getTime());
-            System.out.println("LEVEL: " + item.getLevel());
+            FarmItem farmItem = (FarmItem)item;
+            System.out.println("NAME: " + farmItem.getName());
+            System.out.println("COST FOR ONE: " + farmItem.getCostForOne());
+            System.out.println("COST FOR TEN: " + farmItem.getCostForTen());
+            System.out.println("EXP: " + farmItem.getExp());
+            System.out.println("TIME: " + farmItem.getTime());
+            System.out.println("LEVEL: " + farmItem.getLevel());
             
-            printRequirementTests(item.getRequirements());
+            printRequirementTests(farmItem.getRequirements());
             
-            printSourceTests(item.getSource());
+            printSourceTests(farmItem.getSource());
             System.out.println();
             System.out.println("********************");
             System.out.println();
         }
     }
     
-    public static void printHarvestItemTests(ArrayList<HarvestItem> harvestItems)
+    public static void printHarvestItemTests(ArrayList<Item> harvestItems)
     {
         System.out.println("***PRODUCT ITEMS***");
-        for(HarvestItem item : harvestItems)
+        for(Item item : harvestItems)
         {
-            System.out.println("NAME: " + item.getName());
-            System.out.println("COST FOR ONE: " + item.getCostForOne());
-            System.out.println("COST FOR TEN: " + item.getCostForTen());
-            System.out.println("EXP: " + item.getExp());
-            System.out.println("TIME: " + item.getTime());
-            System.out.println("LEVEL: " + item.getLevel());
+            HarvestItem harvestItem = (HarvestItem)item;
+            System.out.println("NAME: " + harvestItem.getName());
+            System.out.println("COST FOR ONE: " + harvestItem.getCostForOne());
+            System.out.println("COST FOR TEN: " + harvestItem.getCostForTen());
+            System.out.println("EXP: " + harvestItem.getExp());
+            System.out.println("TIME: " + harvestItem.getTime());
+            System.out.println("LEVEL: " + harvestItem.getLevel());
             
-            printRequirementTests(item.getRequirements());
+            printRequirementTests(harvestItem.getRequirements());
             
-            printSourceTests(item.getSource());
+            printSourceTests(harvestItem.getSource());
             System.out.println();
             System.out.println("********************");
             System.out.println();
@@ -177,15 +182,17 @@ public class PrintTests
         }
     }
     
-    public static void printMineItemTests(ArrayList<MineItem> mineItems)
+    public static void printMineItemTests(ArrayList<Item> mineItems)
     {
-        for (MineItem mineItem : mineItems)
+        for (Item item : mineItems)
         {
+            MineItem mineItem = (MineItem)item;
             System.out.println("NAME: " + mineItem.getName());
             System.out.println("COST FOR ONE: " + mineItem.getCostForOne());
             System.out.println("COST FOR TEN: " + mineItem.getCostForTen());
             System.out.println("EXP: " + mineItem.getExp());
             System.out.println("LEVEL: " + mineItem.getLevel());
+            System.out.println("TIME: " + mineItem.getTime());
         }
     }
     
@@ -213,6 +220,19 @@ public class PrintTests
         for (String product : products)
         {
             System.out.println("\tPRODUCT: " + product);
+        }
+    }
+    
+    public static void printRareItemTests(ArrayList<Item> rareItems)
+    {
+        for (Item item : rareItems)
+        {
+            RareItem rareItem = (RareItem)item;
+            System.out.println("NAME: " + rareItem.getName());
+            System.out.println("COST FOR ONE: " + rareItem.getCostForOne());
+            System.out.println("COST FOR TEN: " + rareItem.getCostForTen());
+            System.out.println("LEVEL: " + rareItem.getLevel());
+            System.out.println("TIME: " + rareItem.getTime());
         }
     }
 }
