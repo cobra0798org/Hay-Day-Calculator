@@ -5,13 +5,9 @@ import java.util.Scanner;
 
 import hayDay.xmlObjects.Animal;
 import hayDay.xmlObjects.Bush;
-import hayDay.xmlObjects.FarmItem;
-import hayDay.xmlObjects.HarvestItem;
 import hayDay.xmlObjects.HayDayType;
+import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Machine;
-import hayDay.xmlObjects.MineItem;
-import hayDay.xmlObjects.ProductItem;
-import hayDay.xmlObjects.RareItem;
 import hayDay.xmlObjects.Tree;
 import user.xmlObjects.Barn;
 import user.xmlObjects.Entry;
@@ -63,7 +59,7 @@ public class UserCreation
         System.out.println("what is the current max size of your silo?");
         int siloSize = input.nextInt();
         userSilo.setSiloSize(siloSize);
-        for (FarmItem farmItem : hayDay.getFarmItems())
+        for (Item farmItem : hayDay.getFarmItems())
         {
             if (!farmItem.getName().equals("none"))
             {
@@ -99,7 +95,7 @@ public class UserCreation
     
     private static void createProductItems(ArrayList<Entry> barnEntries, HayDayType hayDay, Scanner input)
     {
-        for (ProductItem productItem : hayDay.getProductItems())
+        for (Item productItem : hayDay.getProductItems())
         {
             Entry entry = new Entry();
             entry.setName(productItem.getName());
@@ -115,7 +111,7 @@ public class UserCreation
     
     private static void createHarvestItems(ArrayList<Entry> barnEntries, HayDayType hayDay, Scanner input)
     {
-        for (HarvestItem harvestItem : hayDay.getHarvestItems())
+        for (Item harvestItem : hayDay.getHarvestItems())
         {
             Entry entry = new Entry();
             entry.setName(harvestItem.getName());
@@ -131,7 +127,7 @@ public class UserCreation
     
     private static void createMineItems(ArrayList<Entry> barnEntries, HayDayType hayDay, Scanner input)
     {
-        for (MineItem mineItem : hayDay.getMineItems())
+        for (Item mineItem : hayDay.getMineItems())
         {
             Entry entry = new Entry();
             entry.setName(mineItem.getName());
@@ -147,7 +143,7 @@ public class UserCreation
     
     private static void createRareItems(ArrayList<Entry> barnEntries, HayDayType hayDay, Scanner input)
     {
-        for (RareItem rareItem : hayDay.getRareItems())
+        for (Item rareItem : hayDay.getRareItems())
         {
             Entry entry = new Entry();
             entry.setName(rareItem.getName());
