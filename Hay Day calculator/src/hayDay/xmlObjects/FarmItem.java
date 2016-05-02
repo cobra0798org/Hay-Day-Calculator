@@ -6,19 +6,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlRootElement;
 
-
-@XmlType(name = "FarmItem", propOrder = {
-    "name",
-    "cost_for_one",
-    "cost_for_ten",
-    "exp",
-    "time",
-    "level",
-    "requirement",
-    "source"
-})
+@XmlRootElement(name = "farm_item")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FarmItem implements Item
 {

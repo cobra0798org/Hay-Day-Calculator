@@ -24,38 +24,43 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class HayDayType extends ObjectFactory
 {
-    @XmlElement(name = "product_item", required = true)
-    protected ArrayList<ProductItem> product_item;
-    @XmlElement(name = "farm_item", required = true)
-    protected ArrayList<FarmItem> farm_item;
-    @XmlElement(name = "harvest_item", required = true)
-    protected ArrayList<HarvestItem> harvest_item;
+    @XmlElement(type = ProductItem.class, name = "product_item", required = true)
+//    @XmlAnyElement
+    protected ArrayList<Item> product_item;
+    @XmlElement(type = FarmItem.class, name = "farm_item", required = true)
+//    @XmlAnyElement
+    protected ArrayList<Item> farm_item;
+    @XmlElement(type = HarvestItem.class, name = "harvest_item", required = true)
+//    @XmlAnyElement
+    protected ArrayList<Item> harvest_item;
     @XmlElement(name = "machine", required = true)
     protected ArrayList<Machine> machine;
     @XmlElement(name = "tree", required = true)
     protected ArrayList<Tree> tree;
     @XmlElement(name = "bush", required = true)
     protected ArrayList<Bush> bush;
-    @XmlElement(name = "mine_item", required = true)
-    protected ArrayList<MineItem> mine_item;
+    @XmlElement(type = MineItem.class, name = "mine_item", required = true)
+//    @XmlAnyElement
+    protected ArrayList<Item> mine_item;
     @XmlElement(name = "voucher", required = true)
     protected ArrayList<String> voucher;
     @XmlElement(name = "animal", required = true)
     protected ArrayList<Animal> animal;
-    @XmlElement(name = "rare_item", required = true)
-    protected ArrayList<RareItem> rare_item;
+    @XmlElement(type = RareItem.class, name = "rare_item", required = true)
+//    @XmlAnyElement
+    protected ArrayList<Item> rare_item;
     
-    public ArrayList<ProductItem> getProductItems()
+    public ArrayList<Item> getProductItems()
     {
         return this.product_item;
     }
     
-    public ArrayList<FarmItem> getFarmItems()
+    public ArrayList<Item> getFarmItems()
     {
         return this.farm_item;
     }
     
-    public ArrayList<HarvestItem> getHarvestItems()
+    public ArrayList<Item> getHarvestItems()
     {
         return this.harvest_item;
     }
@@ -75,7 +80,7 @@ public class HayDayType extends ObjectFactory
         return this.bush;
     }
     
-    public ArrayList<MineItem> getMineItems()
+    public ArrayList<Item> getMineItems()
     {
         return this.mine_item;
     }
@@ -90,7 +95,7 @@ public class HayDayType extends ObjectFactory
         return this.animal;
     }
     
-    public ArrayList<RareItem> getRareItems()
+    public ArrayList<Item> getRareItems()
     {
         return rare_item;
     }

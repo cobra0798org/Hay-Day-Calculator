@@ -4,15 +4,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlType(name = "MineItem", propOrder = {
-        "name",
-        "cost_for_one",
-        "cost_for_ten",
-        "level",
-        "exp"
-})
+@XmlRootElement(name = "mine_item")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class MineItem implements Item
 {
