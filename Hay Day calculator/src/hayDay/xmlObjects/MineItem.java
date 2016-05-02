@@ -51,4 +51,9 @@ public class MineItem implements Item
     {
         return exp;
     }
+    
+    public int getTime()
+    {
+        return 0;
+    }
 }

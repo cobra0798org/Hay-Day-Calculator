@@ -43,4 +43,9 @@ public class RareItem implements Item
     {
         return level;
     }
+    
+    public int getTime()
+    {
+        return 0;
+    }
 }

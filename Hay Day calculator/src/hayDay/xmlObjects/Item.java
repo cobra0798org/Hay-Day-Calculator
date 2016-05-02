@@ -6,4 +6,5 @@ public interface Item
     double getCostForOne();
     double getCostForTen();
     int getLevel();
+    int getTime();
 }
