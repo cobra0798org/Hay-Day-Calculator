@@ -3,6 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import debug.PrintTests;
 import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
@@ -13,6 +14,13 @@ import user.xmlObjects.User;
 public class HayDayCalculator
 {
     public static void main(String[] args)
+    {
+        HayDayType hayDay = HayDayAccessor.unmarshal();
+        PrintTests.printProductItemTests(hayDay.getProductItems());
+    }
+    
+    @SuppressWarnings("unused")
+    public static void amain(String[] args)
     {
         HayDayType hayDay = HayDayAccessor.unmarshal();
         User user = UserAccessor.unmarshal("GreenEggsAndHam");
