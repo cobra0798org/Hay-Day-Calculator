@@ -540,10 +540,9 @@
       <source type="machine">loom</source>
     </product_item>
     
-    <!-- missing cost_for_ten -->  
     <product_item name="cotton_shirt">
       <cost_for_one>241</cost_for_one>
-      <cost_for_ten>2410</cost_for_ten>
+      <cost_for_ten>2412</cost_for_ten>
       <exp>29</exp>
       <time>45</time>
       <mastered_time>38</mastered_time>
