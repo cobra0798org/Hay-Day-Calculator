@@ -9,18 +9,11 @@ import hayDay.xmlObjects.MineItem;
 
 public class MineItems
 {
-    private HayDayType hayDay;
     private ArrayList<Item> mineItems;
-    
-    public MineItems()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        mineItems = hayDay.getMineItems();
-    }
+
     
     public MineItems(HayDayType hayDay)
     {
-        this.hayDay = hayDay;
         mineItems = hayDay.getMineItems();
     }
     

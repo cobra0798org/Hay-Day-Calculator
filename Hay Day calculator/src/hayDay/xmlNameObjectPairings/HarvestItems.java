@@ -10,18 +10,10 @@ import hayDay.xmlObjects.Requirement;
 
 public class HarvestItems
 {
-    private HayDayType hayDay;
     private ArrayList<Item> harvestItems;
-    
-    public HarvestItems()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        harvestItems = hayDay.getHarvestItems();
-    }
     
     public HarvestItems(HayDayType hayDay)
     {
-        this.hayDay = hayDay;
         harvestItems = hayDay.getHarvestItems();
     }
     

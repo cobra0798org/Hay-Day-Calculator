@@ -16,12 +16,12 @@ import hayDay.xmlObjects.RareItem;
 
 public class HayDayAccessor
 {
-    public static HayDayType unmarshal()
+    public static HayDayType unmarshal(String dataFileName)
     {
         HayDayType hayDay = null;
         try
         {
-            hayDay = xmlAccess();
+            hayDay = xmlAccess(dataFileName);
         }
         catch(JAXBException je)
         {
@@ -46,13 +46,13 @@ public class HayDayAccessor
     }
     
     @SuppressWarnings({"resource" })
-    private static HayDayType xmlAccess() throws JAXBException, FileNotFoundException
+    private static HayDayType xmlAccess(String dataFileName) throws JAXBException, FileNotFoundException
     {
         JAXBContext jc = JAXBContext.newInstance(HayDayType.class, 
                 FarmItem.class, ProductItem.class,
                 HarvestItem.class, RareItem.class, MineItem.class);
         Unmarshaller u = jc.createUnmarshaller();
-        FileInputStream poFIO = new FileInputStream("Data/data.xml");
+        FileInputStream poFIO = new FileInputStream(dataFileName);
         HayDayType poe = (HayDayType)u.unmarshal(poFIO);
         return poe;
     }

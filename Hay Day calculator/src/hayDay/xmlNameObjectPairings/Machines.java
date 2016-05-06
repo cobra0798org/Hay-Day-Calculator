@@ -13,12 +13,6 @@ public class Machines
     private HayDayType hayDay;
     private ArrayList<Machine> machines;
     
-    public Machines()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        machines = hayDay.getMachines();
-    }
-    
     public Machines(HayDayType hayDay)
     {
         this.hayDay = hayDay;
@@ -45,7 +39,7 @@ public class Machines
     private ArrayList<ProductItem> getProductList(ArrayList<String> currentProducts)
     {
         ArrayList<ProductItem> products = new ArrayList<ProductItem>();
-        ProductItems p = new ProductItems();
+        ProductItems p = new ProductItems(hayDay);
         LinkedHashMap<String, ProductItem> productItems = p.getProductItems();
         for (String s : currentProducts)
         {
@@ -57,7 +51,7 @@ public class Machines
     public ArrayList<FarmItem> getFieldProductList(ArrayList<String> currentProducts)
     {
         ArrayList<FarmItem> products = new ArrayList<FarmItem>();
-        FarmItems f = new FarmItems();
+        FarmItems f = new FarmItems(hayDay);
         LinkedHashMap<String, FarmItem> farmItems = f.getFarmItems();
         for (String s : currentProducts)
         {
