@@ -44,17 +44,17 @@ public class Entry
         if(this.type.equals("product_item"))
         {
             ProductItems productItems = new ProductItems(hayDay);
-            type = productItems.getProductItems().get(name);
+            type = productItems.getItems().get(name);
         }
         else if(this.type.equals("farm_item"))
         {
             FarmItems farmItems = new FarmItems(hayDay);
-            type = farmItems.getFarmItems().get(name);
+            type = farmItems.getItems().get(name);
         }
         else if(this.type.equals("harvest_item"))
         {
             HarvestItems harvestItems = new HarvestItems(hayDay);
-            type = harvestItems.getHarvestItems().get(name);
+            type = harvestItems.getItems().get(name);
         }
         else if(this.type.equals("rare_item"))
         {
@@ -64,7 +64,7 @@ public class Entry
         else if(this.type.equals("mine_item"))
         {
             MineItems mineItems = new MineItems(hayDay);
-            type = mineItems.getMineItems().get(name);
+            type = mineItems.getItems().get(name);
         }
         return type;
     }

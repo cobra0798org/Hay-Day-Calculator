@@ -3,10 +3,9 @@ package hayDay.xmlNameObjectPairings;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HayDayType;
+import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Machine;
-import hayDay.xmlObjects.ProductItem;
 
 public class Machines
 {
@@ -25,16 +24,16 @@ public class Machines
         machines = hayDay.getMachines();
     }
     
-    public LinkedHashMap<String, ArrayList<ProductItem>> getProducts()
+    public LinkedHashMap<String, ArrayList<Item>> getProducts()
     {
-        LinkedHashMap<String, ArrayList<ProductItem>> products 
-                = new LinkedHashMap<String, ArrayList<ProductItem>>();
+        LinkedHashMap<String, ArrayList<Item>> products 
+                = new LinkedHashMap<String, ArrayList<Item>>();
         for (Machine machine : machines)
         {
             if (!machine.getName().equals("field"))
             {
                 ArrayList<String> currentProducts = machine.getProducts();
-                ArrayList<ProductItem> newProducts = getProductList(currentProducts);
+                ArrayList<Item> newProducts = getProductList(currentProducts);
                 products.put(machine.getName(), newProducts);
             }
         }
@@ -42,11 +41,11 @@ public class Machines
         return products;
     }
 
-    private ArrayList<ProductItem> getProductList(ArrayList<String> currentProducts)
+    private ArrayList<Item> getProductList(ArrayList<String> currentProducts)
     {
-        ArrayList<ProductItem> products = new ArrayList<ProductItem>();
-        ProductItems p = new ProductItems();
-        LinkedHashMap<String, ProductItem> productItems = p.getProductItems();
+        ArrayList<Item> products = new ArrayList<Item>();
+        ProductItems p = new ProductItems(hayDay);
+        LinkedHashMap<String, Item> productItems = p.getItems();
         for (String s : currentProducts)
         {
             products.add(productItems.get(s));
@@ -54,11 +53,11 @@ public class Machines
         return products;
     }
     
-    public ArrayList<FarmItem> getFieldProductList(ArrayList<String> currentProducts)
+    public ArrayList<Item> getFieldProductList(ArrayList<String> currentProducts)
     {
-        ArrayList<FarmItem> products = new ArrayList<FarmItem>();
-        FarmItems f = new FarmItems();
-        LinkedHashMap<String, FarmItem> farmItems = f.getFarmItems();
+        ArrayList<Item> products = new ArrayList<Item>();
+        FarmItems f = new FarmItems(hayDay);
+        LinkedHashMap<String, Item> farmItems = f.getItems();
         for (String s : currentProducts)
         {
             products.add(farmItems.get(s));

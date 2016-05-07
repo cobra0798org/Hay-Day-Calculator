@@ -8,54 +8,26 @@ import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Requirement;
 
-public class HarvestItems
+public class HarvestItems extends Items
 {
-    private HayDayType hayDay;
     private ArrayList<Item> harvestItems;
-    
-    public HarvestItems()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        harvestItems = hayDay.getHarvestItems();
-    }
     
     public HarvestItems(HayDayType hayDay)
     {
-        this.hayDay = hayDay;
+        super(hayDay.getHarvestItems());
         harvestItems = hayDay.getHarvestItems();
     }
     
-    public LinkedHashMap<String, HarvestItem> getHarvestItems()
+    @Override
+    public LinkedHashMap<String, Item> getItems()
     {
-        LinkedHashMap<String, HarvestItem> items = new LinkedHashMap<String, HarvestItem>();
+        LinkedHashMap<String, Item> items = new LinkedHashMap<String, Item>();
         for (Item item : harvestItems)
         {
-            items.put(item.getName(), (HarvestItem)item);
+            items.put(item.getName(), item);
         }
         
         return items;
-    }
-    
-    public LinkedHashMap<String, Double> getCostsForOne()
-    {
-        LinkedHashMap<String, Double> prices = new LinkedHashMap<String, Double>();
-        for (Item item : harvestItems)
-        {
-            prices.put(item.getName(), item.getCostForOne());
-        }
-        
-        return prices;
-    }
-    
-    public LinkedHashMap<String, Double> getCostsForTen()
-    {
-        LinkedHashMap<String, Double> costsForTen = new LinkedHashMap<String, Double>();
-        for (Item item : harvestItems)
-        {
-            costsForTen.put(item.getName(), item.getCostForTen());
-        }
-        
-        return costsForTen;
     }
     
     public LinkedHashMap<String, Integer> getExps()
@@ -67,28 +39,6 @@ public class HarvestItems
         }
         
         return exps;
-    }
-    
-    public LinkedHashMap<String, Integer> getLevels()
-    {
-        LinkedHashMap<String, Integer> levels = new LinkedHashMap<String, Integer>();
-        for (Item item : harvestItems)
-        {
-            levels.put(item.getName(), item.getLevel());
-        }
-        
-        return levels;
-    }
-    
-    public LinkedHashMap<String, Integer> getTimes()
-    {
-        LinkedHashMap<String, Integer> times = new LinkedHashMap<String, Integer>();
-        for (Item item : harvestItems)
-        {
-            times.put(item.getName(), item.getTime());
-        }
-        
-        return times;
     }
     
     public LinkedHashMap<String, ArrayList<Requirement>> getRequirements()

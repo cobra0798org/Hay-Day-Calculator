@@ -7,54 +7,26 @@ import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.MineItem;
 
-public class MineItems
+public class MineItems extends Items
 {
-    private HayDayType hayDay;
     private ArrayList<Item> mineItems;
-    
-    public MineItems()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        mineItems = hayDay.getMineItems();
-    }
     
     public MineItems(HayDayType hayDay)
     {
-        this.hayDay = hayDay;
+        super(hayDay.getMineItems());
         mineItems = hayDay.getMineItems();
     }
     
-    public LinkedHashMap<String, MineItem> getMineItems()
+    @Override
+    public LinkedHashMap<String, Item> getItems()
     {
-        LinkedHashMap<String, MineItem> items = new LinkedHashMap<String, MineItem>();
+        LinkedHashMap<String, Item> items = new LinkedHashMap<String, Item>();
         for (Item item : mineItems)
         {
-            items.put(item.getName(), (MineItem)item);
+            items.put(item.getName(), item);
         }
         
         return items;
-    }
-    
-    public LinkedHashMap<String, Double> getCostsForOne()
-    {
-        LinkedHashMap<String, Double> prices = new LinkedHashMap<String, Double>();
-        for (Item item : mineItems)
-        {
-            prices.put(item.getName(), item.getCostForOne());
-        }
-        
-        return prices;
-    }
-    
-    public LinkedHashMap<String, Double> getCostsForTen()
-    {
-        LinkedHashMap<String, Double> costsForTen = new LinkedHashMap<String, Double>();
-        for (Item item : mineItems)
-        {
-            costsForTen.put(item.getName(), item.getCostForTen());
-        }
-        
-        return costsForTen;
     }
     
     public LinkedHashMap<String, Integer> getExps()
@@ -66,16 +38,5 @@ public class MineItems
         }
         
         return exps;
-    }
-    
-    public LinkedHashMap<String, Integer> getLevels()
-    {
-        LinkedHashMap<String, Integer> levels = new LinkedHashMap<String, Integer>();
-        for (Item item : mineItems)
-        {
-            levels.put(item.getName(), item.getLevel());
-        }
-        
-        return levels;
     }
 }
