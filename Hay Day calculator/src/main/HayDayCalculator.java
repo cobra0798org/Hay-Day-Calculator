@@ -13,16 +13,17 @@ import user.xmlObjects.User;
 
 public class HayDayCalculator
 {
+    public final static String DATAFILENAME = "Data/data.xml";
     public static void main(String[] args)
     {
-        HayDayType hayDay = HayDayAccessor.unmarshal();
+        HayDayType hayDay = HayDayAccessor.unmarshal(DATAFILENAME);
         PrintTests.printProductItemTests(hayDay.getProductItems());
     }
     
     @SuppressWarnings("unused")
     public static void amain(String[] args)
     {
-        HayDayType hayDay = HayDayAccessor.unmarshal();
+        HayDayType hayDay = HayDayAccessor.unmarshal(DATAFILENAME);
         User user = UserAccessor.unmarshal("GreenEggsAndHam");
         
         ArrayList<Entry> barnEntries = user.getBarn().getEntries();

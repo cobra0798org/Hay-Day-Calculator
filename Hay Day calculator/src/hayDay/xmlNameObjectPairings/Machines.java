@@ -12,12 +12,6 @@ public class Machines
     private HayDayType hayDay;
     private ArrayList<Machine> machines;
     
-    public Machines()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        machines = hayDay.getMachines();
-    }
-    
     public Machines(HayDayType hayDay)
     {
         this.hayDay = hayDay;

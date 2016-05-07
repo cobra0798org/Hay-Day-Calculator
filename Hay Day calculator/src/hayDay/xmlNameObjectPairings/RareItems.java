@@ -8,18 +8,10 @@ import hayDay.xmlObjects.Item;
 
 public class RareItems
 {
-    private HayDayType hayDay;
     private ArrayList<Item> rareItems;
-    
-    public RareItems()
-    {
-        hayDay = HayDayAccessor.unmarshal();
-        rareItems = hayDay.getRareItems();
-    }
     
     public RareItems(HayDayType hayDay)
     {
-        this.hayDay = hayDay;
         rareItems = hayDay.getRareItems();
     }
     
