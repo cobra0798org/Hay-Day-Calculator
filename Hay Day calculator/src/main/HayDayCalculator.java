@@ -17,7 +17,7 @@ public class HayDayCalculator
     public static void main(String[] args)
     {
         HayDayType hayDay = HayDayAccessor.unmarshal(DATAFILENAME);
-        PrintTests.printProductItemTests(hayDay.getProductItems());
+        PrintTests.printHarvestItemTests(hayDay.getHarvestItems());
     }
     
     @SuppressWarnings("unused")
