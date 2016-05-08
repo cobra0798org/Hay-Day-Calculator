@@ -4305,7 +4305,7 @@
       <level_two_mastery_time>150</level_two_mastery_time>
       <level_three_mastery_time>450</level_three_mastery_time>
         <product type="ProductItem">popcorn</product>
-        <product type="ProductItem">butttered_popcorn</product>
+        <product type="ProductItem">buttered_popcorn</product>
         <product type="ProductItem">chili_popcorn</product>
         <product type="ProductItem">honey_popcorn</product>
         <product type="ProductItem">chocolate_popcorn</product>
@@ -4320,7 +4320,7 @@
       <level_two_mastery_time>120</level_two_mastery_time>
       <level_three_mastery_time>480</level_three_mastery_time>
         <product type="ProductItem">pancake</product>
-        <product type="ProductItem">bacon_and_egg</product>
+        <product type="ProductItem">bacon_and_eggs</product>
         <product type="ProductItem">hamburger</product>
         <product type="ProductItem">fish_burger</product>
         <product type="ProductItem">roasted_tomatoes</product>
@@ -4501,7 +4501,7 @@
         <product type="ProductItem">bracelet</product>
         <product type="ProductItem">necklace</product>
         <product type="ProductItem">diamond_ring</product>
-        <product type="ProductItem">rion_bracelet</product>
+        <product type="ProductItem">iron_bracelet</product>
     </machine>
     
     <machine name="honey_extractor">
@@ -4525,8 +4525,8 @@
       <level_two_mastery_time>240</level_two_mastery_time>
       <level_three_mastery_time>960</level_three_mastery_time>
         <product type="ProductItem">espresso</product>
-        <product type="ProductItem">caffé_latte</product>
-        <product type="ProductItem">caffé_mocha</product>
+        <product type="ProductItem">caffè_latte</product>
+        <product type="ProductItem">caffè_mocha</product>
         <product type="ProductItem">raspberry_mocha</product>
         <product type="ProductItem">hot_chocolate</product>
     </machine>
@@ -4549,7 +4549,7 @@
       <level_one_mastery_time>0</level_one_mastery_time>
       <level_two_mastery_time>0</level_two_mastery_time>
       <level_three_mastery_time>0</level_three_mastery_time>
-        <product type="ProductItem">lobster_tail</product>
+        <product type="HarvestItem">lobster_tail</product>
     </machine>
     
     <machine name="soup_kitchen">
@@ -4603,7 +4603,7 @@
       <level_one_mastery_time>0</level_one_mastery_time>
       <level_two_mastery_time>0</level_two_mastery_time>
       <level_three_mastery_time>0</level_three_mastery_time>
-        <product type="ProductItem">duck_feather</product>
+        <product type="HarvestItem">duck_feather</product>
     </machine>
     
     <machine name="candy_machine">
