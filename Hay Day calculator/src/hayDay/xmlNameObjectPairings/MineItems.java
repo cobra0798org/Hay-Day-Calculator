@@ -29,6 +29,12 @@ public class MineItems extends Items
         return items;
     }
     
+    public Item getMineItem(String mineItemName)
+    {
+        LinkedHashMap<String, Item> items = getItems();
+        return items.get(mineItemName);
+    }
+    
     public LinkedHashMap<String, Integer> getExps()
     {
         LinkedHashMap<String, Integer> exps = new LinkedHashMap<String, Integer>();
