@@ -27,11 +27,10 @@ public class UserCreation
     public static User newUser(HayDayType hayDay)
     {
         Scanner input = new Scanner(System.in);
-        User user = new User();
         
         System.out.println("what is the name of your farm? ");
         String name = input.next();
-        user.setName(name);
+        User user = new User(name);
         
         System.out.println("what is your current level?");
         int level = input.nextInt();

@@ -28,6 +28,15 @@ public class User
     @XmlElement(name = "animals", required = true)
     protected UserAnimals animals;
     
+    /**
+     * creates a user with a farm name of <code>name</code>.
+     * @param name - farm name
+     */
+    public User(String name)
+    {
+        this.name = name;
+    }
+    
     public String getName()
     {
         return name;
@@ -38,6 +47,10 @@ public class User
         return level;
     }
     
+    /**
+     * 
+     * @return the amount of exp that the user has towards the next level.
+     */
     public int getExpOnCurrentLevel()
     {
         return exp_on_current_level;
@@ -83,6 +96,11 @@ public class User
         this.level = level;
     }
     
+    /**
+     * 
+     * @param expOnCurrentLevel -
+     *  the amount of exp that the user has towards the next level.
+     */
     public void setExpOnCurrentLevel(int expOnCurrentLevel)
     {
         exp_on_current_level = expOnCurrentLevel;
