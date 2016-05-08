@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
         "product"
 })
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Machine extends HayDayType
+public class Machine implements HayDayXMLObject
 {
     @XmlAttribute(name = "name", required = true)
     protected String name;

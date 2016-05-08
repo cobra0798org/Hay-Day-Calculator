@@ -1,8 +1,7 @@
 package hayDay.xmlObjects;
 
-public interface Item
+public interface Item extends HayDayXMLObject
 {
-    String getName();
     double getCostForOne();
     double getCostForTen();
     int getLevel();

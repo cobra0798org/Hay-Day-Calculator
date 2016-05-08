@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
         "product"
 })
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Animal extends HayDayType
+public class Animal implements HayDayXMLObject
 {
     @XmlAttribute(name = "name", required = true)
     protected String name;

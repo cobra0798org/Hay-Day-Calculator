@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
         "level"
 })
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Tree extends HayDayType
+public class Tree implements HayDayXMLObject
 {
     @XmlAttribute(name = "name", required = true)
     protected String name;
