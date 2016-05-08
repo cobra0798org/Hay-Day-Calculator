@@ -1285,10 +1285,9 @@
       <source type="machine">smelter</source>
     </product_item>
     
-    <!-- missing cost_for_ten -->  
     <product_item name="cherry_popsicle">
       <cost_for_one>352</cost_for_one>
-      <cost_for_ten>3520</cost_for_ten>
+      <cost_for_ten>3528</cost_for_ten>
       <exp>42</exp>
       <time>180</time>
       <mastered_time>153</mastered_time>
@@ -4175,10 +4174,9 @@
       <source type="tree">beehive_tree</source>
     </harvest_item>
     
-    <!-- missing cost_for_ten -->
     <harvest_item name="lobster_tail">
       <cost_for_one>201</cost_for_one>
-      <cost_for_ten>2010</cost_for_ten>
+      <cost_for_ten>2016</cost_for_ten>
       <exp>24</exp>
       <time>360</time>
       <level>44</level>
