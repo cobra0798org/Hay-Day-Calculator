@@ -30,6 +30,12 @@ public class FarmItems extends Items
         return items;
     }
     
+    public Item getFarmItem(String farmItemName)
+    {
+        LinkedHashMap<String, Item> items = getItems();
+        return items.get(farmItemName);
+    }
+    
     public LinkedHashMap<String, Integer> getExps()
     {
         LinkedHashMap<String, Integer> exps = new LinkedHashMap<String, Integer>();
