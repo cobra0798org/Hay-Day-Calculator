@@ -5,6 +5,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlValue;
 
+import hayDay.xmlNameObjectPairings.HarvestItems;
+import hayDay.xmlNameObjectPairings.ProductItems;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product
 {
@@ -25,9 +28,21 @@ public class Product
             return null;
         }
     }
-    public String getProductName()
+    
+    public Item getProduct(HayDayType hayDay)
     {
-        return product;
+        Item item = null;
+        if(getType().equals(ProductItem.class))
+        {
+            ProductItems p = new ProductItems(hayDay);
+            item = p.getProductItem(product);
+        }
+        else if(getType().equals(HarvestItem.class))
+        {
+            HarvestItems h = new HarvestItems(hayDay);
+            item = h.getHarvestItem(product);
+        }
+        return item;
     }
 
 }

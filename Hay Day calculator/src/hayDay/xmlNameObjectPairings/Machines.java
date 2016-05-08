@@ -43,7 +43,7 @@ public class Machines
                 ArrayList<Product> currentProducts = machine.getProducts();
                 for (Product product : currentProducts)
                 {
-                    productNames.add(product.getProductName());
+                    productNames.add(product.getProduct(hayDay).getName());
                 }
                 ArrayList<Item> newProducts = getProductList(productNames);
                 products.put(machine.getName(), newProducts);
