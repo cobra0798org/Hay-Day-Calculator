@@ -25,13 +25,10 @@ import javax.xml.bind.annotation.XmlType;
 public class HayDayType extends ObjectFactory
 {
     @XmlElement(type = ProductItem.class, name = "product_item", required = true)
-//    @XmlAnyElement
     protected ArrayList<Item> product_item;
     @XmlElement(type = FarmItem.class, name = "farm_item", required = true)
-//    @XmlAnyElement
     protected ArrayList<Item> farm_item;
     @XmlElement(type = HarvestItem.class, name = "harvest_item", required = true)
-//    @XmlAnyElement
     protected ArrayList<Item> harvest_item;
     @XmlElement(name = "machine", required = true)
     protected ArrayList<Machine> machine;
@@ -40,14 +37,12 @@ public class HayDayType extends ObjectFactory
     @XmlElement(name = "bush", required = true)
     protected ArrayList<Bush> bush;
     @XmlElement(type = MineItem.class, name = "mine_item", required = true)
-//    @XmlAnyElement
     protected ArrayList<Item> mine_item;
     @XmlElement(name = "voucher", required = true)
-    protected ArrayList<String> voucher;
+    protected ArrayList<Voucher> voucher;
     @XmlElement(name = "animal", required = true)
     protected ArrayList<Animal> animal;
     @XmlElement(type = RareItem.class, name = "rare_item", required = true)
-//    @XmlAnyElement
     protected ArrayList<Item> rare_item;
     
     public ArrayList<Item> getProductItems()
@@ -85,7 +80,7 @@ public class HayDayType extends ObjectFactory
         return this.mine_item;
     }
     
-    public ArrayList<String> getVouchers()
+    public ArrayList<Voucher> getVouchers()
     {
         return this.voucher;
     }
