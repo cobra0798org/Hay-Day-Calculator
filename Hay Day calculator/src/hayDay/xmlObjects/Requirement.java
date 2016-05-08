@@ -1,15 +1,20 @@
 package hayDay.xmlObjects;
 
+import java.util.ArrayList;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+import hayDay.Bushes;
+import hayDay.xmlNameObjectPairings.Animals;
 import hayDay.xmlNameObjectPairings.FarmItems;
 import hayDay.xmlNameObjectPairings.HarvestItems;
 import hayDay.xmlNameObjectPairings.MineItems;
 import hayDay.xmlNameObjectPairings.ProductItems;
 import hayDay.xmlNameObjectPairings.RareItems;
+import hayDay.xmlNameObjectPairings.Trees;
 
 @XmlType(name = "Requirement", propOrder = {
         "item",
@@ -39,10 +44,10 @@ public class Requirement
         }
     }
     
-    public Item getItem(HayDayType hayDay)
+    public HayDayXMLObject getItem(HayDayType hayDay)
     {
         Class<?> javaClass = getType();
-        Item item;
+        HayDayXMLObject item = null;
         if(javaClass == ProductItem.class)
         {
             ProductItems p = new ProductItems(hayDay);
@@ -68,9 +73,31 @@ public class Requirement
             RareItems r = new RareItems(hayDay);
             item = r.getRareItem(this.item);
         }
-        else
+        else if(javaClass == Animal.class)
         {
-            item = null;
+            Animals r = new Animals(hayDay);
+            item = r.getAnimal(this.item);
+        }
+        else if(javaClass == Tree.class)
+        {
+            Trees r = new Trees(hayDay);
+            item = r.getTree(this.item);
+        }
+        else if(javaClass == Bush.class)
+        {
+            Bushes r = new Bushes(hayDay);
+            item = r.getBush(this.item);
+        }
+        else if(javaClass == Voucher.class)
+        {
+            ArrayList<Voucher> vouchers = hayDay.getVouchers();
+            for (Voucher voucher : vouchers)
+            {
+                if (voucher.getName().equals(this.item))
+                {
+                    item = voucher;
+                }
+            }
         }
         return item;
     }
