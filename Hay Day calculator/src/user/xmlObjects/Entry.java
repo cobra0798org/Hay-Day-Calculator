@@ -59,7 +59,7 @@ public class Entry
         else if(this.type.equals("rare_item"))
         {
             RareItems rareItems = new RareItems(hayDay);
-            type = rareItems.getRareItems().get(name);
+            type = rareItems.getItems().get(name);
         }
         else if(this.type.equals("mine_item"))
         {
