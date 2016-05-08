@@ -28,7 +28,6 @@ public class Source
             try
             {
                 Class<?> c = Class.forName("hayDay.xmlObjects." + this.type);
-                System.out.println(c);
                 classType = c;
             }
             catch (ClassNotFoundException e)
@@ -39,10 +38,9 @@ public class Source
         return classType;
     }
     
-    public Object getSource(HayDayType hayDay)
+    public HayDayXMLObject getSource(HayDayType hayDay)
     {
-        Object source = null;
-        System.out.println(this.source);
+        HayDayXMLObject source = null;
         if(classType == Machine.class)
         {
             Machines machines = new Machines(hayDay);
