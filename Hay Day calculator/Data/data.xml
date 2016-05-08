@@ -4215,22 +4215,22 @@
       <level_one_mastery_time>0</level_one_mastery_time>
       <level_two_mastery_time>0</level_two_mastery_time>
       <level_three_mastery_time>0</level_three_mastery_time>
-        <farm_item>none</farm_item>
-        <farm_item>diamond</farm_item>
-        <farm_item>wheat</farm_item>
-        <farm_item>corn</farm_item>
-        <farm_item>sozbean</farm_item>
-        <farm_item>sugarcane</farm_item>
-        <farm_item>carrot</farm_item>
-        <farm_item>indigo</farm_item>
-        <farm_item>pumpkin</farm_item>
-        <farm_item>cotton</farm_item>
-        <farm_item>chili_pepper</farm_item>
-        <farm_item>tomato</farm_item>
-        <farm_item>strawberrz</farm_item>
-        <farm_item>potato</farm_item>
-        <farm_item>rice</farm_item>
-        <farm_item>lettuce</farm_item>
+        <product type="FarmItem">none</product>
+        <product type="FarmItem">diamond</product>
+        <product type="FarmItem">wheat</product>
+        <product type="FarmItem">corn</product>
+        <product type="FarmItem">sozbean</product>
+        <product type="FarmItem">sugarcane</product>
+        <product type="FarmItem">carrot</product>
+        <product type="FarmItem">indigo</product>
+        <product type="FarmItem">pumpkin</product>
+        <product type="FarmItem">cotton</product>
+        <product type="FarmItem">chili_pepper</product>
+        <product type="FarmItem">tomato</product>
+        <product type="FarmItem">strawberrz</product>
+        <product type="FarmItem">potato</product>
+        <product type="FarmItem">rice</product>
+        <product type="FarmItem">lettuce</product>
     </machine>
   
     <machine name="bakery">
@@ -4241,15 +4241,15 @@
       <level_one_mastery_time>35</level_one_mastery_time>
       <level_two_mastery_time>140</level_two_mastery_time>
       <level_three_mastery_time>560</level_three_mastery_time>
-        <product_item>bread</product_item>
-        <product_item>corn_bread</product_item>
-        <product_item>cookie</product_item>
-        <product_item>raspberry_muffin</product_item>
-        <product_item>blackberry_muffin</product_item>
-        <product_item>pizza</product_item>
-        <product_item>spicy_pizza</product_item>
-        <product_item>potato_bread</product_item>
-        <product_item>frutti_di_mare_pizza</product_item>
+        <product type="ProductItem">bread</product>
+        <product type="ProductItem">corn_bread</product>
+        <product type="ProductItem">cookie</product>
+        <product type="ProductItem">raspberry_muffin</product>
+        <product type="ProductItem">blackberry_muffin</product>
+        <product type="ProductItem">pizza</product>
+        <product type="ProductItem">spicy_pizza</product>
+        <product type="ProductItem">potato_bread</product>
+        <product type="ProductItem">frutti_di_mare_pizza</product>
     </machine>
     
     <machine name="feed_mill">
@@ -4262,11 +4262,11 @@
       <level_one_mastery_time>120</level_one_mastery_time>
       <level_two_mastery_time>840</level_two_mastery_time>
       <level_three_mastery_time>5880</level_three_mastery_time>
-        <product_item>chicken_feed</product_item>
-        <product_item>cow_feed</product_item>
-        <product_item>pig_feed</product_item>
-        <product_item>sheep_feed</product_item>
-        <product_item>goat_feed</product_item>
+        <product type="ProductItem">chicken_feed</product>
+        <product type="ProductItem">cow_feed</product>
+        <product type="ProductItem">pig_feed</product>
+        <product type="ProductItem">sheep_feed</product>
+        <product type="ProductItem">goat_feed</product>
     </machine>
     
     <machine name="dairy">
@@ -4277,10 +4277,10 @@
       <level_one_mastery_time>40</level_one_mastery_time>
       <level_two_mastery_time>120</level_two_mastery_time>
       <level_three_mastery_time>360</level_three_mastery_time>
-        <product_item>cream</product_item>
-        <product_item>butter</product_item>
-        <product_item>cheese</product_item>
-        <product_item>goat_cheese</product_item>
+        <product type="ProductItem">cream</product>
+        <product type="ProductItem">butter</product>
+        <product type="ProductItem">cheese</product>
+        <product type="ProductItem">goat_cheese</product>
     </machine>
     
     <machine name="sugar_mill">
@@ -4291,9 +4291,9 @@
       <level_one_mastery_time>25</level_one_mastery_time>
       <level_two_mastery_time>100</level_two_mastery_time>
       <level_three_mastery_time>400</level_three_mastery_time>
-        <product_item>brown_sugar</product_item>
-        <product_item>white_sugar</product_item>
-        <product_item>syrup</product_item>
+        <product type="ProductItem">brown_sugar</product>
+        <product type="ProductItem">white_sugar</product>
+        <product type="ProductItem">syrup</product>
     </machine>
     
     <machine name="popcorn_pot">
@@ -4304,11 +4304,11 @@
       <level_one_mastery_time>50</level_one_mastery_time>
       <level_two_mastery_time>150</level_two_mastery_time>
       <level_three_mastery_time>450</level_three_mastery_time>
-        <product_item>popcorn</product_item>
-        <product_item>butttered_popcorn</product_item>
-        <product_item>chili_popcorn</product_item>
-        <product_item>honey_popcorn</product_item>
-        <product_item>chocolate_popcorn</product_item>
+        <product type="ProductItem">popcorn</product>
+        <product type="ProductItem">butttered_popcorn</product>
+        <product type="ProductItem">chili_popcorn</product>
+        <product type="ProductItem">honey_popcorn</product>
+        <product type="ProductItem">chocolate_popcorn</product>
     </machine>
     
     <machine name="bbq_grill">
@@ -4319,14 +4319,14 @@
       <level_one_mastery_time>30</level_one_mastery_time>
       <level_two_mastery_time>120</level_two_mastery_time>
       <level_three_mastery_time>480</level_three_mastery_time>
-        <product_item>pancake</product_item>
-        <product_item>bacon_and_egg</product_item>
-        <product_item>hamburger</product_item>
-        <product_item>fish_burger</product_item>
-        <product_item>roasted_tomatoes</product_item>
-        <product_item>baked_potato</product_item>
-        <product_item>fish_and_chips</product_item>
-        <product_item>lobster_skewer</product_item>
+        <product type="ProductItem">pancake</product>
+        <product type="ProductItem">bacon_and_egg</product>
+        <product type="ProductItem">hamburger</product>
+        <product type="ProductItem">fish_burger</product>
+        <product type="ProductItem">roasted_tomatoes</product>
+        <product type="ProductItem">baked_potato</product>
+        <product type="ProductItem">fish_and_chips</product>
+        <product type="ProductItem">lobster_skewer</product>
     </machine>
     
     <machine name="pie_oven">
@@ -4337,15 +4337,15 @@
       <level_one_mastery_time>40</level_one_mastery_time>
       <level_two_mastery_time>160</level_two_mastery_time>
       <level_three_mastery_time>640</level_three_mastery_time>
-        <product_item>carrot_pie</product_item>
-        <product_item>pumpkin_pie</product_item>
-        <product_item>bacon_pie</product_item>
-        <product_item>apple_pie</product_item>
-        <product_item>fish_pie</product_item>
-        <product_item>feta_pie</product_item>
-        <product_item>casserole</product_item>
-        <product_item>sheperds_pie</product_item>
-        <product_item>lemon_pie</product_item>
+        <product type="ProductItem">carrot_pie</product>
+        <product type="ProductItem">pumpkin_pie</product>
+        <product type="ProductItem">bacon_pie</product>
+        <product type="ProductItem">apple_pie</product>
+        <product type="ProductItem">fish_pie</product>
+        <product type="ProductItem">feta_pie</product>
+        <product type="ProductItem">casserole</product>
+        <product type="ProductItem">sheperds_pie</product>
+        <product type="ProductItem">lemon_pie</product>
     </machine>
     
     <machine name="loom">
@@ -4356,11 +4356,11 @@
       <level_one_mastery_time>36</level_one_mastery_time>
       <level_two_mastery_time>180</level_two_mastery_time>
       <level_three_mastery_time>900</level_three_mastery_time>
-        <product_item>sweater</product_item>
-        <product_item>cotton_fabric</product_item>
-        <product_item>blue_woolly_hat</product_item>
-        <product_item>blue_sweater</product_item>
-        <product_item>red_scarf</product_item>
+        <product type="ProductItem">sweater</product>
+        <product type="ProductItem">cotton_fabric</product>
+        <product type="ProductItem">blue_woolly_hat</product>
+        <product type="ProductItem">blue_sweater</product>
+        <product type="ProductItem">red_scarf</product>
     </machine>
     
     <machine name="sewing_machine">
@@ -4371,11 +4371,11 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>cotton_shirt</product_item>
-        <product_item>woolly_chaps</product_item>
-        <product_item>violet_dress</product_item>
-        <product_item>pillow</product_item>
-        <product_item>blanket</product_item>
+        <product type="ProductItem">cotton_shirt</product>
+        <product type="ProductItem">woolly_chaps</product>
+        <product type="ProductItem">violet_dress</product>
+        <product type="ProductItem">pillow</product>
+        <product type="ProductItem">blanket</product>
     </machine>
     
     <machine name="cake_oven">
@@ -4386,15 +4386,15 @@
       <level_one_mastery_time>65</level_one_mastery_time>
       <level_two_mastery_time>260</level_two_mastery_time>
       <level_three_mastery_time>1040</level_three_mastery_time>
-        <product_item>carrot_cake</product_item>
-        <product_item>cream_cake</product_item>
-        <product_item>red_berry_cake</product_item>
-        <product_item>cheesecake</product_item>
-        <product_item>strawberry_cake</product_item>
-        <product_item>chocolate_cake</product_item>
-        <product_item>potato_feta_cake</product_item>
-        <product_item>honey_apple_cake</product_item>
-        <product_item>lemon_cake</product_item>
+        <product type="ProductItem">carrot_cake</product>
+        <product type="ProductItem">cream_cake</product>
+        <product type="ProductItem">red_berry_cake</product>
+        <product type="ProductItem">cheesecake</product>
+        <product type="ProductItem">strawberry_cake</product>
+        <product type="ProductItem">chocolate_cake</product>
+        <product type="ProductItem">potato_feta_cake</product>
+        <product type="ProductItem">honey_apple_cake</product>
+        <product type="ProductItem">lemon_cake</product>
     </machine>
     
     <machine name="smelter">
@@ -4410,11 +4410,11 @@
       <level_one_mastery_time>390</level_one_mastery_time>
       <level_two_mastery_time>1540</level_two_mastery_time>
       <level_three_mastery_time>6180</level_three_mastery_time>
-        <product_item>silver_bar</product_item>
-        <product_item>gold_bar</product_item>
-        <product_item>platinum_bar</product_item>
-        <product_item>iron_bar</product_item>
-        <product_item>refined_coal</product_item>
+        <product type="ProductItem">silver_bar</product>
+        <product type="ProductItem">gold_bar</product>
+        <product type="ProductItem">platinum_bar</product>
+        <product type="ProductItem">iron_bar</product>
+        <product type="ProductItem">refined_coal</product>
     </machine>
         
     <machine name="juice_press">
@@ -4425,11 +4425,11 @@
       <level_one_mastery_time>50</level_one_mastery_time>
       <level_two_mastery_time>250</level_two_mastery_time>
       <level_three_mastery_time>1250</level_three_mastery_time>
-        <product_item>carrot_juice</product_item>
-        <product_item>apple_juice</product_item>
-        <product_item>cherry_juice</product_item>
-        <product_item>tomato_juice</product_item>
-        <product_item>berry_juice</product_item>
+        <product type="ProductItem">carrot_juice</product>
+        <product type="ProductItem">apple_juice</product>
+        <product type="ProductItem">cherry_juice</product>
+        <product type="ProductItem">tomato_juice</product>
+        <product type="ProductItem">berry_juice</product>
     </machine>
     
     <machine name="lure_workbench">
@@ -4440,11 +4440,11 @@
       <level_one_mastery_time></level_one_mastery_time>
       <level_two_mastery_time></level_two_mastery_time>
       <level_three_mastery_time></level_three_mastery_time>
-        <product_item>red_lure</product_item>
-        <product_item>green_lure</product_item>
-        <product_item>blue_lure</product_item>
-        <product_item>purple_lure</product_item>
-        <product_item>golden_lure</product_item>
+        <product type="ProductItem">red_lure</product>
+        <product type="ProductItem">green_lure</product>
+        <product type="ProductItem">blue_lure</product>
+        <product type="ProductItem">purple_lure</product>
+        <product type="ProductItem">golden_lure</product>
     </machine>
     
     <machine name="ice_cream_maker">
@@ -4455,10 +4455,10 @@
       <level_one_mastery_time>60</level_one_mastery_time>
       <level_two_mastery_time>240</level_two_mastery_time>
       <level_three_mastery_time>360</level_three_mastery_time>
-        <product_item>vanilla_ice_cream</product_item>
-        <product_item>cherry_popsicle</product_item>
-        <product_item>strawberry_ice_cream</product_item>
-        <product_item>chocolate_ice_cream</product_item>
+        <product type="ProductItem">vanilla_ice_cream</product>
+        <product type="ProductItem">cherry_popsicle</product>
+        <product type="ProductItem">strawberry_ice_cream</product>
+        <product type="ProductItem">chocolate_ice_cream</product>
     </machine>
     
     <machine name="net_maker">
@@ -4469,10 +4469,10 @@
       <level_one_mastery_time>120</level_one_mastery_time>
       <level_two_mastery_time>840</level_two_mastery_time>
       <level_three_mastery_time>5880</level_three_mastery_time>
-        <product_item>fishing_net</product_item>
-        <product_item>mystery_net</product_item>
-        <product_item>lobster_trap</product_item>
-        <product_item>duck_trap</product_item>
+        <product type="ProductItem">fishing_net</product>
+        <product type="ProductItem">mystery_net</product>
+        <product type="ProductItem">lobster_trap</product>
+        <product type="ProductItem">duck_trap</product>
     </machine>
     
     <machine name="jam_maker">
@@ -4483,11 +4483,11 @@
       <level_one_mastery_time>90</level_one_mastery_time>
       <level_two_mastery_time>360</level_two_mastery_time>
       <level_three_mastery_time>1440</level_three_mastery_time>
-        <product_item>apple_jam</product_item>
-        <product_item>raspberry_jam</product_item>
-        <product_item>blackberry_jam</product_item>
-        <product_item>cherry_jam</product_item>
-        <product_item>strawberry_jam</product_item>
+        <product type="ProductItem">apple_jam</product>
+        <product type="ProductItem">raspberry_jam</product>
+        <product type="ProductItem">blackberry_jam</product>
+        <product type="ProductItem">cherry_jam</product>
+        <product type="ProductItem">strawberry_jam</product>
     </machine>
     
     <machine name="jeweler">
@@ -4498,10 +4498,10 @@
       <level_one_mastery_time>70</level_one_mastery_time>
       <level_two_mastery_time>280</level_two_mastery_time>
       <level_three_mastery_time>1120</level_three_mastery_time>
-        <product_item>bracelet</product_item>
-        <product_item>necklace</product_item>
-        <product_item>diamond_ring</product_item>
-        <product_item>rion_bracelet</product_item>
+        <product type="ProductItem">bracelet</product>
+        <product type="ProductItem">necklace</product>
+        <product type="ProductItem">diamond_ring</product>
+        <product type="ProductItem">rion_bracelet</product>
     </machine>
     
     <machine name="honey_extractor">
@@ -4512,8 +4512,8 @@
       <level_one_mastery_time>50</level_one_mastery_time>
       <level_two_mastery_time>150</level_two_mastery_time>
       <level_three_mastery_time>450</level_three_mastery_time>
-        <product_item>honey</product_item>
-        <product_item>beeswax</product_item>
+        <product type="ProductItem">honey</product>
+        <product type="ProductItem">beeswax</product>
     </machine>
     
     <machine name="coffee_kiosk">
@@ -4524,11 +4524,11 @@
       <level_one_mastery_time>70</level_one_mastery_time>
       <level_two_mastery_time>240</level_two_mastery_time>
       <level_three_mastery_time>960</level_three_mastery_time>
-        <product_item>espresso</product_item>
-        <product_item>caffé_latte</product_item>
-        <product_item>caffé_mocha</product_item>
-        <product_item>raspberry_mocha</product_item>
-        <product_item>hot_chocolate</product_item>
+        <product type="ProductItem">espresso</product>
+        <product type="ProductItem">caffé_latte</product>
+        <product type="ProductItem">caffé_mocha</product>
+        <product type="ProductItem">raspberry_mocha</product>
+        <product type="ProductItem">hot_chocolate</product>
     </machine>
     
     <machine name="lobster_pool">
@@ -4549,7 +4549,7 @@
       <level_one_mastery_time>0</level_one_mastery_time>
       <level_two_mastery_time>0</level_two_mastery_time>
       <level_three_mastery_time>0</level_three_mastery_time>
-        <product_item>lobster_tail</product_item>
+        <product type="ProductItem">lobster_tail</product>
     </machine>
     
     <machine name="soup_kitchen">
@@ -4560,11 +4560,11 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>lobster_soup</product_item>
-        <product_item>tomato_soup</product_item>
-        <product_item>pumpkin_soup</product_item>
-        <product_item>fish_soup</product_item>
-        <product_item>noodle_soup</product_item>
+        <product type="ProductItem">lobster_soup</product>
+        <product type="ProductItem">tomato_soup</product>
+        <product type="ProductItem">pumpkin_soup</product>
+        <product type="ProductItem">fish_soup</product>
+        <product type="ProductItem">noodle_soup</product>
     </machine>
     
     <machine name="candle_maker">
@@ -4575,9 +4575,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>strawberry_candle</product_item>
-        <product_item>raspberry_candle</product_item>
-        <product_item>lemon_candle</product_item>
+        <product type="ProductItem">strawberry_candle</product>
+        <product type="ProductItem">raspberry_candle</product>
+        <product type="ProductItem">lemon_candle</product>
     </machine>
     
     <machine name="duck_salon">
@@ -4603,7 +4603,7 @@
       <level_one_mastery_time>0</level_one_mastery_time>
       <level_two_mastery_time>0</level_two_mastery_time>
       <level_three_mastery_time>0</level_three_mastery_time>
-        <product_item>duck_feather</product_item>
+        <product type="ProductItem">duck_feather</product>
     </machine>
     
     <machine name="candy_machine">
@@ -4614,11 +4614,11 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>caramel_apple</product_item>
-        <product_item>toffee</product_item>
-        <product_item>chocolate</product_item>
-        <product_item>lollipop</product_item>
-        <product_item>jelly_beans</product_item>
+        <product type="ProductItem">caramel_apple</product>
+        <product type="ProductItem">toffee</product>
+        <product type="ProductItem">chocolate</product>
+        <product type="ProductItem">lollipop</product>
+        <product type="ProductItem">jelly_beans</product>
     </machine>
     
     <machine name="sauce_maker">
@@ -4629,11 +4629,11 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>soy_sauce</product_item>
-        <product_item>olive_oil</product_item>
-        <product_item>mayonnaise</product_item>
-        <product_item>lemon_curd</product_item>
-        <product_item>tomato_sauce</product_item>
+        <product type="ProductItem">soy_sauce</product>
+        <product type="ProductItem">olive_oil</product>
+        <product type="ProductItem">mayonnaise</product>
+        <product type="ProductItem">lemon_curd</product>
+        <product type="ProductItem">tomato_sauce</product>
     </machine>
     
     <machine name="sushi_bar">
@@ -4644,9 +4644,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>sushi_roll</product_item>
-        <product_item>lobster_sushi</product_item>
-        <product_item>egg_sushi</product_item>
+        <product type="ProductItem">sushi_roll</product>
+        <product type="ProductItem">lobster_sushi</product>
+        <product type="ProductItem">egg_sushi</product>
     </machine>
     
     <machine name="salad_bar">
@@ -4657,10 +4657,10 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>feta_salad</product_item>
-        <product_item>blt_salad</product_item>
-        <product_item>seafood_salad</product_item>
-        <product_item>pasta_salad</product_item>
+        <product type="ProductItem">feta_salad</product>
+        <product type="ProductItem">blt_salad</product>
+        <product type="ProductItem">seafood_salad</product>
+        <product type="ProductItem">pasta_salad</product>
     </machine>
     
     <machine name="sandwich_bar">
@@ -4671,10 +4671,10 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>veggie_bagel</product_item>
-        <product_item>bacon_toast</product_item>
-        <product_item>egg_sandwich</product_item>
-        <product_item>honey_toast</product_item>
+        <product type="ProductItem">veggie_bagel</product>
+        <product type="ProductItem">bacon_toast</product>
+        <product type="ProductItem">egg_sandwich</product>
+        <product type="ProductItem">honey_toast</product>
     </machine>
     
     <machine name="smoothie_mixer">
@@ -4685,9 +4685,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>berry_smoothie</product_item>
-        <product_item>green_smoothie</product_item>
-        <product_item>yogurt_smoothie</product_item>
+        <product type="ProductItem">berry_smoothie</product>
+        <product type="ProductItem">green_smoothie</product>
+        <product type="ProductItem">yogurt_smoothie</product>
     </machine>
     
     <machine name="pasta_maker">
@@ -4698,8 +4698,8 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>fresh_pasta</product_item>
-        <product_item>rice_noodles</product_item>
+        <product type="ProductItem">fresh_pasta</product>
+        <product type="ProductItem">rice_noodles</product>
     </machine>
     
     <machine name="hat_maker">
@@ -4710,9 +4710,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>cloche_hat</product_item>
-        <product_item>top_hat</product_item>
-        <product_item>sun_hat</product_item>
+        <product type="ProductItem">cloche_hat</product>
+        <product type="ProductItem">top_hat</product>
+        <product type="ProductItem">sun_hat</product>
     </machine>
     
     <machine name="pasta_kitchen">
@@ -4723,9 +4723,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>gnocchi</product_item>
-        <product_item>veggie_lasagna</product_item>
-        <product_item>lobster_pasta</product_item>
+        <product type="ProductItem">gnocchi</product>
+        <product type="ProductItem">veggie_lasagna</product>
+        <product type="ProductItem">lobster_pasta</product>
     </machine>
     
     <machine name="hot_dog_stand">
@@ -4736,9 +4736,9 @@
       <level_one_mastery_time>72</level_one_mastery_time>
       <level_two_mastery_time>288</level_two_mastery_time>
       <level_three_mastery_time>1152</level_three_mastery_time>
-        <product_item>hot_dog</product_item>
-        <product_item>tofu_dog</product_item>
-        <product_item>corn_dog</product_item>
+        <product type="ProductItem">hot_dog</product>
+        <product type="ProductItem">tofu_dog</product>
+        <product type="ProductItem">corn_dog</product>
     </machine>
 
     <tree name="aaple_tree">
