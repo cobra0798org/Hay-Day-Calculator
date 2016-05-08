@@ -18,6 +18,18 @@ public class Machines
         machines = hayDay.getMachines();
     }
     
+    public Machine getMachine(String machineName)
+    {
+        for (Machine machine : machines)
+        {
+            if(machine.getName().equals(machineName))
+            {
+                return machine;
+            }
+        }
+        return null;
+    }
+    
     public LinkedHashMap<String, ArrayList<Item>> getProducts()
     {
         LinkedHashMap<String, ArrayList<Item>> products 
