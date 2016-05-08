@@ -17,8 +17,7 @@ import javax.xml.bind.annotation.XmlType;
         "level_one_mastery_time",
         "level_two_mastery_time",
         "level_three_mastery_time",
-        "product_item",
-        "farm_item"
+        "product"
 })
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Machine extends HayDayType
@@ -39,10 +38,8 @@ public class Machine extends HayDayType
     protected int level_two_mastery_time;
     @XmlElement(name = "level_three_mastery_time", required = true)
     protected int level_three_mastery_time;
-    @XmlElement(name = "product_item")
-    protected ArrayList<String> product_item;
-    @XmlElement(name = "farm_item")
-    protected ArrayList<String> farm_item;
+    @XmlElement(name = "product", required = true)
+    protected ArrayList<Product> product;
     
     public String getName()
     {
@@ -84,8 +81,8 @@ public class Machine extends HayDayType
         return level_three_mastery_time;
     }
     
-    public ArrayList<String> getProducts()
+    public ArrayList<Product> getProducts()
     {
-        return (product_item != null || product_item.size() != 0) ? product_item : farm_item;
+        return product;
     }
 }
