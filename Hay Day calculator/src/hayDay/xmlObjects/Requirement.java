@@ -1,7 +1,5 @@
 package hayDay.xmlObjects;
 
-import java.util.LinkedHashMap;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -28,33 +26,47 @@ public class Requirement
     @XmlElement(name = "type", required = true)
     protected String type;
     
+    public Class<?> getType()
+    {
+        try
+        {
+            return Class.forName("hayDay.xmlObjects." + type);
+        }
+        catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
     public Item getItem(HayDayType hayDay)
     {
-        LinkedHashMap<String, Item> p = new ProductItems(hayDay).getItems();
-        LinkedHashMap<String, Item> f = new FarmItems(hayDay).getItems();
-        LinkedHashMap<String, Item> h = new HarvestItems(hayDay).getItems();
-        LinkedHashMap<String, Item> m = new MineItems(hayDay).getItems();
-        LinkedHashMap<String, Item> r = new RareItems(hayDay).getItems();
+        Class<?> javaClass = getType();
         Item item;
-        if(p.containsKey(this.item))
+        if(javaClass == ProductItem.class)
         {
-            item = p.get(this.item);
+            ProductItems p = new ProductItems(hayDay);
+            item = p.getProductItem(this.item);
         }
-        else if(f.containsKey(this.item))
+        else if(javaClass == FarmItem.class)
         {
-            item = f.get(this.item);
+            FarmItems f = new FarmItems(hayDay);
+            item = f.getFarmItem(this.item);
         }
-        else if(h.containsKey(this.item))
+        else if(javaClass == HarvestItem.class)
         {
-            item = h.get(this.item);
+            HarvestItems h = new HarvestItems(hayDay);
+            item = h.getHarvestItem(this.item);
         }
-        else if(m.containsKey(this.item))
+        else if(javaClass == MineItem.class)
         {
-            item = m.get(this.item);
+            MineItems m = new MineItems(hayDay);
+            item = m.getMineItem(this.item);
         }
-        else if(r.containsKey(this.item))
+        else if(javaClass == RareItem.class)
         {
-            item = r.get(this.item);
+            RareItems r = new RareItems(hayDay);
+            item = r.getRareItem(this.item);
         }
         else
         {
@@ -66,10 +78,5 @@ public class Requirement
     public int getCount()
     {
         return count;
-    }
-    
-    public String getType()
-    {
-        return type;
     }
 }
