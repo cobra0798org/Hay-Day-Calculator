@@ -87,7 +87,7 @@ public class PrintTests
                 System.out.println("\t\tLEVEL: " + levels.get(i).getLevel());
                 System.out.println("\t\tCOST: " + costs.get(i).getCost());
             }
-            System.out.println("\tPRODUCT: " + product.getProductName());
+            System.out.println("\tPRODUCT: " + product.getProduct(hayDay).getName());
             System.out.println();
             System.out.println();
         }
@@ -141,20 +141,24 @@ public class PrintTests
     {
         for(Machine machine : machines)
         {
-            System.out.println("***MACHINES***");
-            System.out.println("NAME: ");
-            System.out.println("LEVEL: ");
-            System.out.println("COST: ");
-            System.out.println("CONSTRUCTION TIME: ");
-            System.out.println("EXP: ");
-            System.out.println("LEVEL ONE MASTERY TIME: ");
-            System.out.println("LEVEL TWO MASTERY TIME: ");
-            System.out.println("LEVEL THREE MASTERY TIME: ");
-            
-            printProductTests(machine.getProducts());
-            
-            System.out.println("********************");
-            System.out.println();
+            if(!machine.getName().equals("field"))
+            {
+                System.out.println("***MACHINES***");
+                System.out.println("NAME: " + machine.getName());
+                System.out.println("LEVEL: " + machine.getLevel());
+                System.out.println("COST: " + machine.getCost());
+                System.out.println("CONSTRUCTION TIME: " + machine.getConstructionTime());
+                System.out.println("EXP: " + machine.getExp());
+                System.out.println("LEVEL ONE MASTERY TIME: " + machine.getLevelOneMasteryTime());
+                System.out.println("LEVEL TWO MASTERY TIME: " + machine.getLevelTwoMasteryTime());
+                System.out.println("LEVEL THREE MASTERY TIME: " + machine.getLevelThreeMasteryTime());
+                
+                ArrayList<Product> products = machine.getProducts();
+                printProductTests(products);
+                
+                System.out.println("********************");
+                System.out.println();
+            }
         }
     }
     
@@ -214,16 +218,17 @@ public class PrintTests
     
     public static void printSourceTests(Source source)
     {
-        System.out.println("SOURCE: " + source.getSource());
-        System.out.println("\tSOURCE TYPE: " + source.getType());
+        Class<?> sourceType = source.getType();
+        System.out.println("SOURCE: " + source.getSource(hayDay).getName());
+        System.out.println("\tSOURCE TYPE: " + sourceType);
     }
     
-    public static void printProductTests(ArrayList<String> products)
+    public static void printProductTests(ArrayList<Product> products)
     {
         System.out.println("***PRODUCTS***");
-        for (String product : products)
+        for (Product product : products)
         {
-            System.out.println("\tPRODUCT: " + product);
+            System.out.println("\tPRODUCT: " + product.getProduct(hayDay).getName());
         }
     }
     
