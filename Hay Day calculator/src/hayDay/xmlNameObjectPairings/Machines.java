@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Machine;
+import hayDay.xmlObjects.Product;
 
 public class Machines
 {
@@ -38,8 +39,13 @@ public class Machines
         {
             if (!machine.getName().equals("field"))
             {
-                ArrayList<String> currentProducts = machine.getProducts();
-                ArrayList<Item> newProducts = getProductList(currentProducts);
+                ArrayList<String> productNames = new ArrayList<String>();
+                ArrayList<Product> currentProducts = machine.getProducts();
+                for (Product product : currentProducts)
+                {
+                    productNames.add(product.getProductName());
+                }
+                ArrayList<Item> newProducts = getProductList(productNames);
                 products.put(machine.getName(), newProducts);
             }
         }
