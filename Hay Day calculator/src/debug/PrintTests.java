@@ -2,11 +2,13 @@ package debug;
 
 import java.util.ArrayList;
 
+import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlObjects.Animal;
 import hayDay.xmlObjects.Bush;
 import hayDay.xmlObjects.Cost;
 import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HarvestItem;
+import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Level;
 import hayDay.xmlObjects.Machine;
@@ -17,9 +19,11 @@ import hayDay.xmlObjects.RareItem;
 import hayDay.xmlObjects.Requirement;
 import hayDay.xmlObjects.Source;
 import hayDay.xmlObjects.Tree;
+import main.HayDayCalculator;
 
 public class PrintTests
 {
+    private static HayDayType hayDay = HayDayAccessor.unmarshal(HayDayCalculator.DATAFILENAME);
     public static void printProductItemTests(ArrayList<Item> list)
     {
         System.out.println("***PRODUCT ITEMS***");
@@ -201,7 +205,7 @@ public class PrintTests
         System.out.println("***REQUIREMENTS***");
         for(Requirement requirement : requirements)
         {
-            System.out.println("\tNAME: " + requirement.getItem());
+            System.out.println("\tNAME: " + requirement.getItem(hayDay).getName());
             System.out.println("\tCOUNT: " + requirement.getCount());
             System.out.println("\tTYPE: " + requirement.getType());
             System.out.println();
