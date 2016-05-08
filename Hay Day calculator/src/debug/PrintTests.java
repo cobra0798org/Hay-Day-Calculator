@@ -214,7 +214,7 @@ public class PrintTests
     
     public static void printSourceTests(Source source)
     {
-        System.out.println("SOURCE: " + source.getSourceName());
+        System.out.println("SOURCE: " + source.getSource());
         System.out.println("\tSOURCE TYPE: " + source.getType());
     }
     

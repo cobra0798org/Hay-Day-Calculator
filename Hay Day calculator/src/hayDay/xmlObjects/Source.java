@@ -13,12 +13,20 @@ public class Source
     @XmlValue
     protected String source;
     
-    public String getType()
+    public Class<?> getType()
     {
-        return this.type;
+        try
+        {
+            return Class.forName(this.type);
+        }
+        catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();
+            return null;
+        }
     }
     
-    public String getSourceName()
+    public String getSource()
     {
         return this.source;
     }

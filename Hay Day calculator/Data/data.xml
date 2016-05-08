@@ -14,7 +14,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->    
@@ -37,7 +37,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">feed_mill</source>
+      <source type="Machine">feed_mill</source>
     </product_item>
     
     <product_item name="cow_feed">
@@ -57,7 +57,7 @@
           <count>1</count>
         </requirement> 
 
-      <source type="machine">feed_mill</source>
+      <source type="Machine">feed_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -75,7 +75,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">dairy</source>
+      <source type="Machine">dairy</source>
     </product_item>
     
     <product_item name="corn_bread">
@@ -97,7 +97,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -115,7 +115,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sugar_mill</source>
+      <source type="Machine">sugar_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -133,7 +133,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">popcorn_pot</source>
+      <source type="Machine">popcorn_pot</source>
     </product_item>
     
     <product_item name="butter">
@@ -150,7 +150,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">dairy</source>
+      <source type="Machine">dairy</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -173,7 +173,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <product_item name="pig_feed">
@@ -195,7 +195,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">feed_mill</source>
+      <source type="Machine">feed_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -223,7 +223,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <product_item name="bacon_and_eggs">
@@ -245,7 +245,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <product_item name="cheese">
@@ -262,7 +262,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">dairy</source>
+      <source type="Machine">dairy</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -280,7 +280,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sugar_mill</source>
+      <source type="Machine">sugar_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -308,7 +308,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -336,7 +336,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <product_item name="sheep_feed">
@@ -358,7 +358,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">feed_mill</source>
+      <source type="Machine">feed_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -381,7 +381,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">popcorn_pot</source>
+      <source type="Machine">popcorn_pot</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -399,7 +399,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">loom</source>
+      <source type="Machine">loom</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -427,7 +427,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -445,7 +445,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sugar_mill</source>
+      <source type="Machine">sugar_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -463,7 +463,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">loom</source>
+      <source type="Machine">loom</source>
     </product_item>
     
     <!-- missing cost_for_ten -->
@@ -486,7 +486,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -514,7 +514,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -537,7 +537,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">loom</source>
+      <source type="Machine">loom</source>
     </product_item>
     
     <product_item name="cotton_shirt">
@@ -554,7 +554,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">sewing_machine</source>
+      <source type="Machine">sewing_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -577,7 +577,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">loom</source>
+      <source type="Machine">loom</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -605,7 +605,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -628,7 +628,7 @@
           <type>harvest_item</type>
         </requirement>         
 
-      <source type="machine">sewing_machine</source>
+      <source type="Machine">sewing_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -656,7 +656,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <product_item name="red_berry_cake">
@@ -688,7 +688,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -711,7 +711,7 @@
           <type>product_item</type>
         </requirement>         
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -729,7 +729,7 @@
           <type>mine_item</type>
         </requirement> 
 
-      <source type="machine">smelter</source>
+      <source type="Machine">smelter</source>
     </product_item>
     
     <product_item name="chili_popcorn">
@@ -751,7 +751,7 @@
           <type>farm_item</type>
         </requirement>       
 
-      <source type="machine">popcorn_pot</source>
+      <source type="Machine">popcorn_pot</source>
     </product_item>
     
     <product_item name="gold_bar">
@@ -768,7 +768,7 @@
           <type>mine_item</type>
         </requirement> 
 
-      <source type="machine">smelter</source>
+      <source type="Machine">smelter</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -786,7 +786,7 @@
           <type>mine_item</type>
         </requirement> 
 
-      <source type="machine">smelter</source>
+      <source type="Machine">smelter</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -814,7 +814,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">sewing_machine</source>
+      <source type="Machine">sewing_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -842,7 +842,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -860,7 +860,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">juice_press</source>
+      <source type="Machine">juice_press</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -888,7 +888,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <product_item name="red_lure">
@@ -905,7 +905,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">lure_workbench</source>
+      <source type="Machine">lure_workbench</source>
     </product_item>
     
     <product_item name="green_lure">
@@ -922,7 +922,7 @@
           <type>voucher</type>
         </requirement> 
 
-      <source type="machine">lure_workbench</source>
+      <source type="Machine">lure_workbench</source>
     </product_item>
     
     <product_item name="blue_lure">
@@ -939,7 +939,7 @@
           <type>voucher</type>
         </requirement> 
 
-      <source type="machine">lure_workbench</source>
+      <source type="Machine">lure_workbench</source>
     </product_item>
     
     <product_item name="purple_lure">
@@ -956,7 +956,7 @@
           <type>voucher</type>
         </requirement> 
 
-      <source type="machine">lure_workbench</source>
+      <source type="Machine">lure_workbench</source>
     </product_item>
     
     <product_item name="golden_lure">
@@ -973,7 +973,7 @@
           <type>voucher</type>
         </requirement> 
 
-      <source type="machine">lure_workbench</source>
+      <source type="Machine">lure_workbench</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1006,7 +1006,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1034,7 +1034,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1052,7 +1052,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">juice_press</source>
+      <source type="Machine">juice_press</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1080,7 +1080,7 @@
           <type>product_item</type>
         </requirement>         
 
-      <source type="machine">ice_cream_maker</source>
+      <source type="Machine">ice_cream_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1098,7 +1098,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1116,7 +1116,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">juice_press</source>
+      <source type="Machine">juice_press</source>
     </product_item>
     
     <product_item name="fishing_net">
@@ -1133,7 +1133,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">net_maker</source>
+      <source type="Machine">net_maker</source>
     </product_item>
     
     <product_item name="mystery_net">
@@ -1150,7 +1150,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">net_maker</source>
+      <source type="Machine">net_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1168,7 +1168,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">juice_press</source>
+      <source type="Machine">juice_press</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1191,7 +1191,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">juice_press</source>
+      <source type="Machine">juice_press</source>
     </product_item>
     
     <product_item name="goat_feed">
@@ -1218,7 +1218,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">feed_mill</source>
+      <source type="Machine">feed_mill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1236,7 +1236,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">dairy</source>
+      <source type="Machine">dairy</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1264,7 +1264,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1282,7 +1282,7 @@
           <type>mine_item</type>
         </requirement> 
 
-      <source type="machine">smelter</source>
+      <source type="Machine">smelter</source>
     </product_item>
     
     <product_item name="cherry_popsicle">
@@ -1304,7 +1304,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">ice_cream_maker</source>
+      <source type="Machine">ice_cream_maker</source>
     </product_item>
     
     <product_item name="feta_pie">
@@ -1331,7 +1331,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1349,7 +1349,7 @@
           <type>mine_item</type>
         </requirement> 
 
-      <source type="machine">smelter</source>
+      <source type="Machine">smelter</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1382,7 +1382,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">ice_cream_maker</source>
+      <source type="Machine">ice_cream_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1415,7 +1415,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1448,7 +1448,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1466,7 +1466,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">jam_maker</source>
+      <source type="Machine">jam_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1494,7 +1494,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1527,7 +1527,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1545,7 +1545,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">jam_maker</source>
+      <source type="Machine">jam_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1578,7 +1578,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1596,7 +1596,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">jam_maker</source>
+      <source type="Machine">jam_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1624,7 +1624,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1642,7 +1642,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">jam_maker</source>
+      <source type="Machine">jam_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1665,7 +1665,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">jeweler</source>
+      <source type="Machine">jeweler</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1698,7 +1698,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1731,7 +1731,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine"></source>
+      <source type="Machine"></source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1764,7 +1764,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">ice_cream_maker</source>
+      <source type="Machine">ice_cream_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1792,7 +1792,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">jeweler</source>
+      <source type="Machine">jeweler</source>
     </product_item>
     
     <product_item name="honey">
@@ -1809,7 +1809,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">honey_extractor</source>
+      <source type="Machine">honey_extractor</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1832,7 +1832,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">popcorn_pot</source>
+      <source type="Machine">popcorn_pot</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1860,7 +1860,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">jeweler</source>
+      <source type="Machine">jeweler</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1883,7 +1883,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1911,7 +1911,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">jeweler</source>
+      <source type="Machine">jeweler</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1934,7 +1934,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">coffee_kiosk</source>
+      <source type="Machine">coffee_kiosk</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1967,7 +1967,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -1995,7 +1995,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">coffee_kiosk</source>
+      <source type="Machine">coffee_kiosk</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2018,7 +2018,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">popcorn_pot</source>
+      <source type="Machine">popcorn_pot</source>
     </product_item>
     
     <product_item name="lobster_trap">
@@ -2035,7 +2035,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">net_maker</source>
+      <source type="Machine">net_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2068,7 +2068,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">bakery</source>
+      <source type="Machine">bakery</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2096,7 +2096,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">coffee_kiosk</source>
+      <source type="Machine">coffee_kiosk</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2129,7 +2129,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">coffee_kiosk</source>
+      <source type="Machine">coffee_kiosk</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2162,7 +2162,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">soup_kitchen</source>
+      <source type="Machine">soup_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2195,7 +2195,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">coffee_kiosk</source>
+      <source type="Machine">coffee_kiosk</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2228,7 +2228,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">soup_kitchen</source>
+      <source type="Machine">soup_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2251,7 +2251,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">loom</source>
+      <source type="Machine">loom</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2279,7 +2279,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">bbq_grill</source>
+      <source type="Machine">bbq_grill</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2297,7 +2297,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">honey_extractor</source>
+      <source type="Machine">honey_extractor</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2320,7 +2320,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">candle_maker</source>
+      <source type="Machine">candle_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2353,7 +2353,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">soup_kitchen</source>
+      <source type="Machine">soup_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2371,7 +2371,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">jam_maker</source>
+      <source type="Machine">jam_maker</source>
     </product_item>
     
     <product_item name="duck_trap">
@@ -2388,7 +2388,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">net_maker</source>
+      <source type="Machine">net_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2411,7 +2411,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">candy_machine</source>
+      <source type="Machine">candy_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2434,7 +2434,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">sewing_machine</source>
+      <source type="Machine">sewing_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2462,7 +2462,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">candy_machine</source>
+      <source type="Machine">candy_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2485,7 +2485,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">candle_maker</source>
+      <source type="Machine">candle_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2518,7 +2518,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">soup_kitchen</source>
+      <source type="Machine">soup_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2541,7 +2541,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sauce_maker</source>
+      <source type="Machine">sauce_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2569,7 +2569,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">candy_machine</source>
+      <source type="Machine">candy_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2597,7 +2597,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">sushi_bar</source>
+      <source type="Machine">sushi_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2625,7 +2625,7 @@
           <type>product_item</type>
         </requirement>
 
-      <source type="machine">candy_machine</source>
+      <source type="Machine">candy_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2658,7 +2658,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">salad_bar</source>
+      <source type="Machine">salad_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2686,7 +2686,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">sushi_bar</source>
+      <source type="Machine">sushi_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2714,7 +2714,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sewing_machine</source>
+      <source type="Machine">sewing_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2742,7 +2742,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">candy_machine</source>
+      <source type="Machine">candy_machine</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2760,7 +2760,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sauce_maker</source>
+      <source type="Machine">sauce_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2793,7 +2793,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sandwich_bar</source>
+      <source type="Machine">sandwich_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2826,7 +2826,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">salad_bar</source>
+      <source type="Machine">salad_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2849,7 +2849,7 @@
           <type>product_item</type>
         </requirement>
 
-      <source type="machine">sauce_maker</source>
+      <source type="Machine">sauce_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2882,7 +2882,7 @@
           <type>product_item</type>
         </requirement>
 
-      <source type="machine">sushi_bar</source>
+      <source type="Machine">sushi_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2915,7 +2915,7 @@
           <type>product_item</type>
         </requirement>
 
-      <source type="machine">salad_bar</source>
+      <source type="Machine">salad_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2943,7 +2943,7 @@
           <type>farm_item</type>
         </requirement>
 
-      <source type="machine">smoothie_maker</source>
+      <source type="Machine">smoothie_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -2976,7 +2976,7 @@
           <type>product_item</type>
         </requirement>
 
-      <source type="machine">sandwich_bar</source>
+      <source type="Machine">sandwich_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3009,7 +3009,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">sauce_maker</source>
+      <source type="Machine">sauce_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3042,7 +3042,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">sandwich_bar</source>
+      <source type="Machine">sandwich_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3070,7 +3070,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">smoothie_mixer</source>
+      <source type="Machine">smoothie_mixer</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3093,7 +3093,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pasta_maker</source>
+      <source type="Machine">pasta_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3126,7 +3126,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">salad_bar</source>
+      <source type="Machine">salad_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3154,7 +3154,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">pie_oven</source>
+      <source type="Machine">pie_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3187,7 +3187,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">cake_oven</source>
+      <source type="Machine">cake_oven</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3215,7 +3215,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">sauce_maker</source>
+      <source type="Machine">sauce_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3248,7 +3248,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">sandwich_bar</source>
+      <source type="Machine">sandwich_bar</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3281,7 +3281,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">smothie_mixer</source>
+      <source type="Machine">smothie_mixer</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3304,7 +3304,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">hat_maker</source>
+      <source type="Machine">hat_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3327,7 +3327,7 @@
           <type>farm_item</type>
         </requirement>         
 
-      <source type="machine">candle_maker</source>
+      <source type="Machine">candle_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3355,7 +3355,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">hat_maker</source>
+      <source type="Machine">hat_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3388,7 +3388,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">pasta_kitchen</source>
+      <source type="Machine">pasta_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3421,7 +3421,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">soup_kitchen</source>
+      <source type="Machine">soup_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3439,7 +3439,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pasta_maker</source>
+      <source type="Machine">pasta_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3472,7 +3472,7 @@
           <type>harvest_item</type>
         </requirement> 
 
-      <source type="machine">hat_maker</source>
+      <source type="Machine">hat_maker</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3505,7 +3505,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">pasta_kitchen</source>
+      <source type="Machine">pasta_kitchen</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3533,7 +3533,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">hot_dog_stand</source>
+      <source type="Machine">hot_dog_stand</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3561,7 +3561,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">hot_dog_stand</source>
+      <source type="Machine">hot_dog_stand</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3589,7 +3589,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">hot_dog_stand</source>
+      <source type="Machine">hot_dog_stand</source>
     </product_item>
     
     <!-- missing cost_for_ten -->  
@@ -3622,7 +3622,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">pasta_kitchen</source>
+      <source type="Machine">pasta_kitchen</source>
     </product_item>
   
     <farm_item name="none">
@@ -3639,7 +3639,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="diamond">
@@ -3656,7 +3656,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="wheat">
@@ -3672,7 +3672,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
 	
 	  <farm_item name="corn">
@@ -3688,7 +3688,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="soybean">
@@ -3704,7 +3704,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="sugarcane">
@@ -3720,7 +3720,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="carrot">
@@ -3736,7 +3736,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="indigo">
@@ -3752,7 +3752,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="pumpkin">
@@ -3768,7 +3768,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="apple">
@@ -3784,7 +3784,7 @@
           <type>tree</type>
         </requirement> 
 
-      <source type="tree">apple_tree</source>
+      <source type="Tree">apple_tree</source>
     </farm_item>
     
     <farm_item name="cotton">
@@ -3800,7 +3800,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="raspberry">
@@ -3816,7 +3816,7 @@
           <type>bush</type>
         </requirement> 
 
-      <source type="bush">raspberry_bush</source>
+      <source type="Bush">raspberry_bush</source>
     </farm_item>
     
     <farm_item name="cherry">
@@ -3832,7 +3832,7 @@
           <type>tree</type>
         </requirement> 
 
-      <source type="tree">cherry_tree</source>
+      <source type="Tree">cherry_tree</source>
     </farm_item>
     
     <farm_item name="chili_pepper">
@@ -3848,7 +3848,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="blackberry">
@@ -3864,7 +3864,7 @@
           <type>bush</type>
         </requirement> 
 
-      <source type="bush">blackberry_bush</source>
+      <source type="Bush">blackberry_bush</source>
     </farm_item>
     
     <farm_item name="tomato">
@@ -3880,7 +3880,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="strawberry">
@@ -3896,7 +3896,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="potato">
@@ -3912,7 +3912,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="cocao">
@@ -3928,7 +3928,7 @@
           <type>tree</type>
         </requirement> 
 
-      <source type="tree">cacao_tree</source>
+      <source type="Tree">cacao_tree</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -3945,7 +3945,7 @@
           <type>bush</type>
         </requirement> 
 
-      <source type="machine">coffee_bush</source>
+      <source type="Machine">coffee_bush</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -3962,7 +3962,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <farm_item name="olive">
@@ -3978,7 +3978,7 @@
           <type>tree</type>
         </requirement> 
 
-      <source type="tree">olive_tree</source>
+      <source type="Tree">olive_tree</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -3995,7 +3995,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="machine">field</source>
+      <source type="Machine">field</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -4012,7 +4012,7 @@
           <type>tree</type>
         </requirement> 
 
-      <source type="tree">lemon_tree</source>
+      <source type="Tree">lemon_tree</source>
     </farm_item>
     
     <farm_item name="nectar">
@@ -4028,7 +4028,7 @@
           <type>bush</type>
         </requirement> 
 
-      <source type="bush">nectar_bush</source>
+      <source type="Bush">nectar_bush</source>
     </farm_item>
 
     <harvest_item name="egg">
@@ -4044,7 +4044,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">chicken</source>
+      <source type="Animal">chicken</source>
     </harvest_item>
     
     <harvest_item name="milk">
@@ -4060,7 +4060,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">cow</source>
+      <source type="Animal">cow</source>
     </harvest_item>
     
     <harvest_item name="bacon">
@@ -4076,7 +4076,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">pig</source>
+      <source type="Animal">pig</source>
     </harvest_item>
     
     <harvest_item name="wool">
@@ -4092,7 +4092,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">sheep</source>
+      <source type="Animal">sheep</source>
     </harvest_item>
     
     <harvest_item name="fish_fillet">
@@ -4138,7 +4138,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">fish</source>
+      <source type="Animal">fish</source>
     </harvest_item>
     
     <harvest_item name="goat_milk">
@@ -4154,7 +4154,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="animal">goat</source>
+      <source type="Animal">goat</source>
     </harvest_item>
     
     <!-- missing cost_for_ten -->
@@ -4171,7 +4171,7 @@
           <type>farm_item</type>
         </requirement> 
 
-      <source type="tree">beehive_tree</source>
+      <source type="Tree">beehive_tree</source>
     </harvest_item>
     
     <harvest_item name="lobster_tail">
@@ -4187,7 +4187,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">lobster_pool</source>
+      <source type="Machine">lobster_pool</source>
     </harvest_item>
     
     <!-- missing cost_for_ten -->
@@ -4204,7 +4204,7 @@
           <type>product_item</type>
         </requirement> 
 
-      <source type="machine">duck_salon</source>
+      <source type="Machine">duck_salon</source>
     </harvest_item>
 
     <machine name="field">
