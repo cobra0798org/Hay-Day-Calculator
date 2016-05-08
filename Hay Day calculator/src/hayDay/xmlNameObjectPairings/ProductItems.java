@@ -29,6 +29,13 @@ public class ProductItems extends Items
         
         return items;
     }
+    
+    public Item getProductItem(String productItemName)
+    {
+        LinkedHashMap<String, Item> items = getItems();
+        Item item = items.get(productItemName);
+        return item;
+    }
 
     public LinkedHashMap<String, Integer> getExps()
     {
