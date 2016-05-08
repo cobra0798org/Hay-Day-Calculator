@@ -959,7 +959,7 @@
       <source type="machine">lure_workbench</source>
     </product_item>
     
-    <product_item name="gold_lure">
+    <product_item name="golden_lure">
       <cost_for_one>0</cost_for_one>
       <cost_for_ten>0</cost_for_ten>
       <exp>5</exp>
@@ -4015,6 +4015,22 @@
 
       <source type="tree">lemon_tree</source>
     </farm_item>
+    
+    <farm_item name="nectar">
+      <cost_for_one>0</cost_for_one>
+      <cost_for_ten>0</cost_for_ten>
+      <exp>0</exp>
+      <time>0.75</time>
+      <level>39</level>
+
+        <requirement> 
+          <item>nectar_bush</item>
+          <count>1</count>
+          <type>bush</type>
+        </requirement> 
+
+      <source type="bush">nectar_bush</source>
+    </farm_item>
 
     <harvest_item name="egg">
       <cost_for_one>18</cost_for_one>
@@ -4026,7 +4042,7 @@
         <requirement>
           <item>chicken_feed</item>
           <count>1</count>
-          <type>cost_for_one</type>
+          <type>product_item</type>
         </requirement> 
 
       <source type="animal">chicken</source>
@@ -4084,7 +4100,7 @@
       <cost_for_one>54</cost_for_one>
       <cost_for_ten>540</cost_for_ten>
       <exp>8</exp>
-      <time>0</time>
+      <time>120</time>
       <level>27</level>
 
         <requirement>
@@ -4108,7 +4124,7 @@
           <type>product_item</type>
         </requirement>
         <requirement>
-          <item>yellow_lure</item>
+          <item>golden_lure</item>
           <count>1</count>
           <type>product_item</type>
         </requirement>
@@ -4151,9 +4167,9 @@
       <level>39</level>
 
         <requirement>
-          <item>bee</item>
-          <count>3</count>
-          <type>animal</type>
+          <item>nectar</item>
+          <count>100</count>
+          <type>farm_item</type>
         </requirement> 
 
       <source type="tree">beehive_tree</source>
@@ -4364,7 +4380,7 @@
         <product_item>blanket</product_item>
     </machine>
     
-    <machine name="acke_oven">
+    <machine name="cake_oven">
       <level>21</level>
       <cost>12100</cost>
       <construction_time>24</construction_time>
