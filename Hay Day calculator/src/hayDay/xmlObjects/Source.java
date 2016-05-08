@@ -17,7 +17,7 @@ public class Source
     {
         try
         {
-            return Class.forName(this.type);
+            return Class.forName("hayDay.xmlObjects." + this.type);
         }
         catch (ClassNotFoundException e)
         {
