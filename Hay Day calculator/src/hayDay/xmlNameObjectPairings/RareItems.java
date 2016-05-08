@@ -27,4 +27,10 @@ public class RareItems extends Items
         
         return items;
     }
+    
+    public Item getRareItem(String rareItemName)
+    {
+        LinkedHashMap<String, Item> items = getItems();
+        return items.get(rareItemName);
+    }
 }
