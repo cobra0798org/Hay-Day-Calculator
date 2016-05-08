@@ -30,6 +30,12 @@ public class HarvestItems extends Items
         return items;
     }
     
+    public Item getHarvestItem(String harvestItemName)
+    {
+        LinkedHashMap<String, Item> items = getItems();
+        return items.get(harvestItemName);
+    }
+    
     public LinkedHashMap<String, Integer> getExps()
     {
         LinkedHashMap<String, Integer> exps = new LinkedHashMap<String, Integer>();
