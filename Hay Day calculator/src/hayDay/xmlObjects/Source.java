@@ -3,6 +3,7 @@ package hayDay.xmlObjects;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -12,18 +13,25 @@ public class Source
     protected String type;
     @XmlValue
     protected String source;
+    @XmlTransient
+    private Class<?> classType;
     
     public Class<?> getType()
     {
-        try
+        if(classType == null)
         {
-            return Class.forName("hayDay.xmlObjects." + this.type);
+            try
+            {
+                Class<?> c = Class.forName("hayDay.xmlObjects." + this.type);
+                System.out.println(c);
+                classType = c;
+            }
+            catch (ClassNotFoundException e)
+            {
+                e.printStackTrace();
+            }
         }
-        catch (ClassNotFoundException e)
-        {
-            e.printStackTrace();
-            return null;
-        }
+        return classType;
     }
     
     public String getSource()
