@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "UserTrees", propOrder = {
         "tree"
 })
+//TODO: potential duplicate of UserBushes; consider merging
 public class UserTrees
 {
     @XmlElement(name = "tree", required = true)

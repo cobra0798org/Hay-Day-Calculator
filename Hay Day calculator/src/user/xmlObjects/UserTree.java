@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlType;
         "quantity",
         "life_cycle_level"
 })
+//TODO: potential duplicate of UserBush; consider merging
 public class UserTree
 {
     @XmlElement(name = "name", required = true)
@@ -30,6 +31,7 @@ public class UserTree
         return quantity;
     }
     
+    //TODO: change return to enum
     public int getLifeCycleLevel()
     {
         return life_cycle_level;
@@ -45,6 +47,7 @@ public class UserTree
         this.quantity = quantity;
     }
     
+    //TODO: change param to enum
     public void setLifeCycleLevel(int lifeCycleLevel)
     {
         life_cycle_level = lifeCycleLevel;
