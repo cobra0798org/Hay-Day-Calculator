@@ -313,10 +313,9 @@
       <source type="Machine">pie_oven</source>
     </product_item>
     
-    <!-- missing cost_for_ten -->
     <product_item name="pumpkin_pie">
       <cost_for_one>158</cost_for_one>
-      <cost_for_ten>1580</cost_for_ten>
+      <cost_for_ten>1586</cost_for_ten>
       <exp>19</exp>
       <time>120</time>
       <mastered_time>102</mastered_time>
@@ -404,10 +403,9 @@
       <source type="Machine">loom</source>
     </product_item>
     
-    <!-- missing cost_for_ten -->
     <product_item name="bacon_pie">
       <cost_for_one>219</cost_for_one>
-      <cost_for_ten>2190</cost_for_ten>
+      <cost_for_ten>2196</cost_for_ten>
       <exp>26</exp>
       <time>180</time>
       <mastered_time>153</mastered_time>
@@ -819,10 +817,9 @@
       <source type="Machine">sewing_machine</source>
     </product_item>
     
-    <!-- missing cost_for_ten -->  
     <product_item name="blackberry_muffin">
       <cost_for_one>226</cost_for_one>
-      <cost_for_ten>2260</cost_for_ten>
+      <cost_for_ten>2264</cost_for_ten>
       <exp>27</exp>
       <time>45</time>
       <mastered_time>38</mastered_time>
