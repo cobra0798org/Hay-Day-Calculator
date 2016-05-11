@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name = "Bush", propOrder = {
+@XmlType(name = "Plant", propOrder = {
         "name",
         "total_lifespan",
         "cost",
@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
         "level"
 })
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Bush implements HayDayXMLObject
+public class Plant implements HayDayXMLObject
 {
     @XmlAttribute(name = "name", required = true)
     protected String name;
