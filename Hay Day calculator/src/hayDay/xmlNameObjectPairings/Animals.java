@@ -8,7 +8,9 @@ import hayDay.xmlObjects.HayDayType;
 public class Animals
 {
     private ArrayList<Animal> animals;
-    public Animals(HayDayType hayDay)
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
+    
+    public Animals()
     {
         animals = hayDay.getAnimals();
     }

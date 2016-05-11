@@ -2,6 +2,7 @@ package hayDay.xmlNameObjectPairings;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -14,39 +15,46 @@ import hayDay.xmlObjects.MineItem;
 import hayDay.xmlObjects.ProductItem;
 import hayDay.xmlObjects.RareItem;
 
-public class HayDayAccessor
+public class HayDayAccessor implements Serializable
 {
-    public static HayDayType unmarshal(String dataFileName)
+    private static final long serialVersionUID = -3416877414983169159L;
+    private static HayDayType hayDay = null;
+
+    private HayDayAccessor(){}
+
+    public static HayDayType newHayDayType()
     {
-        HayDayType hayDay = null;
-        try
+        if(hayDay == null)
         {
-            hayDay = xmlAccess(dataFileName);
-        }
-        catch(JAXBException je)
-        {
-            JAXBExceptionCatch(je);
-        }
-        catch (FileNotFoundException fe)
-        {
-            genericExceptionCatch(fe);
+            try
+            {
+                hayDay = unmarshal("Data/data.xml");
+            }
+            catch(JAXBException je)
+            {
+                JAXBExceptionCatch(je);
+            }
+            catch (FileNotFoundException fe)
+            {
+                genericExceptionCatch(fe);
+            }
         }
         return hayDay;
     }
-    
+
     public static void JAXBExceptionCatch(JAXBException je)
     {
         System.err.println(je.getErrorCode());
         je.printStackTrace();
     }
-    
+
     public static void genericExceptionCatch(Exception e)
     {
         e.printStackTrace();
     }
-    
+
     @SuppressWarnings({"resource" })
-    private static HayDayType xmlAccess(String dataFileName) throws JAXBException, FileNotFoundException
+    private static HayDayType unmarshal(String dataFileName) throws JAXBException, FileNotFoundException
     {
         JAXBContext jc = JAXBContext.newInstance(HayDayType.class, 
                 FarmItem.class, ProductItem.class,
@@ -55,5 +63,20 @@ public class HayDayAccessor
         FileInputStream poFIO = new FileInputStream(dataFileName);
         HayDayType poe = (HayDayType)u.unmarshal(poFIO);
         return poe;
+    }
+    
+    private Object readResolve()
+    {
+        return hayDay;
+    }
+    
+    private Object writeReplace()
+    {
+        return hayDay;
+    }
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException{
+        throw new CloneNotSupportedException("Singleton, cannot be clonned");
     }
 }

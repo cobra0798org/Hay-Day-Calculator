@@ -11,8 +11,9 @@ import hayDay.xmlObjects.Requirement;
 public class FarmItems extends Items
 {
     private ArrayList<Item> farmItems;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     
-    public FarmItems(HayDayType hayDay)
+    public FarmItems()
     {
         super(hayDay.getFarmItems());
         farmItems = hayDay.getFarmItems();

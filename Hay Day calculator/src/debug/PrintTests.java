@@ -3,13 +3,11 @@ package debug;
 import java.util.ArrayList;
 
 import exceptions.ProducableException;
-import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlObjects.Animal;
 import hayDay.xmlObjects.Bush;
 import hayDay.xmlObjects.Cost;
 import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HarvestItem;
-import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Level;
 import hayDay.xmlObjects.Machine;
@@ -20,13 +18,11 @@ import hayDay.xmlObjects.RareItem;
 import hayDay.xmlObjects.Requirement;
 import hayDay.xmlObjects.Source;
 import hayDay.xmlObjects.Tree;
-import main.HayDayCalculator;
 import user.xmlAccessors.UserAccessor;
 import user.xmlObjects.User;
 
 public class PrintTests
 {
-    private static HayDayType hayDay = HayDayAccessor.unmarshal(HayDayCalculator.DATAFILENAME);
     private static User user = UserAccessor.unmarshal("GreenEggsAndHam");
     public static void printProductItemTests(ArrayList<Item> list)
     {
@@ -42,7 +38,7 @@ public class PrintTests
             int totalTime = 0;
             try
             {
-                totalTime = productItem.getTotalTime(hayDay, user, true, 1);
+                totalTime = productItem.getTotalTime(user, true, 1);
             }
             catch (ProducableException e)
             {
@@ -102,7 +98,7 @@ public class PrintTests
                 System.out.println("\t\tLEVEL: " + levels.get(i).getLevel());
                 System.out.println("\t\tCOST: " + costs.get(i).getCost());
             }
-            System.out.println("\tPRODUCT: " + product.getProduct(hayDay).getName());
+            System.out.println("\tPRODUCT: " + product.getProduct().getName());
             System.out.println();
             System.out.println();
         }
@@ -122,7 +118,7 @@ public class PrintTests
             int totalTime = 0;
             try
             {
-                totalTime = farmItem.getTotalTime(hayDay, user, true, 1);
+                totalTime = farmItem.getTotalTime(user, true, 1);
             }
             catch (ProducableException e)
             {
@@ -154,7 +150,7 @@ public class PrintTests
             int totalTime = 0;
             try
             {
-                totalTime = harvestItem.getTotalTime(hayDay, user, true, 1);
+                totalTime = harvestItem.getTotalTime(user, true, 1);
             }
             catch (ProducableException e)
             {
@@ -242,7 +238,7 @@ public class PrintTests
             int totalTime = 0;
             try
             {
-                totalTime = mineItem.getTotalTime(hayDay, user, true, 1);
+                totalTime = mineItem.getTotalTime(user, true, 1);
             }
             catch (ProducableException e)
             {
@@ -257,7 +253,7 @@ public class PrintTests
         System.out.println("***REQUIREMENTS***");
         for(Requirement requirement : requirements)
         {
-            System.out.println("\tNAME: " + requirement.getItem(hayDay).getName());
+            System.out.println("\tNAME: " + requirement.getItem().getName());
             System.out.println("\tCOUNT: " + requirement.getCount());
             System.out.println("\tTYPE: " + requirement.getType());
             System.out.println();
@@ -268,7 +264,7 @@ public class PrintTests
     {
         System.out.println("***SOURCE***");
         Class<?> sourceType = source.getType();
-        System.out.println("SOURCE: " + source.getSource(hayDay).getName());
+        System.out.println("SOURCE: " + source.getSource().getName());
         System.out.println("\tSOURCE TYPE: " + sourceType);
     }
     
@@ -277,7 +273,7 @@ public class PrintTests
         System.out.println("***PRODUCTS***");
         for (Product product : products)
         {
-            System.out.println("\tPRODUCT: " + product.getProduct(hayDay).getName());
+            System.out.println("\tPRODUCT: " + product.getProduct().getName());
         }
     }
     
@@ -295,7 +291,7 @@ public class PrintTests
             int totalTime = 0;
             try
             {
-                totalTime = rareItem.getTotalTime(hayDay, user, true, 1);
+                totalTime = rareItem.getTotalTime(user, true, 1);
             }
             catch (ProducableException e)
             {

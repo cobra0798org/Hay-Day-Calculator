@@ -9,6 +9,6 @@ public interface Item extends HayDayXMLObject
     double getCostForTen();
     int getLevel();
     int getTime();
-    int getTotalTime(HayDayType hayDay, 
-            User user, boolean isProducing, int quantity) throws ProducableException;
+    int getTotalTime(User user, 
+            boolean isProducing, int quantity) throws ProducableException;
 }

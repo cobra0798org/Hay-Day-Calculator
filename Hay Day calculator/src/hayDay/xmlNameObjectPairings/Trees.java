@@ -8,8 +8,9 @@ import hayDay.xmlObjects.Tree;
 public class Trees
 {
     private ArrayList<Tree> trees;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     
-    public Trees(HayDayType hayDay)
+    public Trees()
     {
         trees = hayDay.getTrees();
     }

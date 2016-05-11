@@ -49,8 +49,8 @@ public class RareItem implements Item
         return 0;
     }
     
-    public int getTotalTime(HayDayType hayDay, 
-            User user, boolean isProducing, int quantity) throws ProducableException
+    public int getTotalTime(User user, 
+            boolean isProducing, int quantity) throws ProducableException
     {
         Barn barn = user.getBarn();
         

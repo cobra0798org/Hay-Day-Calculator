@@ -9,8 +9,9 @@ import hayDay.xmlObjects.Item;
 public class RareItems extends Items
 {
     private ArrayList<Item> rareItems;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     
-    public RareItems(HayDayType hayDay)
+    public RareItems()
     {
         super(hayDay.getRareItems());
         rareItems = hayDay.getRareItems();

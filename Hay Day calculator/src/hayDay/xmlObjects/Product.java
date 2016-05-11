@@ -29,17 +29,17 @@ public class Product
         }
     }
     
-    public Item getProduct(HayDayType hayDay)
+    public Item getProduct()
     {
         Item item = null;
         if(getType().equals(ProductItem.class))
         {
-            ProductItems p = new ProductItems(hayDay);
+            ProductItems p = new ProductItems();
             item = p.getProductItem(product);
         }
         else if(getType().equals(HarvestItem.class))
         {
-            HarvestItems h = new HarvestItems(hayDay);
+            HarvestItems h = new HarvestItems();
             item = h.getHarvestItem(product);
         }
         return item;

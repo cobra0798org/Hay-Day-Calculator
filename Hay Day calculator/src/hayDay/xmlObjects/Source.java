@@ -38,27 +38,28 @@ public class Source
         return classType;
     }
     
-    public HayDayXMLObject getSource(HayDayType hayDay)
+    public HayDayXMLObject getSource()
     {
         HayDayXMLObject source = null;
+        
         if(classType == Machine.class)
         {
-            Machines machines = new Machines(hayDay);
+            Machines machines = new Machines();
             source = machines.getMachine(this.source);
         }
         else if(classType == Animal.class)
         {
-            Animals animals = new Animals(hayDay);
+            Animals animals = new Animals();
             source = animals.getAnimal(this.source);
         }
         else if(classType == Tree.class)
         {
-            Trees trees = new Trees(hayDay);
+            Trees trees = new Trees();
             source = trees.getTree(this.source);
         }
         else if(classType == Bush.class)
         {
-            Bushes bushes = new Bushes(hayDay);
+            Bushes bushes = new Bushes();
             source = bushes.getBush(this.source);
         }
         return source;

@@ -8,8 +8,9 @@ import hayDay.xmlObjects.HayDayType;
 public class Bushes
 {
     private ArrayList<Bush> bushes;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     
-    public Bushes(HayDayType hayDay)
+    public Bushes()
     {
         bushes = hayDay.getBushes();
     }

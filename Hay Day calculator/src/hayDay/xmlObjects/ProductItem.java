@@ -64,8 +64,8 @@ public class ProductItem implements Item
         return this.time;
     }
     
-    public int getTotalTime(HayDayType hayDay, 
-            User user, boolean isProducing, int quantity) throws ProducableException
+    public int getTotalTime(User user, 
+            boolean isProducing, int quantity) throws ProducableException
     {
         int time = 0;
         Barn barn = user.getBarn();
@@ -84,11 +84,11 @@ public class ProductItem implements Item
                 
                 for (Requirement req : requirement)
                 {
-                    if (req.getItem(hayDay) instanceof Item)
+                    if (req.getItem() instanceof Item)
                     {
-                        Item reqItem = (Item)req.getItem(hayDay);
+                        Item reqItem = (Item)req.getItem();
                         int count = req.getCount();
-                        time += reqItem.getTotalTime(hayDay, user, true, count);
+                        time += reqItem.getTotalTime(user, true, count);
                     }
                 }
             }

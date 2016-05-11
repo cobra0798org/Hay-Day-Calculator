@@ -11,6 +11,7 @@ import hayDay.xmlNameObjectPairings.Animals;
 import hayDay.xmlNameObjectPairings.Bushes;
 import hayDay.xmlNameObjectPairings.FarmItems;
 import hayDay.xmlNameObjectPairings.HarvestItems;
+import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlNameObjectPairings.MineItems;
 import hayDay.xmlNameObjectPairings.ProductItems;
 import hayDay.xmlNameObjectPairings.RareItems;
@@ -44,48 +45,50 @@ public class Requirement
         }
     }
     
-    public HayDayXMLObject getItem(HayDayType hayDay)
+    public HayDayXMLObject getItem()
     {
         Class<?> javaClass = getType();
         HayDayXMLObject item = null;
+        HayDayType hayDay = HayDayAccessor.newHayDayType();
+        
         if(javaClass == ProductItem.class)
         {
-            ProductItems p = new ProductItems(hayDay);
+            ProductItems p = new ProductItems();
             item = p.getProductItem(this.item);
         }
         else if(javaClass == FarmItem.class)
         {
-            FarmItems f = new FarmItems(hayDay);
+            FarmItems f = new FarmItems();
             item = f.getFarmItem(this.item);
         }
         else if(javaClass == HarvestItem.class)
         {
-            HarvestItems h = new HarvestItems(hayDay);
+            HarvestItems h = new HarvestItems();
             item = h.getHarvestItem(this.item);
         }
         else if(javaClass == MineItem.class)
         {
-            MineItems m = new MineItems(hayDay);
+            MineItems m = new MineItems();
             item = m.getMineItem(this.item);
         }
         else if(javaClass == RareItem.class)
         {
-            RareItems r = new RareItems(hayDay);
+            RareItems r = new RareItems();
             item = r.getRareItem(this.item);
         }
         else if(javaClass == Animal.class)
         {
-            Animals r = new Animals(hayDay);
+            Animals r = new Animals();
             item = r.getAnimal(this.item);
         }
         else if(javaClass == Tree.class)
         {
-            Trees r = new Trees(hayDay);
+            Trees r = new Trees();
             item = r.getTree(this.item);
         }
         else if(javaClass == Bush.class)
         {
-            Bushes r = new Bushes(hayDay);
+            Bushes r = new Bushes();
             item = r.getBush(this.item);
         }
         else if(javaClass == Voucher.class)

@@ -13,24 +13,23 @@ import user.xmlObjects.User;
 
 public class HayDayCalculator
 {
-    public final static String DATAFILENAME = "Data/data.xml";
     public static void main(String[] args)
     {
-        HayDayType hayDay = HayDayAccessor.unmarshal(DATAFILENAME);
-        PrintTests.printHarvestItemTests(hayDay.getHarvestItems());
+        HayDayType hayDay = HayDayAccessor.newHayDayType();
+        PrintTests.printProductItemTests(hayDay.getProductItems());
     }
     
     @SuppressWarnings("unused")
     public static void amain(String[] args)
     {
-        HayDayType hayDay = HayDayAccessor.unmarshal(DATAFILENAME);
+        HayDayType hayDay = HayDayAccessor.newHayDayType();
         User user = UserAccessor.unmarshal("GreenEggsAndHam");
         
         ArrayList<Entry> barnEntries = user.getBarn().getEntries();
         HashMap<Item, Integer> barnItems = new HashMap<Item, Integer>();
         for (Entry entry : barnEntries)
         {
-            barnItems.put(entry.getType(hayDay), entry.getQuantity());
+            barnItems.put(entry.getType(), entry.getQuantity());
         }
         Calculator calculator = new Calculator();
         double barnSum = calculator.calculateSum(barnItems);
@@ -42,7 +41,7 @@ public class HayDayCalculator
         HashMap<Item, Integer> siloItems = new HashMap<Item, Integer>();
         for (Entry entry : siloEntries)
         {
-            siloItems.put(entry.getType(hayDay), entry.getQuantity());
+            siloItems.put(entry.getType(), entry.getQuantity());
         }
         double siloSum = calculator.calculateSum(siloItems);
         System.out.println("************SILO SUM************");

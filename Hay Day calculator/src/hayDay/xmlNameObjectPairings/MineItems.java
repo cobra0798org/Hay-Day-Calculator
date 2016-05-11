@@ -10,8 +10,9 @@ import hayDay.xmlObjects.MineItem;
 public class MineItems extends Items
 {
     private ArrayList<Item> mineItems;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     
-    public MineItems(HayDayType hayDay)
+    public MineItems()
     {
         super(hayDay.getMineItems());
         mineItems = hayDay.getMineItems();

@@ -10,7 +10,6 @@ import hayDay.xmlNameObjectPairings.HarvestItems;
 import hayDay.xmlNameObjectPairings.MineItems;
 import hayDay.xmlNameObjectPairings.ProductItems;
 import hayDay.xmlNameObjectPairings.RareItems;
-import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -38,32 +37,32 @@ public class Entry
         return quantity;
     }
     
-    public Item getType(HayDayType hayDay)
+    public Item getType()
     {
         Item type = null;
         if(this.type.equals("product_item"))
         {
-            ProductItems productItems = new ProductItems(hayDay);
+            ProductItems productItems = new ProductItems();
             type = productItems.getItems().get(name);
         }
         else if(this.type.equals("farm_item"))
         {
-            FarmItems farmItems = new FarmItems(hayDay);
+            FarmItems farmItems = new FarmItems();
             type = farmItems.getItems().get(name);
         }
         else if(this.type.equals("harvest_item"))
         {
-            HarvestItems harvestItems = new HarvestItems(hayDay);
+            HarvestItems harvestItems = new HarvestItems();
             type = harvestItems.getItems().get(name);
         }
         else if(this.type.equals("rare_item"))
         {
-            RareItems rareItems = new RareItems(hayDay);
+            RareItems rareItems = new RareItems();
             type = rareItems.getItems().get(name);
         }
         else if(this.type.equals("mine_item"))
         {
-            MineItems mineItems = new MineItems(hayDay);
+            MineItems mineItems = new MineItems();
             type = mineItems.getItems().get(name);
         }
         return type;

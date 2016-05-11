@@ -10,12 +10,11 @@ import hayDay.xmlObjects.Product;
 
 public class Machines
 {
-    private HayDayType hayDay;
+    private static HayDayType hayDay = HayDayAccessor.newHayDayType();
     private ArrayList<Machine> machines;
     
-    public Machines(HayDayType hayDay)
+    public Machines()
     {
-        this.hayDay = hayDay;
         machines = hayDay.getMachines();
     }
     
@@ -43,7 +42,7 @@ public class Machines
                 ArrayList<Product> currentProducts = machine.getProducts();
                 for (Product product : currentProducts)
                 {
-                    productNames.add(product.getProduct(hayDay).getName());
+                    productNames.add(product.getProduct().getName());
                 }
                 ArrayList<Item> newProducts = getProductList(productNames);
                 products.put(machine.getName(), newProducts);
@@ -56,7 +55,7 @@ public class Machines
     private ArrayList<Item> getProductList(ArrayList<String> currentProducts)
     {
         ArrayList<Item> products = new ArrayList<Item>();
-        ProductItems p = new ProductItems(hayDay);
+        ProductItems p = new ProductItems();
         LinkedHashMap<String, Item> productItems = p.getItems();
         for (String s : currentProducts)
         {
@@ -68,7 +67,7 @@ public class Machines
     public ArrayList<Item> getFieldProductList(ArrayList<String> currentProducts)
     {
         ArrayList<Item> products = new ArrayList<Item>();
-        FarmItems f = new FarmItems(hayDay);
+        FarmItems f = new FarmItems();
         LinkedHashMap<String, Item> farmItems = f.getItems();
         for (String s : currentProducts)
         {

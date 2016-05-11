@@ -62,8 +62,8 @@ public class FarmItem implements Item
         return this.time;
     }
     
-    public int getTotalTime(HayDayType hayDay, 
-            User user, boolean isProducing, int quantity) throws ProducableException
+    public int getTotalTime(User user, 
+            boolean isProducing, int quantity) throws ProducableException
     {
         int time = 0;
         Silo silo = user.getSilo();
