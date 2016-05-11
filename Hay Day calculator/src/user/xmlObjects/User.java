@@ -28,6 +28,11 @@ public class User
     @XmlElement(name = "animals", required = true)
     protected UserAnimals animals;
     
+    public User()
+    {
+        
+    }
+    
     /**
      * creates a user with a farm name of <code>name</code>.
      * @param name - farm name
