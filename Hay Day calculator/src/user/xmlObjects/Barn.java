@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+import exceptions.EntryNotFoundException;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Barn", propOrder = {
         "barn_size",
@@ -27,6 +29,27 @@ public class Barn
     public ArrayList<Entry> getEntries()
     {
         return entry;
+    }
+    
+    public Entry getEntry(String entryName) throws EntryNotFoundException
+    {
+        Entry requestedEntry = null;
+        boolean found = false;
+        for (int i = 0; i < entry.size() && !found; i++)
+        {
+            Entry e = entry.get(i);
+            if (e.getName().equals(entryName))
+            {
+                requestedEntry = e;
+                found = true;
+            }
+        }
+        
+        if (requestedEntry == null)
+        {
+            throw new EntryNotFoundException(entryName, "barn");
+        }
+        return requestedEntry;
     }
     
     public void setBarnSize(int barnSize)
