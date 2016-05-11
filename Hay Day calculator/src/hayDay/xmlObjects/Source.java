@@ -6,8 +6,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
 
-import hayDay.Bushes;
 import hayDay.xmlNameObjectPairings.Animals;
+import hayDay.xmlNameObjectPairings.Bushes;
 import hayDay.xmlNameObjectPairings.Machines;
 import hayDay.xmlNameObjectPairings.Trees;
 

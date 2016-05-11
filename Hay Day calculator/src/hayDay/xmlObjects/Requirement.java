@@ -7,8 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import hayDay.Bushes;
 import hayDay.xmlNameObjectPairings.Animals;
+import hayDay.xmlNameObjectPairings.Bushes;
 import hayDay.xmlNameObjectPairings.FarmItems;
 import hayDay.xmlNameObjectPairings.HarvestItems;
 import hayDay.xmlNameObjectPairings.MineItems;
