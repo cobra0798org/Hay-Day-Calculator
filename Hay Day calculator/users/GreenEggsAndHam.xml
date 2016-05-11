@@ -1264,55 +1264,53 @@
             <mastery_hours>0</mastery_hours>
         </Machine>
     </machines>
-    <trees>
-        <tree>
+    <plants>
+        <plant>
             <name>aaple_tree</name>
             <quantity>0</quantity>
             <life_cycle_level>0</life_cycle_level>
-        </tree>
-        <tree>
+        </plant>
+        <plant>
             <name>cherry_tree</name>
             <quantity>10</quantity>
             <life_cycle_level>4</life_cycle_level>
-        </tree>
-        <tree>
+        </plant>
+        <plant>
             <name>cacao_tree</name>
             <quantity>10</quantity>
             <life_cycle_level>3</life_cycle_level>
-        </tree>
-        <tree>
+        </plant>
+        <plant>
             <name>olive_tree</name>
             <quantity>0</quantity>
             <life_cycle_level>0</life_cycle_level>
-        </tree>
-        <tree>
+        </plant>
+        <plant>
             <name>lemon_tree</name>
             <quantity>0</quantity>
             <life_cycle_level>0</life_cycle_level>
-        </tree>
-    </trees>
-    <bushes>
-        <bush>
+        </plant>
+        <plant>
             <name>raspberry_bush</name>
             <quantity>10</quantity>
             <life_cycle_level>3</life_cycle_level>
-        </bush>
-        <bush>
+        </plant>
+        <plant>
             <name>blackberry_bush</name>
             <quantity>0</quantity>
             <life_cycle_level>0</life_cycle_level>
-        </bush>
-        <bush>
+        </plant>
+        <plant>
             <name>nectar_bush</name>
             <quantity>10</quantity>
             <life_cycle_level>1</life_cycle_level>
-        </bush>
-        <bush>
+        </plant>
+        <plant>
             <name>coffee_bush</name>
             <quantity>10</quantity>
             <life_cycle_level>4</life_cycle_level>
-        </bush>
-    </bushes>
+        </plant>
+    </plants>
     <animals>
         <animal>
             <name>chicken</name>
