@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import exceptions.EntryNotFoundException;
+import exceptions.ProducableException;
+import user.xmlObjects.Silo;
+import user.xmlObjects.User;
+
 @XmlRootElement(name = "farm_item")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FarmItem implements Item
@@ -55,6 +60,42 @@ public class FarmItem implements Item
     public int getTime()
     {
         return this.time;
+    }
+    
+    public int getTotalTime(HayDayType hayDay, 
+            User user, boolean isProducing, int quantity) throws ProducableException
+    {
+        int time = 0;
+        Silo silo = user.getSilo();
+        if(!name.equals("none") && !name.equals("nectar"))
+        {
+            try
+            {
+                int userQuantity = silo.getEntry(name).getQuantity();
+                System.out.println();
+                System.out.println("NAME: " + name);
+                System.out.println("user quantity: " + userQuantity);
+                System.out.println("quantity requested: " + quantity);
+                
+                if (userQuantity < quantity && userQuantity > 0)
+                {
+                    int fieldCount = 
+                            user.getMachines().getMachines().get(0).getQuantity();
+                    quantity = quantity / fieldCount + 1;
+                    time = quantity * this.time;
+                }
+                else if (userQuantity <= 0)
+                {
+                    throw new ProducableException(true);
+                }
+            }
+            catch (EntryNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("TIME TAKEN: " + time);
+        return time;
     }
     
     public int getLevel()

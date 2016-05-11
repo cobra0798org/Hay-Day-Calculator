@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import exceptions.EntryNotFoundException;
+import exceptions.ProducableException;
+import user.xmlObjects.Barn;
+import user.xmlObjects.User;
+
 @XmlRootElement(name = "product_item")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ProductItem implements Item
@@ -57,6 +62,44 @@ public class ProductItem implements Item
     public int getTime()
     {
         return this.time;
+    }
+    
+    public int getTotalTime(HayDayType hayDay, 
+            User user, boolean isProducing, int quantity) throws ProducableException
+    {
+        int time = 0;
+        Barn barn = user.getBarn();
+        
+        try
+        {
+            int userQuantity = barn.getEntry(name).getQuantity();
+            System.out.println();
+            System.out.println("NAME: " + name);
+            System.out.println("user quantity: " + userQuantity);
+            System.out.println("quantity requested: " + quantity);
+            
+            if (userQuantity < quantity)
+            {
+                time += this.time;
+                
+                for (Requirement req : requirement)
+                {
+                    if (req.getItem(hayDay) instanceof Item)
+                    {
+                        Item reqItem = (Item)req.getItem(hayDay);
+                        int count = req.getCount();
+                        time += reqItem.getTotalTime(hayDay, user, true, count);
+                    }
+                }
+            }
+        }
+        catch (EntryNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        
+        System.out.println("TIME TAKEN: " + time);
+        return time;
     }
     
     /**
