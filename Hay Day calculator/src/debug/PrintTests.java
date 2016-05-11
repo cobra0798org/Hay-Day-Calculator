@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import exceptions.ProducableException;
 import hayDay.xmlObjects.Animal;
-import hayDay.xmlObjects.Bush;
 import hayDay.xmlObjects.Cost;
 import hayDay.xmlObjects.FarmItem;
 import hayDay.xmlObjects.HarvestItem;
@@ -12,14 +11,15 @@ import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Level;
 import hayDay.xmlObjects.Machine;
 import hayDay.xmlObjects.MineItem;
+import hayDay.xmlObjects.Plant;
 import hayDay.xmlObjects.Product;
 import hayDay.xmlObjects.ProductItem;
 import hayDay.xmlObjects.RareItem;
 import hayDay.xmlObjects.Requirement;
 import hayDay.xmlObjects.Source;
-import hayDay.xmlObjects.Tree;
 import user.xmlAccessors.UserAccessor;
 import user.xmlObjects.User;
+import user.xmlObjects.UserPlant;
 
 public class PrintTests
 {
@@ -193,33 +193,18 @@ public class PrintTests
         }
     }
     
-    public static void printTreeTests(ArrayList<Tree> trees)
+    public static void printPlantTests(ArrayList<Plant> plants)
     {
-        System.out.println("***TREES***");
-        for (Tree tree : trees)
+        System.out.println("***PLANTS***");
+        for (Plant plant : plants)
         {
-            System.out.println("NAME: " + tree.getName());
-            System.out.println("TOTAL LIFESPAN: " + tree.getTotalLifespan());
-            System.out.println("COST: " + tree.getCost());
-            System.out.println("TOTAL EXP: " + tree.getTotalExp());
-            System.out.println("GROSS PROFIT: " + tree.getGrossProfit());
-            System.out.println("NET PROFIT: " + tree.getNetProfit());
-            System.out.println("LEVEL: " + tree.getLevel());
-        }
-    }
-    
-    public static void printBushTests(ArrayList<Bush> bushes)
-    {
-        System.out.println("***BUSHES***");
-        for (Bush bush : bushes)
-        {
-            System.out.println("NAME: " + bush.getName());
-            System.out.println("TOTAL LIFESPAN: " + bush.getTotalLifespan());
-            System.out.println("COST: " + bush.getCost());
-            System.out.println("TOTAL EXP: " + bush.getTotalExp());
-            System.out.println("GROSS PROFIT: " + bush.getGrossProfit());
-            System.out.println("NET PROFIT: " + bush.getNetProfit());
-            System.out.println("LEVEL: " + bush.getLevel());
+            System.out.println("NAME: " + plant.getName());
+            System.out.println("TOTAL LIFESPAN: " + plant.getTotalLifespan());
+            System.out.println("COST: " + plant.getCost());
+            System.out.println("TOTAL EXP: " + plant.getTotalExp());
+            System.out.println("GROSS PROFIT: " + plant.getGrossProfit());
+            System.out.println("NET PROFIT: " + plant.getNetProfit());
+            System.out.println("LEVEL: " + plant.getLevel());
         }
     }
     
@@ -298,6 +283,17 @@ public class PrintTests
                 e.printStackTrace();
             }
             System.out.println("TOTAL TIME: " + totalTime);
+        }
+    }
+    
+    public static void printUserPlantTests(ArrayList<UserPlant> userPlants)
+    {
+        System.out.println("***USER PLANTS***");
+        for (UserPlant userPlant : userPlants)
+        {
+            System.out.println("NAME: " + userPlant.getName());
+            System.out.println("QUANTITY: " + userPlant.getQuantity());
+            System.out.println("LIFE CYCLE LEVEL: " + userPlant.getLifeCycleLevel());
         }
     }
 }

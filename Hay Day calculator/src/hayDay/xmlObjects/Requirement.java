@@ -8,14 +8,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import hayDay.xmlNameObjectPairings.Animals;
-import hayDay.xmlNameObjectPairings.Bushes;
 import hayDay.xmlNameObjectPairings.FarmItems;
 import hayDay.xmlNameObjectPairings.HarvestItems;
 import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlNameObjectPairings.MineItems;
+import hayDay.xmlNameObjectPairings.Plants;
 import hayDay.xmlNameObjectPairings.ProductItems;
 import hayDay.xmlNameObjectPairings.RareItems;
-import hayDay.xmlNameObjectPairings.Trees;
 
 @XmlType(name = "Requirement", propOrder = {
         "item",
@@ -81,15 +80,10 @@ public class Requirement
             Animals r = new Animals();
             item = r.getAnimal(this.item);
         }
-        else if(javaClass == Tree.class)
+        else if(javaClass == Plant.class)
         {
-            Trees r = new Trees();
-            item = r.getTree(this.item);
-        }
-        else if(javaClass == Bush.class)
-        {
-            Bushes r = new Bushes();
-            item = r.getBush(this.item);
+            Plants r = new Plants();
+            item = r.getPlant(this.item);
         }
         else if(javaClass == Voucher.class)
         {

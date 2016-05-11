@@ -4,23 +4,20 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import hayDay.xmlObjects.Animal;
-import hayDay.xmlObjects.Bush;
 import hayDay.xmlObjects.HayDayType;
 import hayDay.xmlObjects.Item;
 import hayDay.xmlObjects.Machine;
-import hayDay.xmlObjects.Tree;
+import hayDay.xmlObjects.Plant;
 import user.xmlObjects.Barn;
 import user.xmlObjects.Entry;
 import user.xmlObjects.Silo;
 import user.xmlObjects.User;
 import user.xmlObjects.UserAnimal;
 import user.xmlObjects.UserAnimals;
-import user.xmlObjects.UserBush;
-import user.xmlObjects.UserBushes;
 import user.xmlObjects.UserMachine;
 import user.xmlObjects.UserMachines;
-import user.xmlObjects.UserTree;
-import user.xmlObjects.UserTrees;
+import user.xmlObjects.UserPlant;
+import user.xmlObjects.UserPlants;
 
 public class UserCreation
 {
@@ -43,8 +40,7 @@ public class UserCreation
         createSilo(user, hayDay, input);
         createBarn(user, hayDay, input);
         createUserMachines(user, hayDay, input);
-        createUserTrees(user, hayDay, input);
-        createUserBushes(user, hayDay, input);
+        createUserPlants(user, hayDay, input);
         createUserAnimals(user, hayDay, input);
         
         input.close();
@@ -187,54 +183,29 @@ public class UserCreation
         user.setMachines(userMachines);
     }
     
-    private static void createUserTrees(User user, HayDayType hayDay, Scanner input)
+    private static void createUserPlants(User user, HayDayType hayDay, Scanner input)
     {
-        UserTrees userTrees = new UserTrees();
-        ArrayList<UserTree> treeEntries = new ArrayList<UserTree>();
-        for (Tree tree : hayDay.getTrees())
+        UserPlants userPlants = new UserPlants();
+        ArrayList<UserPlant> plantEntries = new ArrayList<UserPlant>();
+        for (Plant plant : hayDay.getPlants())
         {
-            UserTree userTree = new UserTree();
-            userTree.setName(tree.getName());
+            UserPlant userPlant = new UserPlant();
+            userPlant.setName(plant.getName());
             
-            System.out.println("how many " + tree.getName() + "s do you have?");
+            System.out.println("how many " + plant.getName() + "s do you have?");
             int quantity = input.nextInt();
-            userTree.setQuantity(quantity);
+            userPlant.setQuantity(quantity);
             
-            System.out.println("at what stage of life are those trees in?");
+            System.out.println("at what stage of life are those plants in?");
             System.out.println("(harvest 2 = 1, harvest 3 = 2,"
                     + " harvest 4 /w help = 3, harvest 4 /wo help = 4)");
             int lifeCycleLevel = input.nextInt();
-            userTree.setLifeCycleLevel(lifeCycleLevel);
+            userPlant.setLifeCycleLevel(lifeCycleLevel);
             
-            treeEntries.add(userTree);
+            plantEntries.add(userPlant);
         }
-        userTrees.setTrees(treeEntries);
-        user.setTrees(userTrees);
-    }
-    
-    private static void createUserBushes(User user, HayDayType hayDay, Scanner input)
-    {
-        UserBushes userBushes = new UserBushes();
-        ArrayList<UserBush> bushEntries = new ArrayList<UserBush>();
-        for (Bush bush : hayDay.getBushes())
-        {
-            UserBush userBush = new UserBush();
-            userBush.setName(bush.getName());
-            
-            System.out.println("how many " + bush.getName() + "s do you have?");
-            int quantity = input.nextInt();
-            userBush.setQuantity(quantity);
-            
-            System.out.println("at what stage of life are those bushes in?");
-            System.out.println("(harvest 2 = 1, harvest 3 = 2,"
-                    + " harvest 4 /w help = 3, harvest 4 /wo help = 4)");
-            int lifeCycleLevel = input.nextInt();
-            userBush.setLifeCycleLevel(lifeCycleLevel);
-            
-            bushEntries.add(userBush);
-        }
-        userBushes.setBushes(bushEntries);
-        user.setBushes(userBushes);
+        userPlants.setPlants(plantEntries);
+        user.setPlants(userPlants);
     }
     
     private static void createUserAnimals(User user, HayDayType hayDay, Scanner input)

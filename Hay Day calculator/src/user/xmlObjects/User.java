@@ -21,10 +21,8 @@ public class User
     protected Silo silo;
     @XmlElement(name = "machines", required = true)
     protected UserMachines machines;
-    @XmlElement(name = "trees", required = true)
-    protected UserTrees trees;
-    @XmlElement(name = "bushes", required = true)
-    protected UserBushes bushes;
+    @XmlElement(name = "plants", required = true)
+    protected UserPlants plants;
     @XmlElement(name = "animals", required = true)
     protected UserAnimals animals;
     
@@ -76,14 +74,9 @@ public class User
         return machines;
     }
     
-    public UserTrees getTrees()
+    public UserPlants getPlants()
     {
-        return trees;
-    }
-    
-    public UserBushes getBushes()
-    {
-        return bushes;
+        return plants;
     }
     
     public UserAnimals getAnimals()
@@ -126,14 +119,9 @@ public class User
         this.machines = machines;
     }
     
-    public void setTrees(UserTrees trees)
+    public void setPlants(UserPlants plants)
     {
-        this.trees = trees;
-    }
-    
-    public void setBushes(UserBushes bushes)
-    {
-        this.bushes = bushes;
+        this.plants = plants;
     }
     
     public void setAnimals(UserAnimals animals)

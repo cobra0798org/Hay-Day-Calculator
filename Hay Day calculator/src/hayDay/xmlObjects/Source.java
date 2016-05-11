@@ -7,9 +7,8 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
 
 import hayDay.xmlNameObjectPairings.Animals;
-import hayDay.xmlNameObjectPairings.Bushes;
 import hayDay.xmlNameObjectPairings.Machines;
-import hayDay.xmlNameObjectPairings.Trees;
+import hayDay.xmlNameObjectPairings.Plants;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Source
@@ -52,15 +51,10 @@ public class Source
             Animals animals = new Animals();
             source = animals.getAnimal(this.source);
         }
-        else if(classType == Tree.class)
+        else if(classType == Plant.class)
         {
-            Trees trees = new Trees();
-            source = trees.getTree(this.source);
-        }
-        else if(classType == Bush.class)
-        {
-            Bushes bushes = new Bushes();
-            source = bushes.getBush(this.source);
+            Plants plants = new Plants();
+            source = plants.getPlant(this.source);
         }
         return source;
     }
