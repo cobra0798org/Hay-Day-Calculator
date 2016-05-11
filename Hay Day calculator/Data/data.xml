@@ -3778,12 +3778,12 @@
       <level>15</level>
 
         <requirement> 
-          <item>apple_tree</item>
+          <item>apple_plant</item>
           <count>1</count>
-          <type>Tree</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Tree">apple_tree</source>
+      <source type="Plant">apple_plant</source>
     </farm_item>
     
     <farm_item name="cotton">
@@ -3810,12 +3810,12 @@
       <level>19</level>
 
         <requirement> 
-          <item>raspberry_bush</item>
+          <item>raspberry_plant</item>
           <count>1</count>
-          <type>Bush</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Bush">raspberry_bush</source>
+      <source type="Plant">raspberry_plant</source>
     </farm_item>
     
     <farm_item name="cherry">
@@ -3826,12 +3826,12 @@
       <level>22</level>
 
         <requirement> 
-          <item>cherry_tree</item>
+          <item>cherry_plant</item>
           <count>1</count>
-          <type>Tree</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Tree">cherry_tree</source>
+      <source type="Plant">cherry_plant</source>
     </farm_item>
     
     <farm_item name="chili_pepper">
@@ -3858,12 +3858,12 @@
       <level>26</level>
 
         <requirement> 
-          <item>blackberry_bush</item>
+          <item>blackberry_plant</item>
           <count>1</count>
-          <type>Bush</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Bush">blackberry_bush</source>
+      <source type="Plant">blackberry_plant</source>
     </farm_item>
     
     <farm_item name="tomato">
@@ -3922,12 +3922,12 @@
       <level>36</level>
 
         <requirement> 
-          <item>cacao_tree</item>
+          <item>cacao_plant</item>
           <count>1</count>
-          <type>Tree</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Tree">cacao_tree</source>
+      <source type="Plant">cacao_plant</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -3939,12 +3939,12 @@
       <level>42</level>
 
         <requirement> 
-          <item>coffee_bush</item>
+          <item>coffee_plant</item>
           <count>1</count>
-          <type>Bush</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Bush">coffee_bush</source>
+      <source type="Plant">coffee_plant</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -3972,12 +3972,12 @@
       <level>57</level>
 
         <requirement> 
-          <item>olive_tree</item>
+          <item>olive_plant</item>
           <count>1</count>
-          <type>Tree</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Tree">olive_tree</source>
+      <source type="Plant">olive_plant</source>
     </farm_item>
     
     <!-- missing cost_for_ten -->
@@ -4006,12 +4006,12 @@
       <level>66</level>
 
         <requirement> 
-          <item>lemon_tree</item>
+          <item>lemon_plant</item>
           <count>1</count>
-          <type>Tree</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Tree">lemon_tree</source>
+      <source type="Plant">lemon_plant</source>
     </farm_item>
     
     <farm_item name="nectar">
@@ -4022,12 +4022,12 @@
       <level>39</level>
 
         <requirement> 
-          <item>nectar_bush</item>
+          <item>nectar_plant</item>
           <count>1</count>
-          <type>Bush</type>
+          <type>Plant</type>
         </requirement> 
 
-      <source type="Bush">nectar_bush</source>
+      <source type="Plant">nectar_plant</source>
     </farm_item>
 
     <harvest_item name="egg">
@@ -4175,7 +4175,7 @@
           <type>Animal</type>
         </requirement>
 
-      <source type="Machine">beehive_tree</source>
+      <source type="Machine">beehive_plant</source>
     </harvest_item>
     
     <harvest_item name="lobster_tail">
@@ -4508,7 +4508,7 @@
         <product type="ProductItem">iron_bracelet</product>
     </machine>
     
-        <machine name="beehive_tree">
+        <machine name="beehive_plant">
       <level>39</level>
       <cost>4000</cost>
       <construction_time>0</construction_time>
@@ -4756,86 +4756,86 @@
         <product type="ProductItem">corn_dog</product>
     </machine>
 
-    <tree name="apple_tree">
+    <plant name="apple_tree">
       <total_lifespan>64</total_lifespan>
       <cost>160</cost>
       <total_exp>91</total_exp>
       <gross_profit>514</gross_profit>
       <net_profit>339</net_profit>
       <level>15</level>
-    </tree>
+    </plant>
     
-    <tree name="cherry_tree">
+    <plant name="cherry_tree">
       <total_lifespan>108</total_lifespan>
       <cost>410</cost>
       <total_exp>174</total_exp>
       <gross_profit>889</gross_profit>
       <net_profit>464</net_profit>
       <level>22</level>
-    </tree>
+    </plant>
     
-    <tree name="cacao_tree">
+    <plant name="cacao_tree">
       <total_lifespan>140</total_lifespan>
       <cost>550</cost>
       <total_exp>213</total_exp>
       <gross_profit>1123</gross_profit>
       <net_profit>558</net_profit>
       <level>36</level>
-    </tree>
+    </plant>
     
-    <tree name="olive_tree">
+    <plant name="olive_tree">
       <total_lifespan>96</total_lifespan>
       <cost>620</cost>
       <total_exp>226</total_exp>
       <gross_profit>1076</gross_profit>
       <net_profit>441</net_profit>
       <level>57</level>
-    </tree>
+    </plant>
     
-    <tree name="lemon_tree">
+    <plant name="lemon_tree">
       <total_lifespan>116</total_lifespan>
       <cost>670</cost>
       <total_exp>239</total_exp>
       <gross_profit>1209</gross_profit>
       <net_profit>539</net_profit>
       <level>66</level>
-    </tree>
+    </plant>
 
-    <bush name="raspberry_bush">
+    <plant name="raspberry_bush">
       <total_lifespan>72</total_lifespan>
       <cost>225</cost>
       <total_exp></total_exp>
       <gross_profit>604</gross_profit>
       <net_profit>448</net_profit>
       <level>19</level>
-    </bush>
+    </plant>
     
-    <bush name="blackberry_bush">
+    <plant name="blackberry_bush">
       <total_lifespan>124</total_lifespan>
       <cost>530</cost>
       <total_exp>213</total_exp>
       <gross_profit>1076</gross_profit>
       <net_profit>510</net_profit>
       <level></level>
-    </bush>
+    </plant>
     
-    <bush name="nectar_bush">
+    <plant name="nectar_bush">
       <total_lifespan>8.333333333</total_lifespan>
       <cost>120</cost>
       <total_exp>5</total_exp>
       <gross_profit>0</gross_profit>
       <net_profit>0</net_profit>
       <level>39</level>
-    </bush>
+    </plant>
     
-    <bush name="coffee_bush">
+    <plant name="coffee_bush">
       <total_lifespan>100</total_lifespan>
       <cost>375</cost>
       <total_exp>213</total_exp>
       <gross_profit>796</gross_profit>
       <net_profit>421</net_profit>
       <level>42</level>
-    </bush>
+    </plant>
   
     <mine_item name="silver_ore">
       <cost_for_one>18</cost_for_one>
