@@ -6,13 +6,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UserBush", propOrder = {
+@XmlType(name = "UserPlant", propOrder = {
         "name",
         "quantity",
         "life_cycle_level"
 })
-//TODO: potential duplicate of UserTree; consider merging
-public class UserBush
+public class UserPlant
 {
     @XmlElement(name = "name", required = true)
     protected String name;
