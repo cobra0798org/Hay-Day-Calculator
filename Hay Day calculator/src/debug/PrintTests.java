@@ -2,6 +2,7 @@ package debug;
 
 import java.util.ArrayList;
 
+import exceptions.ProducableException;
 import hayDay.xmlNameObjectPairings.HayDayAccessor;
 import hayDay.xmlObjects.Animal;
 import hayDay.xmlObjects.Bush;
@@ -20,10 +21,13 @@ import hayDay.xmlObjects.Requirement;
 import hayDay.xmlObjects.Source;
 import hayDay.xmlObjects.Tree;
 import main.HayDayCalculator;
+import user.xmlAccessors.UserAccessor;
+import user.xmlObjects.User;
 
 public class PrintTests
 {
     private static HayDayType hayDay = HayDayAccessor.unmarshal(HayDayCalculator.DATAFILENAME);
+    private static User user = UserAccessor.unmarshal("GreenEggsAndHam");
     public static void printProductItemTests(ArrayList<Item> list)
     {
         System.out.println("***PRODUCT ITEMS***");
@@ -35,6 +39,16 @@ public class PrintTests
             System.out.println("COST FOR TEN: " + productItem.getCostForTen());
             System.out.println("EXP: " + productItem.getExp());
             System.out.println("TIME: " + productItem.getTime());
+            int totalTime = 0;
+            try
+            {
+                totalTime = productItem.getTotalTime(hayDay, user, true, 1);
+            }
+            catch (ProducableException e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println("TOTAL TIME: " + totalTime);
             System.out.println("MASTERED TIME: " + productItem.getMasteredTime());
             System.out.println("LEVEL: " + productItem.getLevel());
             
@@ -50,6 +64,7 @@ public class PrintTests
     
     public static void printAnimalTests(ArrayList<Animal> animals)
     {
+        System.out.println("***ANIMALS***");
         for(Animal animal : animals)
         {
             ArrayList<Level> levels = animal.getLevels();
@@ -95,7 +110,7 @@ public class PrintTests
     
     public static void printFarmItemTests(ArrayList<Item> farmItems)
     {
-        System.out.println("***PRODUCT ITEMS***");
+        System.out.println("***FARM ITEMS***");
         for(Item item : farmItems)
         {
             FarmItem farmItem = (FarmItem)item;
@@ -104,6 +119,16 @@ public class PrintTests
             System.out.println("COST FOR TEN: " + farmItem.getCostForTen());
             System.out.println("EXP: " + farmItem.getExp());
             System.out.println("TIME: " + farmItem.getTime());
+            int totalTime = 0;
+            try
+            {
+                totalTime = farmItem.getTotalTime(hayDay, user, true, 1);
+            }
+            catch (ProducableException e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println("TOTAL TIME: " + totalTime);
             System.out.println("LEVEL: " + farmItem.getLevel());
             
             printRequirementTests(farmItem.getRequirements());
@@ -117,7 +142,7 @@ public class PrintTests
     
     public static void printHarvestItemTests(ArrayList<Item> harvestItems)
     {
-        System.out.println("***PRODUCT ITEMS***");
+        System.out.println("***HARVEST ITEMS***");
         for(Item item : harvestItems)
         {
             HarvestItem harvestItem = (HarvestItem)item;
@@ -126,6 +151,16 @@ public class PrintTests
             System.out.println("COST FOR TEN: " + harvestItem.getCostForTen());
             System.out.println("EXP: " + harvestItem.getExp());
             System.out.println("TIME: " + harvestItem.getTime());
+            int totalTime = 0;
+            try
+            {
+                totalTime = harvestItem.getTotalTime(hayDay, user, true, 1);
+            }
+            catch (ProducableException e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println("TOTAL TIME: " + totalTime);
             System.out.println("LEVEL: " + harvestItem.getLevel());
             
             printRequirementTests(harvestItem.getRequirements());
@@ -139,11 +174,11 @@ public class PrintTests
     
     public static void printMachineTests(ArrayList<Machine> machines)
     {
+        System.out.println("***MACHINES***");
         for(Machine machine : machines)
         {
             if(!machine.getName().equals("field"))
             {
-                System.out.println("***MACHINES***");
                 System.out.println("NAME: " + machine.getName());
                 System.out.println("LEVEL: " + machine.getLevel());
                 System.out.println("COST: " + machine.getCost());
@@ -164,6 +199,7 @@ public class PrintTests
     
     public static void printTreeTests(ArrayList<Tree> trees)
     {
+        System.out.println("***TREES***");
         for (Tree tree : trees)
         {
             System.out.println("NAME: " + tree.getName());
@@ -178,6 +214,7 @@ public class PrintTests
     
     public static void printBushTests(ArrayList<Bush> bushes)
     {
+        System.out.println("***BUSHES***");
         for (Bush bush : bushes)
         {
             System.out.println("NAME: " + bush.getName());
@@ -192,6 +229,7 @@ public class PrintTests
     
     public static void printMineItemTests(ArrayList<Item> mineItems)
     {
+        System.out.println("***MINE ITEMS***");
         for (Item item : mineItems)
         {
             MineItem mineItem = (MineItem)item;
@@ -201,6 +239,16 @@ public class PrintTests
             System.out.println("EXP: " + mineItem.getExp());
             System.out.println("LEVEL: " + mineItem.getLevel());
             System.out.println("TIME: " + mineItem.getTime());
+            int totalTime = 0;
+            try
+            {
+                totalTime = mineItem.getTotalTime(hayDay, user, true, 1);
+            }
+            catch (ProducableException e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println("TOTAL TIME: " + totalTime);
         }
     }
     
@@ -218,6 +266,7 @@ public class PrintTests
     
     public static void printSourceTests(Source source)
     {
+        System.out.println("***SOURCE***");
         Class<?> sourceType = source.getType();
         System.out.println("SOURCE: " + source.getSource(hayDay).getName());
         System.out.println("\tSOURCE TYPE: " + sourceType);
@@ -234,6 +283,7 @@ public class PrintTests
     
     public static void printRareItemTests(ArrayList<Item> rareItems)
     {
+        System.out.println("***RARE ITEMS***");
         for (Item item : rareItems)
         {
             RareItem rareItem = (RareItem)item;
@@ -242,6 +292,16 @@ public class PrintTests
             System.out.println("COST FOR TEN: " + rareItem.getCostForTen());
             System.out.println("LEVEL: " + rareItem.getLevel());
             System.out.println("TIME: " + rareItem.getTime());
+            int totalTime = 0;
+            try
+            {
+                totalTime = rareItem.getTotalTime(hayDay, user, true, 1);
+            }
+            catch (ProducableException e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println("TOTAL TIME: " + totalTime);
         }
     }
 }
